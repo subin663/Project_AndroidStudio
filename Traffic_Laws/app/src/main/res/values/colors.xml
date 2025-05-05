@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="splash_background"></color>
+    <color name="rose">#FFFFAEBC</color>
+    <color name="blonde">#FFFBE7C6</color>
+    <color name="lime_green">#FF18B74B</color>
+    <color name="beach_blue">#FF1BA7A6</color>
 </resources>
