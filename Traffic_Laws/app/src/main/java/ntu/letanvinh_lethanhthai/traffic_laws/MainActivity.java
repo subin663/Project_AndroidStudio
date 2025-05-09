@@ -24,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
 
         bottomNav=findViewById(R.id.bottomNavigationView);
         FragmentManager fragmentManager=getSupportFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.fragment_container, new OntapFragment()).commit();
-
+        fragmentManager.beginTransaction().replace(R.id.fragment_container, new ThithuFragment()).commit();
+        Toast.makeText(MainActivity.this, "Chọn mục bất kì để thi thử",Toast.LENGTH_LONG).show();
         bottomNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -37,15 +37,15 @@ public class MainActivity extends AppCompatActivity {
                     //thay fragment
                     // sửa: fragmentManager.beginTransaction().replace(R.id.bottomNavigationView,new ThithuFragment()).commit();
                     fragmentManager.beginTransaction().replace(R.id.fragment_container,new ThithuFragment()).commit();
-                    Toast.makeText(MainActivity.this, "Thay Home",Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, "Chọn mục bất kì để thi thử",Toast.LENGTH_LONG).show();
                 }
                 else if(mnuItemDuocChonID==R.id.mnu_ontap){
                     fragmentManager.beginTransaction().replace(R.id.fragment_container,new OntapFragment()).commit();
-                    Toast.makeText(MainActivity.this,"Thay Search",Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this,"Chọn mục bất kì để ôn tập",Toast.LENGTH_LONG).show();
                 }
                 else if(mnuItemDuocChonID==R.id.mnu_bienbao){
                     fragmentManager.beginTransaction().replace(R.id.fragment_container,new BienbaoFragment()).commit();
-                    Toast.makeText(MainActivity.this,"Thay Profile",Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this,"Biển báo",Toast.LENGTH_LONG).show();
                 }
                 else{
                     return true;

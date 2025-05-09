@@ -7,25 +7,13 @@
         android:icon="@drawable/ic_thithu"
         android:title="Thi thử" />
     <item
-        android:id="@+id/mnu_bienbao"
-        android:icon="@drawable/ic_bienbao"
-        android:title="Biển báo" />
-    <item
         android:id="@+id/mnu_ontap"
         android:icon="@drawable/ic_ontap"
         android:title="Ôn tập" />
-
     <item
-        android:id="@+id/mnu_khac"
-        android:title="Khác"
-        android:icon="@drawable/baseline_add_home_24"/>
-
-    <item
-        android:id="@+id/mnu_khac1"
-        android:title="Khác 1"
-        android:icon="@drawable/baseline_add_home_24"/>
-
-
+        android:id="@+id/mnu_bienbao"
+        android:icon="@drawable/ic_bienbao"
+        android:title="Biển báo" />
 
 
 </menu>

@@ -3,12 +3,130 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ThithuFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ThithuFragment"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="TRANG THI THỬ" />
+        android:orientation="vertical">
+        <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:background="#1BB4B3">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/next"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="GPLX Bằng A1 năm 2025"
+                android:textSize="25dp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#DCDCDC">
+            <LinearLayout
+                android:id="@+id/lnThi1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp"
+                android:gravity="center_vertical"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_edittext"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thi theo bộ đề có sẵn"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Các bộ đề được xây dựng theo cấu trúc của đề thi thật"
+                    android:textSize="18dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lnThi2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp"
+                android:gravity="center_vertical"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_edittext">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thi theo bộ đề ngẫu nhiên"
+                    android:textSize="22dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hệ thống chọn ngẫu nhiên các câu hỏi theo cấu trúc đề thi thật"
+                    android:textSize="18dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lnThi3"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp"
+                android:gravity="center_vertical"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_edittext">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thi theo các câu điểm liệt"
+                    android:textSize="22dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hệ thống tạo đề từ các câu điểm liệt"
+                    android:textSize="18dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lnThi4"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp"
+                android:gravity="center_vertical"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_edittext">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thi thử top những câu hay sai"
+                    android:textSize="22dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TOP CÂU SAI dựa trên lịch sử bài thi của hơn 5000 người sử dụng ứng dụng và dữ liệu được cập nhật sau mỗi ngày"
+                    android:textSize="18dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
 
 </FrameLayout>

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".OntapFragment"
+    tools:context=".ThithuFragment"
     android:orientation="vertical">
 
     <LinearLayout
@@ -23,7 +23,7 @@
                 android:drawableLeft="@drawable/next"
                 android:gravity="center"
                 android:padding="15dp"
-                android:text="Ôn tập lý thuyết"
+                android:text="Các bộ đề thi Bằng A1"
                 android:textSize="25dp"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"/>
@@ -34,33 +34,33 @@
             android:orientation="vertical"
             android:background="#DCDCDC">
             <LinearLayout
-                android:id="@+id/lnLt1"
+                android:id="@+id/lnThi1"
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:orientation="vertical"
+                android:layout_height="120dp"
+                android:orientation="horizontal"
                 android:paddingHorizontal="20dp"
                 android:gravity="center_vertical"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="15dp"
-                android:background="@drawable/custom_edittext"
-                >
-                <TextView
-                    android:layout_width="wrap_content"
+                android:background="@drawable/custom_edittext">
+                <Button
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="Toàn bộ câu hỏi"
-                    android:textSize="20dp"
-                    android:textStyle="bold"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Button 1" />
+                <Button
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="200 câu hỏi bao gồm 20 câu điểm liệt"
-                    android:textSize="18dp"/>
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="Button 2" />
+
+
             </LinearLayout>
             <LinearLayout
-                android:id="@+id/lnLt2"
+                android:id="@+id/lnThi2"
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
+                android:layout_height="120dp"
                 android:orientation="vertical"
                 android:paddingHorizontal="20dp"
                 android:gravity="center_vertical"
@@ -70,19 +70,19 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Khái niệm và quy tắc giao thông"
-                    android:textSize="20dp"
+                    android:text="Thi theo bộ đề ngẫu nhiên"
+                    android:textSize="22dp"
                     android:textStyle="bold"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="83 câu hỏi bao gồm 18 câu điểm liệt"
+                    android:text="Hệ thống chọn ngẫu nhiên các câu hỏi theo cấu trúc đề thi thật"
                     android:textSize="18dp"/>
             </LinearLayout>
             <LinearLayout
-                android:id="@+id/lnLt3"
+                android:id="@+id/lnThi3"
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
+                android:layout_height="120dp"
                 android:orientation="vertical"
                 android:paddingHorizontal="20dp"
                 android:gravity="center_vertical"
@@ -92,19 +92,19 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Văn hoá và đạo đức"
-                    android:textSize="20dp"
+                    android:text="Thi theo các câu điểm liệt"
+                    android:textSize="22dp"
                     android:textStyle="bold"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="5 câu hỏi gồm 0 câu điểm liệt"
+                    android:text="Hệ thống tạo đề từ các câu điểm liệt"
                     android:textSize="18dp"/>
             </LinearLayout>
             <LinearLayout
-                android:id="@+id/lnLt4"
+                android:id="@+id/lnThi4"
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
+                android:layout_height="120dp"
                 android:orientation="vertical"
                 android:paddingHorizontal="20dp"
                 android:gravity="center_vertical"
@@ -114,62 +114,13 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Kỹ thuật lái xe"
-                    android:textSize="20dp"
+                    android:text="Thi thử top những câu hay sai"
+                    android:textSize="22dp"
                     android:textStyle="bold"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="12 câu hỏi bao gồm 2 câu điểm liệt"
-                    android:textSize="18dp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/lnLt5"
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/custom_edittext"
-                android:gravity="center_vertical"
-                android:orientation="vertical"
-                android:paddingHorizontal="20dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Biển báo đường bộ"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="65 câu hỏi bao gồm 0 câu điểm liệt"
-                    android:textSize="18dp" />
-            </LinearLayout>
-
-            <LinearLayout
-
-                android:id="@+id/lnLt6"
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:orientation="vertical"
-                android:paddingHorizontal="20dp"
-                android:gravity="center_vertical"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/custom_edittext">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Sa hình"
-                    android:textSize="20dp"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="35 câu hỏi bao gồm 0 câu điểm liệt"
+                    android:text="TOP CÂU SAI dựa trên lịch sử bài thi của hơn 5000 người sử dụng ứng dụng và dữ liệu được cập nhật sau mỗi ngày"
                     android:textSize="18dp"/>
             </LinearLayout>
         </LinearLayout>
