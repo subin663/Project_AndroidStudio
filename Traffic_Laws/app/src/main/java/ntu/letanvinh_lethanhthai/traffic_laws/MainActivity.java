@@ -31,17 +31,20 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 //                Fragment selectedFragment=null;
                 int mnuItemDuocChonID=item.getItemId();
+
+                // Điều chỉnh để hiển thị các trang lên màn hình - THÁI đã sửa
                 if (mnuItemDuocChonID==R.id.mnu_thithu){
                     //thay fragment
-                    fragmentManager.beginTransaction().replace(R.id.bottomNavigationView,new ThithuFragment()).commit();
+                    // sửa: fragmentManager.beginTransaction().replace(R.id.bottomNavigationView,new ThithuFragment()).commit();
+                    fragmentManager.beginTransaction().replace(R.id.fragment_container,new ThithuFragment()).commit();
                     Toast.makeText(MainActivity.this, "Thay Home",Toast.LENGTH_LONG).show();
                 }
                 else if(mnuItemDuocChonID==R.id.mnu_ontap){
-                    fragmentManager.beginTransaction().replace(R.id.bottomNavigationView,new OntapFragment()).commit();
+                    fragmentManager.beginTransaction().replace(R.id.fragment_container,new OntapFragment()).commit();
                     Toast.makeText(MainActivity.this,"Thay Search",Toast.LENGTH_LONG).show();
                 }
                 else if(mnuItemDuocChonID==R.id.mnu_bienbao){
-                    fragmentManager.beginTransaction().replace(R.id.bottomNavigationView,new BienbaoFragment()).commit();
+                    fragmentManager.beginTransaction().replace(R.id.fragment_container,new BienbaoFragment()).commit();
                     Toast.makeText(MainActivity.this,"Thay Profile",Toast.LENGTH_LONG).show();
                 }
                 else{
