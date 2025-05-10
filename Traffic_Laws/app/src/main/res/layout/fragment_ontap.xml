@@ -28,35 +28,39 @@
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"/>
         </LinearLayout>
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:background="#DCDCDC">
+
             <LinearLayout
-                android:id="@+id/lnLt1"
+                android:id="@+id/Toanbocauhoi"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
-                android:orientation="vertical"
-                android:paddingHorizontal="20dp"
-                android:gravity="center_vertical"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="15dp"
                 android:background="@drawable/custom_edittext"
-                >
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Toàn bộ câu hỏi"
                     android:textSize="20dp"
-                    android:textStyle="bold"
-                    />
+                    android:textStyle="bold" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="200 câu hỏi bao gồm 20 câu điểm liệt"
-                    android:textSize="18dp"/>
+                    android:textSize="18dp" />
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/lnLt2"
                 android:layout_width="match_parent"

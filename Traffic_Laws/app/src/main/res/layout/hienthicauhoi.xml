@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Câu hỏi -->
+    <TextView
+        android:id="@+id/question_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="8dp"/>
+
+    <!-- Lựa chọn -->
+    <TextView
+        android:id="@+id/options_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Options"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"/>
+
+    <!-- Câu trả lời -->
+    <TextView
+        android:id="@+id/answer_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Answer"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_green_dark"
+        android:paddingTop="8dp"/>
+
+</LinearLayout>
