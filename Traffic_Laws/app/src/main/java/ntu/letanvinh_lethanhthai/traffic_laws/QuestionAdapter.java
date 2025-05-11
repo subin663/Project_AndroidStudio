@@ -105,7 +105,7 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.Questi
         holder.optionsText.setText(TextUtils.join("\n", question.getOptions()));
 
         // Hiển thị câu trả lời (có thể là đáp án đúng)
-        holder.answerText.setText("Answer: " + question.getAnswer());
+        holder.answerText.setText("Đáp án: " + question.getAnswer());
     }
 
     @Override
