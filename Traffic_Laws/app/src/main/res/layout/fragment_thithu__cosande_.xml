@@ -17,111 +17,201 @@
             android:layout_height="80dp"
             android:gravity="center"
             android:background="#1BB4B3">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:drawableLeft="@drawable/next"
+                android:drawableLeft="@drawable/back"
                 android:gravity="center"
                 android:padding="15dp"
                 android:text="Các bộ đề thi Bằng A1"
-                android:textSize="25dp"
                 android:textColor="#FFFFFF"
-                android:textStyle="bold"/>
+                android:textSize="25dp"
+                android:textStyle="bold" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:background="#DCDCDC">
+
             <LinearLayout
-                android:id="@+id/lnThi1"
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
                 android:orientation="horizontal"
-                android:paddingHorizontal="20dp"
-                android:gravity="center_vertical"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/custom_edittext">
-                <Button
+                android:paddingHorizontal="20dp">
+
+                <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
                     android:layout_weight="1"
-                    android:text="Button 1" />
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="end"
-                    android:text="Button 2" />
+                    android:background="@drawable/custom_edittext">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/white"
+                        android:text="ĐỀ SỐ 1"
+                        android:textColor="@color/beach_blue" />
+
+                </LinearLayout>
 
 
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_edittext">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/white"
+                        android:text="ĐỀ SỐ 2"
+                        android:textColor="@color/beach_blue" />
+
+                </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
-                android:id="@+id/lnThi2"
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
-                android:orientation="vertical"
-                android:paddingHorizontal="20dp"
-                android:gravity="center_vertical"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="15dp"
-                android:background="@drawable/custom_edittext">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Thi theo bộ đề ngẫu nhiên"
-                    android:textSize="22dp"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Hệ thống chọn ngẫu nhiên các câu hỏi theo cấu trúc đề thi thật"
-                    android:textSize="18dp"/>
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_edittext">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/white"
+                        android:text="ĐỀ SỐ 3"
+                        android:textColor="@color/beach_blue" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_edittext">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/white"
+                        android:text="ĐỀ SỐ 4"
+                        android:textColor="@color/beach_blue" />
+
+                </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
-                android:id="@+id/lnThi3"
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
-                android:orientation="vertical"
-                android:paddingHorizontal="20dp"
-                android:gravity="center_vertical"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="15dp"
-                android:background="@drawable/custom_edittext">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Thi theo các câu điểm liệt"
-                    android:textSize="22dp"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Hệ thống tạo đề từ các câu điểm liệt"
-                    android:textSize="18dp"/>
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_edittext">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/white"
+                        android:text="ĐỀ SỐ 5"
+                        android:textColor="@color/beach_blue" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_edittext">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/white"
+                        android:text="ĐỀ SỐ 6"
+                        android:textColor="@color/beach_blue" />
+
+                </LinearLayout>
             </LinearLayout>
             <LinearLayout
-                android:id="@+id/lnThi4"
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
-                android:orientation="vertical"
-                android:paddingHorizontal="20dp"
-                android:gravity="center_vertical"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="15dp"
-                android:background="@drawable/custom_edittext">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Thi thử top những câu hay sai"
-                    android:textSize="22dp"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="TOP CÂU SAI dựa trên lịch sử bài thi của hơn 5000 người sử dụng ứng dụng và dữ liệu được cập nhật sau mỗi ngày"
-                    android:textSize="18dp"/>
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_edittext">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/white"
+                        android:text="ĐỀ SỐ 7"
+                        android:textColor="@color/beach_blue" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_edittext">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/white"
+                        android:text="ĐỀ SỐ 8"
+                        android:textColor="@color/beach_blue" />
+
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

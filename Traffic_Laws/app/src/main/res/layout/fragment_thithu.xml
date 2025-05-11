@@ -101,28 +101,7 @@
                     android:text="Hệ thống tạo đề từ các câu điểm liệt"
                     android:textSize="18dp"/>
             </LinearLayout>
-            <LinearLayout
-                android:id="@+id/lnThi4"
-                android:layout_width="match_parent"
-                android:layout_height="130dp"
-                android:orientation="vertical"
-                android:paddingHorizontal="20dp"
-                android:gravity="center_vertical"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/custom_edittext">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Thi thử top những câu hay sai"
-                    android:textSize="22dp"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="TOP CÂU SAI dựa trên lịch sử bài thi của hơn 5000 người sử dụng ứng dụng và dữ liệu được cập nhật sau mỗi ngày"
-                    android:textSize="18dp"/>
-            </LinearLayout>
+
         </LinearLayout>
     </LinearLayout>
 
