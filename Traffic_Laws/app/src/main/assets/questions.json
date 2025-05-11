@@ -1,0 +1,357 @@
+[
+    {
+      "question": "1. Người điều khiển xe mô tô hai bánh không được thực hiện hành vi nào sau đây?",
+      "options": [
+        "A. Sử dụng ô điện thoại di động, thiết bị âm thanh.",
+        "B. Chạy quá tốc độ cho phép.",
+        "C. Cả A và B."
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "2. Khi điều khiển xe mô tô trong khu dân cư, tốc độ tối đa cho phép là bao nhiêu km/h (nếu không có biển báo)?",
+      "options": [
+        "A. 50 km/h.",
+        "B. 60 km/h.",
+        "C. 40 km/h."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "3. Người điều khiển xe máy có được phép vượt xe khác trong hầm đường bộ không?",
+      "options": [
+        "A. Được phép nếu thấy đủ an toàn.",
+        "B. Không được phép.",
+        "C. Được phép nếu xe phía trước chạy chậm."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "4. Khi gặp đèn tín hiệu giao thông màu vàng đang bật, người điều khiển phương tiện phải làm gì?",
+      "options": [
+        "A. Tăng tốc vượt nhanh.",
+        "B. Dừng lại trước vạch dừng nếu có thể làm an toàn.",
+        "C. Vẫn đi tiếp nếu không có cảnh sát giao thông."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "5. Người điều khiển xe máy phải đội mũ bảo hiểm như thế nào là đúng quy định?",
+      "options": [
+        "A. Chỉ cần đội mũ.",
+        "B. Đội mũ nhưng không cần cài quai.",
+        "C. Đội mũ bảo hiểm có cài quai đúng cách."
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "6. Xe mô tô hai bánh được dừng, đỗ ở đâu là đúng quy tắc giao thông?",
+      "options": [
+        "A. Trên cầu.",
+        "B. Trên phần đường xe chạy.",
+        "C. Nơi có biển \"Được đỗ xe\" hoặc nơi không có biển cấm."
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "7. Trong các hành vi sau đây, hành vi nào bị nghiêm cấm?",
+      "options": [
+        "A. Điều khiển xe không có giấy đăng ký xe.",
+        "B. Không mang theo bằng lái xe.",
+        "C. Cả hai hành vi trên."
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "8. Khi gặp hiệu lệnh của người điều khiển giao thông, người tham gia giao thông phải chấp hành như thế nào?",
+      "options": [
+        "A. Tuân theo đèn tín hiệu.",
+        "B. Tuân theo người điều khiển giao thông.",
+        "C. Tuân theo biển báo."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "9. Trên đường có nhiều làn đường, người điều khiển xe mô tô phải đi như thế nào?",
+      "options": [
+        "A. Đi ở bất kỳ làn đường nào.",
+        "B. Đi đúng làn đường quy định, không lấn làn.",
+        "C. Đi sang làn ô tô để tránh ổ gà."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "10. Người đủ bao nhiêu tuổi được phép lái xe mô tô hạng A1?",
+      "options": [
+        "A. 16 tuổi.",
+        "B. 17 tuổi.",
+        "C. 18 tuổi."
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "11. Người điều khiển phương tiện tham gia giao thông đường bộ gồm những đối tượng nào dưới đây?",
+      "options": [
+        "A. Người điều khiển xe cơ giới, người điều khiển xe thô sơ.",
+        "B. Người điều khiển xe máy chuyên dùng tham gia giao thông đường bộ.",
+        "C. Cả ý 1 và ý 2."
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "12. Khái niệm “người điều khiển giao thông” được hiểu như thế nào là đúng?",
+      "options": [
+        "A. Là người điều khiển phương tiện tham gia giao thông tại nơi thi công, nơi ùn tắc giao thông, ở bến phà, tại cầu đường bộ đi chung với đường sắt.",
+        "B. Là cảnh sát giao thông, người được giao nhiệm vụ hướng dẫn giao thông tại nơi thi công, nơi ùn tắc giao thông, ở bến phà, tại cầu đường bộ đi chung với đường sắt.",
+        "C. Là người tham gia giao thông tại nơi thi công, nơi ùn tắc giao thông, ở bến phà, tại cầu đường bộ đi chung với đường sắt."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "13. Trong các khái niệm dưới đây khái niệm “dừng xe” được hiểu như thế nào là đúng?",
+      "options": [
+        "A. Là trạng thái đứng yên của phương tiện giao thông không giới hạn thời gian để cho người lên, xuống phương tiện, xếp dỡ hàng hóa hoặc thực hiện công việc khác.",
+        "B. Là trạng thái đứng yên tạm thời của phương tiện giao thông trong một khoảng thời gian cần thiết đủ để cho người lên, xuống phương tiện, xếp dỡ hàng hóa hoặc thực hiện công việc khác.",
+        "C. Là trạng thái đứng yên của phương tiện giao thông không giới hạn thời gian giữa 02 lần vận chuyển hàng hóa hoặc hành khách."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "14. Khái niệm “đỗ xe” được hiểu như thế nào là đúng?",
+      "options": [
+        "A. Là trạng thái đứng yên của phương tiện giao thông có thời hạn trong một khoảng thời gian cần thiết đủ để cho người lên, xuống phương tiện, xếp dỡ hàng hóa hoặc thực hiện công việc khác.",
+        "B. Là trạng thái đứng yên của phương tiện giao thông không giới hạn thời gian."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "15. Cuộc đua xe chỉ được thực hiện khi nào?",
+      "options": [
+        "A. Diễn ra trên đường phố không có người qua lại.",
+        "B. Được người dân ủng hộ.",
+        "C. Được cơ quan có thẩm quyền cấp phép."
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "16. Người điều khiển phương tiện giao thông đường bộ mà trong cơ thể có chất ma túy có bị nghiêm cấm không?",
+      "options": [
+        "A. Bị nghiêm cấm.",
+        "B. Không bị nghiêm cấm.",
+        "C. Không bị nghiêm cấm, nếu có chất ma túy ở mức nhẹ, có thể điều khiển phương tiện tham gia giao thông."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "17. Sử dụng rượu, bia khi lái xe, nếu bị phát hiện thì bị xử lý như thế nào?",
+      "options": [
+        "A. Chỉ bị nhắc nhở.",
+        "B. Bị xử phạt hành chính hoặc có thể bị xử lý hình sự tùy theo mức độ vi phạm.",
+        "C. Không bị xử lý hình sự."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "18. Theo luật phòng chống tác hại của rượu, bia, đối tượng nào dưới đây bị cấm sử dụng rượu, bia khi tham gia giao thông?",
+      "options": [
+        "A. Người điều khiển: Xe ô tô, xe mô tô, xe đạp, xe gắn máy.",
+        "B. Người ngồi phía sau người điều khiển xe cơ giới.",
+        "C. Người đi bộ.",
+        "D. Cả ý 1 và ý 2."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "19. Hành vi điều khiển xe cơ giới chạy quá tốc độ quy định, giành đường, vượt ẩu có bị nghiêm cấm hay không?",
+      "options": [
+        "A. Bị nghiêm cấm tùy trường hợp.",
+        "B. Không bị nghiêm cấm.",
+        "C. Bị nghiêm cấm."
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "20. Khi lái xe trong khu đô thị và đông dân cư trừ các khu vực có biển cấm sử dụng còi, người lái xe được sử dụng còi như thế nào trong các trường hợp dưới đây?",
+      "options": [
+        "A. Từ 22 giờ đêm đến 5 giờ sáng.",
+        "B. Từ 5 giờ sáng đến 22 giờ tối.",
+        "C. Từ 23 giờ đêm đến 5 giờ sáng hôm sau."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "21. Người lái xe sử dụng đèn như thế nào khi lái xe trong khu đô thị và đông dân cư vào ban đêm?",
+      "options": [
+        "A. Bất cứ đèn nào miễn là mắt nhìn rõ phía trước.",
+        "B. Chỉ bật đèn chiếu xa (đèn pha) khi không nhìn rõ đường.",
+        "C. Đèn chiếu xa (đèn pha) khi đường vắng, đèn pha chiếu gần (đèn cốt) khi có xe đi ngược chiều.",
+        "D. Đèn chiếu gần (đèn cốt)."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "22. Trong trường hợp đặc biệt, để được lắp đặt, sử dụng còi, đèn không đúng với thiết kế của nhà sản xuất đối với từng loại xe cơ giới bạn phải đảm bảo yêu cầu nào dưới đây?",
+      "options": [
+        "A. Phải đảm bảo phụ tùng do đúng nhà sản xuất đó cung cấp.",
+        "B. Phải được chấp thuận của cơ quan có thẩm quyền.",
+        "C. Phải là xe đăng ký và hoạt động tại các khu vực có địa hình phức tạp."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "23. Ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, đường cao tốc, đường hẹp, đường dốc, tại nơi đường bộ giao nhau cùng mức với đường sắc có được quay đầu xe hay không?",
+      "options": [
+        "A. Được phép.",
+        "B. Không được phép.",
+        "C. Tùy từng trường hợp."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "24. Bạn đang lái xe phía trước có một xe cảnh sát giao thông không phát tín hiệu ưu tiên bạn có được phép vượt hay không?",
+      "options": [
+        "A. Không được vượt.",
+        "B. Được vượt khi đang đi trên cầu.",
+        "C. Được phép vượt khi đi qua nơi giao nhau có ít phương tiện cùng tham gia giao thông.",
+        "D. Được vượt khi đảm bảo an toàn."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "25. Bạn đang lái xe phía trước có một xe cứu thương đang phát tín hiệu ưu tiên bạn có được phép vượt hay không?",
+      "options": [
+        "A. Không được vượt.",
+        "B. Được vượt khi đang đi trên cầu.",
+        "C. Được phép vượt khi đi qua nơi giao nhau có ít phương tiện cùng tham gia giao thông.",
+        "D. Được vượt khi đảm bảo an toàn."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "26. Người điều khiển xe mô tô hai bánh, ba bánh, xe gắn máy có được phép sử dụng xe để kéo hoặc đẩy các phương tiện khác khi tham gia giao thông không?",
+      "options": [
+        "A. Được phép.",
+        "B. Nếu phương tiện được kéo, đẩy có khối lượng nhỏ hơn phương tiện của mình.",
+        "C. Tùy trường hợp.",
+        "D. Không được phép."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "27. Khi điều khiển xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy, những hành vi buông cả hai tay; sử dụng xe để kéo, đẩy xe khác, vật khác; sử dụng chân chống của xe quệt xuống đường khi xe đang chạy có được phép hay không?",
+      "options": [
+        "A. Được phép.",
+        "B. Tùy trường hợp.",
+        "C. Không được phép."
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "28. Khi điều khiển xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy, những hành vi nào không được phép?",
+      "options": [
+        "A. Buông cả hai tay; sử dụng xe để kéo, đẩy xe khác, vật khác; sử dụng chân chống của xe quệt xuống đường khi xe đang chạy.",
+        "B. Buông một tay; sử dụng xe để chở người hoặc hàng hóa; để chân chạm xuống đất khi khởi hành.",
+        "C. Đội mũ bảo hiểm; chạy xe đúng tốc độ quy định và chấp hành đúng quy tắc giao thông đường bộ.",
+        "D. Chở người ngồi sau dưới 16 tuổi."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "29. Người ngồi trên xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy khi tham gia giao thông có được mang, vác vật cồng kềnh hay không?",
+      "options": [
+        "A. Được mang, vác tùy trường hợp cụ thể.",
+        "B. Không được mang, vác.",
+        "C. Được mang, vác nhưng phải đảm bảo an toàn.",
+        "D. Được mang, vác tùy theo sức khỏe của bản thân."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "30. Người ngồi trên xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy khi tham gia giao thông có được bám, kéo hoặc đẩy các phương tiện khác không?",
+      "options": [
+        "A. Được phép.",
+        "B. Được bám trong trường hợp phương tiện của mình bị hỏng.",
+        "C. Được kéo, đẩy trong trường hợp phương tiện khác bị hỏng.",
+        "D. Không được phép."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "31. Người ngồi trên xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy khi tham gia giao thông có được sử dụng ô khi trời mưa hay không?",
+      "options": [
+        "A. Được sử dụng.",
+        "B. Chỉ người ngồi sau được sử dụng.",
+        "C. Không được sử dụng.",
+        "D. Được sử dụng nếu không có áo mưa."
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "32. Khi đang lên dốc người ngồi trên xe mô tô có được kéo theo người đang điều khiển xe đạp hay không?",
+      "options": [
+        "A. Chỉ được phép nếu cả hai đội mũ bảo hiểm.",
+        "B. Không được phép.",
+        "C. Chỉ được thực hiện trên đường thật vắng.",
+        "D. Chỉ được phép khi người đi xe đạp đã quá mệt."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "33. Hành vi sử dụng xe mô tô để kéo, đẩy xe mô tô khác bị hết xăng đến trạm mua xăng có được phép hay không?",
+      "options": [
+        "A. Chỉ được kéo nếu đã nhìn thấy trạm xăng.",
+        "B. Chỉ được thực hiện trên đường vắng phương tiện cùng tham gia giao thông.",
+        "C. Không được phép."
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "34. Hành vi vận chuyển đồ vật cồng kềnh bằng xe mô tô, xe gắn máy khi tham gia giao thông có được phép hay không?",
+      "options": [
+        "A. Không được vận chuyển.",
+        "B. Chỉ được vận chuyển khi đã chằng buộc cẩn thận.",
+        "C. Chỉ được vận chuyển vật cồng kềnh trên xe máy nếu khoảng cách về nhà ngắn hơn 2 km."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "35. Người đủ bao nhiêu tuổi trở lên thì được điều khiển xe mô tô hai bánh, xe mô tô ba bánh có dung tích xi lanh từ 50 cm3 trở lên và các loại xe có kết cấu tương tự; xe ô tô tải, máy kéo có trọng tải dưới 3,5 tấn; xe ô tô chở người đến 9 chỗ ngồi?",
+      "options": [
+        "A. 16 tuổi.",
+        "B. 18 tuổi.",
+        "C. 17 tuổi."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "36. Người đủ 16 tuổi được điều khiển các loại xe nào dưới đây?",
+      "options": [
+        "A. Xe mô tô 2 bánh có dung tích xi lanh từ 50 cm3 trở lên.",
+        "B. Xe gắn máy có dung tích xi lanh dưới 50 cm3.",
+        "C. Xe ô tô tải dưới 3,5 tấn; xe chở người đến 9 chỗ ngồi.",
+        "D. Tất cả các ý nêu trên."
+    ],
+
+    "answer": "B"
+    },
+      {
+        "question": "37. Người có giấy phép lái xe mô tô hạng A1 không được phép điều khiển loại xe nào dưới đây?",
+        "options": [
+          "A. Xe mô tô có dung tích xi lanh 125 cm3.",
+          "B. Xe mô tô có dung tích xi lanh 125 cm3 trở lên.",
+          "C. Xe mô tô có dung tích xi lanh 100 cm3."
+        ],
+        "answer": "B"
+      },
+      {
+        "question": "38. Người có giấy phép lái xe mô tô hạng A1 được phép điều khiển loại xe nào dưới đây?",
+        "options": [
+          "A. Xe mô tô hai bánh có dung tích xi lanh từ 50 cm3 đến dưới 125 cm3.",
+          "B. Xe mô tô ba bánh dùng cho người khuyết tật.",
+          "C. Cả ý 1 và ý 2."
+        ],
+        "answer": "C"
+      }
+
+  ]
+  
