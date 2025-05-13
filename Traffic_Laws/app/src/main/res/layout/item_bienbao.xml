@@ -11,7 +11,7 @@
         android:layout_marginTop="10dp">
         <ImageView
             android:id="@+id/ivBienbao"
-            android:src="@mipmap/img_1"
+            android:src="@mipmap/p_101"
             android:scaleType="fitXY"
             android:layout_width="150dp"
             android:layout_height="150dp">

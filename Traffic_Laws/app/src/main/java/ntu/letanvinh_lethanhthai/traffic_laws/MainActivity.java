@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 //                Fragment selectedFragment=null;
                 int mnuItemDuocChonID=item.getItemId();
 
-                // Điều chỉnh để hiển thị các trang lên màn hình - THÁI đã sửa
+                // Điều chỉnh để hiển thị các trang lên màn hình
                 if (mnuItemDuocChonID==R.id.mnu_thithu){
                     //thay fragment
                     // sửa: fragmentManager.beginTransaction().replace(R.id.bottomNavigationView,new ThithuFragment()).commit();
