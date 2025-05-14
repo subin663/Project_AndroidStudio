@@ -22,7 +22,7 @@ public class BienbaoFragment extends Fragment {
     BienbaoAdapter bbAdapter;
     ArrayList<Bienbao> recyclerViewDatas = new ArrayList<>(); // Khởi tạo ở đây
     RecyclerView rycyclerViewBB;
-    
+
 
     public BienbaoFragment() {
         // Required empty public constructor
