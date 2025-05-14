@@ -6,26 +6,20 @@
     android:gravity="center">
 
     <ImageView
-        android:id="@+id/imgBear"
+        android:id="@+id/imgBienbao"
         android:layout_width="150dp"
         android:layout_height="150dp"/>
 
+
     <TextView
-        android:id="@+id/txtFb"
+        android:id="@+id/txtTenbien"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
         android:layout_marginTop="10dp"/>
 
     <TextView
-        android:id="@+id/txtIns"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:layout_marginTop="10dp"/>
-
-    <TextView
-        android:id="@+id/txtDescription"
+        android:id="@+id/txtMota"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"

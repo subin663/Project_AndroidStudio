@@ -3,9 +3,9 @@ import java.io.Serializable;
 public class Bienbao implements Serializable {
     private static final long serialVersionUID = 1L;
     int id_bienbao;
-    String wbbFileName;
     String ten_bienbao;
     String mota_bienbao;
+    String wbbFileName;
 
     public Bienbao(int id_bienbao, String ten_bienbao, String mota_bienbao, String wbbFileName) {
         this.id_bienbao = id_bienbao;

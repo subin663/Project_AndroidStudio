@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -16,11 +17,11 @@ import java.util.ArrayList;
 public class BienbaoAdapter extends RecyclerView.Adapter<BienbaoAdapter.itemBienbaoHolder> {
     Context context;
     ArrayList<Bienbao> lstBienbao;
-    // AdapterView.OnItemClickListener onItemClickListener; // Bạn có thể sử dụng interface callback thay vì AdapterView.OnItemClickListener
+    AdapterView.OnItemClickListener onItemClickListener; // Bạn có thể sử dụng interface callback thay vì AdapterView.OnItemClickListener
 
-    public BienbaoAdapter(Context context, ArrayList<Bienbao> lstBienbao) {
+    public BienbaoAdapter(Context context, ArrayList<Bienbao> lstBien) {
         this.context = context;
-        this.lstBienbao = lstBienbao;
+        this.lstBienbao = lstBien;
     }
 
     @NonNull
@@ -53,11 +54,11 @@ public class BienbaoAdapter extends RecyclerView.Adapter<BienbaoAdapter.itemBien
         holder.ivBienbao.setImageResource(imageID);
 
         //Bắt sự kiện click item (ví dụ chuyển sang chi tiết biển báo)
-//        holder.itemView.setOnClickListener(v -> {
-//            Intent intent = new Intent(context, ChiTietBienBaoActivity.class); // **Thay ChiTietBienBaoActivity.class bằng Activity bạn muốn chuyển đến**
-//            intent.putExtra("bienbao_data", bbHienthi); // Truyền dữ liệu biển báo (đảm bảo Bienbao implements Serializable hoặc Parcelable)
-//            context.startActivity(intent);
-//        });
+        holder.itemView.setOnClickListener(v -> {
+            Intent intent = new Intent(context, BienbaoActivity_Detail.class); // **Thay ChiTietBienBaoActivity.class bằng Activity bạn muốn chuyển đến**
+            intent.putExtra("bbData", bbHienthi); // Truyền dữ liệu biển báo (đảm bảo Bienbao implements Serializable hoặc Parcelable)
+            context.startActivity(intent);
+        });
     }
 
     @Override
@@ -78,3 +79,6 @@ public class BienbaoAdapter extends RecyclerView.Adapter<BienbaoAdapter.itemBien
         }
     }
 }
+
+
+
