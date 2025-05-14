@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:background="@color/white"
     android:padding="16dp">
 
     <!-- Câu hỏi -->
@@ -15,6 +17,15 @@
         android:textSize="20sp"
         android:fontFamily="sans-serif-medium"
         android:paddingBottom="8dp"/>
+
+    <!-- Hình ảnh -->
+    <ImageView
+        android:id="@+id/image_text"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        tools:srcCompat="@tools:sample/avatars[0]" />
 
     <!-- Lựa chọn -->
     <TextView

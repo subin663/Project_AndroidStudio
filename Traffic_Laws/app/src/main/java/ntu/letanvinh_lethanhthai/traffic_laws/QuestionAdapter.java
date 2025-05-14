@@ -71,6 +71,7 @@ import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
@@ -98,6 +99,7 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.Questi
         // Lấy câu hỏi tại vị trí 'position'
         All_Question question = questionList.get(position);
 
+
         // Gán câu hỏi vào TextView
         holder.questionText.setText(question.getQuestion());
 
@@ -106,6 +108,23 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.Questi
 
         // Hiển thị câu trả lời (có thể là đáp án đúng)
         holder.answerText.setText("Đáp án: " + question.getAnswer());
+
+// Hiển thị hình ảnh
+        String imageName = question.getImage();
+        if (imageName != null && !imageName.trim().isEmpty()) {
+            int imageResId = holder.itemView.getContext().getResources().getIdentifier(
+                    imageName, "drawable", holder.itemView.getContext().getPackageName()
+            );
+
+            if (imageResId != 0) {
+                holder.imageText.setVisibility(View.VISIBLE);
+                holder.imageText.setImageResource(imageResId);
+            } else {
+                holder.imageText.setVisibility(View.GONE);
+            }
+        } else {
+            holder.imageText.setVisibility(View.GONE);
+        }
     }
 
     @Override
@@ -118,12 +137,15 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.Questi
         public TextView questionText;
         public TextView optionsText;
         public TextView answerText;
+        public ImageView imageText;
 
         public QuestionViewHolder(View itemView) {
             super(itemView);
             questionText = itemView.findViewById(R.id.question_text);
             optionsText = itemView.findViewById(R.id.options_text);
             answerText = itemView.findViewById(R.id.answer_text);
+            imageText = itemView.findViewById(R.id.image_text);
+
         }
     }
 }

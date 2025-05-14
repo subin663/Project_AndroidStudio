@@ -61,7 +61,6 @@ public class All_QuestionActivity extends AppCompatActivity {
             String json = new String(buffer, "UTF-8");
             JSONArray jsonArray = new JSONArray(json);
 
-            Log.d("DEBUG", "Đã đọc file JSON, số lượng câu hỏi: " + jsonArray.length());
 
             for (int i = 0; i < jsonArray.length(); i++) {
                 JSONObject obj = jsonArray.getJSONObject(i);
@@ -72,11 +71,11 @@ public class All_QuestionActivity extends AppCompatActivity {
                     options.add(opts.getString(j));
                 }
                 String answer = obj.getString("answer");
-                questions.add(new All_Question(qText, options, answer));
+                String image = obj.getString("image");
+                questions.add(new All_Question(qText, options, answer, image));
             }
 
-            Log.d("DEBUG", "Số câu hỏi sau khi parse: " + questions.size());
-            Log.d("DEBUG", "JSON nội dung:\n" + json);
+
 
 
         } catch (Exception e) {
