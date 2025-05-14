@@ -1,104 +1,104 @@
 [
     {
-      "question": "1. Người điều khiển xe mô tô hai bánh không được thực hiện hành vi nào sau đây?",
-      "options": [
-        "A. Sử dụng ô điện thoại di động, thiết bị âm thanh.",
-        "B. Chạy quá tốc độ cho phép.",
-        "C. Cả A và B."
-      ],
-      "answer": "C",
-      "image": "ha120"
-    },
-    {
-      "question": "2. Khi điều khiển xe mô tô trong khu dân cư, tốc độ tối đa cho phép là bao nhiêu km/h (nếu không có biển báo)?",
-      "options": [
-        "A. 50 km/h.",
-        "B. 60 km/h.",
-        "C. 40 km/h."
-      ],
-      "answer": "A",
-      "image": ""
-    },
-    {
-      "question": "3. Người điều khiển xe máy có được phép vượt xe khác trong hầm đường bộ không?",
-      "options": [
-        "A. Được phép nếu thấy đủ an toàn.",
-        "B. Không được phép.",
-        "C. Được phép nếu xe phía trước chạy chậm."
-      ],
-      "answer": "B",
-      "image": ""
-    },
-    {
-      "question": "4. Khi gặp đèn tín hiệu giao thông màu vàng đang bật, người điều khiển phương tiện phải làm gì?",
-      "options": [
-        "A. Tăng tốc vượt nhanh.",
-        "B. Dừng lại trước vạch dừng nếu có thể làm an toàn.",
-        "C. Vẫn đi tiếp nếu không có cảnh sát giao thông."
-      ],
-      "answer": "B",
-      "image": ""
-    },
-    {
-      "question": "5. Người điều khiển xe máy phải đội mũ bảo hiểm như thế nào là đúng quy định?",
-      "options": [
-        "A. Chỉ cần đội mũ.",
-        "B. Đội mũ nhưng không cần cài quai.",
-        "C. Đội mũ bảo hiểm có cài quai đúng cách."
-      ],
-      "answer": "C",
-      "image": ""
-    },
-    {
-      "question": "6. Xe mô tô hai bánh được dừng, đỗ ở đâu là đúng quy tắc giao thông?",
-      "options": [
-        "A. Trên cầu.",
-        "B. Trên phần đường xe chạy.",
-        "C. Nơi có biển \"Được đỗ xe\" hoặc nơi không có biển cấm."
-      ],
-      "answer": "C",
-      "image": ""
-    },
-    {
-      "question": "7. Trong các hành vi sau đây, hành vi nào bị nghiêm cấm?",
-      "options": [
-        "A. Điều khiển xe không có giấy đăng ký xe.",
-        "B. Không mang theo bằng lái xe.",
-        "C. Cả hai hành vi trên."
-      ],
-      "answer": "C",
-      "image": ""
-    },
-    {
-      "question": "8. Khi gặp hiệu lệnh của người điều khiển giao thông, người tham gia giao thông phải chấp hành như thế nào?",
-      "options": [
-        "A. Tuân theo đèn tín hiệu.",
-        "B. Tuân theo người điều khiển giao thông.",
-        "C. Tuân theo biển báo."
-      ],
-      "answer": "B",
-      "image": ""
-    },
-    {
-      "question": "9. Trên đường có nhiều làn đường, người điều khiển xe mô tô phải đi như thế nào?",
-      "options": [
-        "A. Đi ở bất kỳ làn đường nào.",
-        "B. Đi đúng làn đường quy định, không lấn làn.",
-        "C. Đi sang làn ô tô để tránh ổ gà."
-      ],
-      "answer": "B",
-      "image": ""
-    },
-    {
-      "question": "10. Người đủ bao nhiêu tuổi được phép lái xe mô tô hạng A1?",
-      "options": [
-        "A. 16 tuổi.",
-        "B. 17 tuổi.",
-        "C. 18 tuổi."
-      ],
-      "answer": "C",
-      "image": ""
-    },
+    "question": "1. Phần của đường bộ được sử dụng cho các phương tiện giao thông qua lại là gì?",
+    "options": [
+      "A. Phần mặt đường và lề đường.",
+      "B. Phần đường xe chạy.",
+      "C. Phần đường xe cơ giới."
+    ],
+    "answer": "B",
+    "image": ""
+  },
+  {
+    "question": "2. “Làn đường” là gì?",
+    "options": [
+      "A. Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, sử dụng cho xe chạy.",
+      "B. Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có bề rộng đủ cho xe chạy an toàn.",
+      "C. Là đường cho xe ô tô chạy, dừng, đỗ an toàn."
+    ],
+    "answer": "B",
+    "image": ""
+  },
+  {
+    "question": "3. Trong các khái niệm dưới đây, “dải phân cách” được hiểu như thế nào là đúng?",
+    "options": [
+      "A. Là bộ phận của đường để ngăn cách không cho các loại xe vào những nơi không được phép.",
+      "B. Là bộ phận của đường để phân tách phần đường xe chạy và hành lang an toàn giao thông.",
+      "C. Là bộ phận của đường để phân chia mặt đường thành hai chiều xe chạy riêng biệt hoặc để phân chia phần đường của xe cơ giới và xe thô sơ."
+    ],
+    "answer": "C",
+    "image": ""
+  },
+  {
+    "question": "4. “Dải phân cách” trên đường bộ gồm những loại nào?",
+    "options": [
+      "A. Dải phân cách gồm loại cố định và loại di động.",
+      "B. Dải phân cách gồm tường chống ồn, hộ lan cứng và hộ lan mềm.",
+      "C. Dải phân cách gồm giá long môn và biển báo hiệu đường bộ."
+    ],
+    "answer": "A",
+    "image": ""
+  },
+  {
+    "question": "5. Người lái xe được hiểu như thế nào trong các khái niệm dưới đây?",
+    "options": [
+      "A. Là người điều khiển xe cơ giới.",
+      "B. Là người điều khiển xe thô sơ.",
+      "C. Là người điều khiển xe có súc vật kéo."
+    ],
+    "answer": "A",
+    "image": ""
+  },
+  {
+    "question": "6. Đường mà trên đó phương tiện tham gia giao thông được các phương tiện giao thông đến từ các hướng khác nhường đường khi qua nơi đường giao nhau, được cắm biển báo hiệu đường ưu tiên là loại đường gì?",
+    "options": [
+      "A. Đường không ưu tiên.",
+      "B. Đường tỉnh lộ.",
+      "C. Đường quốc lộ.",
+      "D. Đường ưu tiên."
+    ],
+    "answer": "D",
+    "image": ""
+  },
+  {
+    "question": "7. Khái niệm “phương tiện giao thông cơ giới đường bộ” được hiểu như thế nào là đúng?",
+    "options": [
+      "A. Gồm xe ô tô; máy kéo; xe mô tô hai bánh; xe mô tô ba bánh; xe gắn máy; xe cơ giới dùng cho người khuyết tật và xe máy chuyên dùng.",
+      "B. Gồm ô tô; máy kéo; rơ moóc hoặc sơ mi rơ moóc được kéo bởi xe ô tô, máy kéo; xe mô tô hai bánh; xe mô tô ba bánh, xe gắn máy (kể cả xe máy điện) và các loại xe tương tự."
+    ],
+    "answer": "B",
+    "image": ""
+  },
+  {
+    "question": "8. Khái niệm “phương tiện giao thông thô sơ đường bộ” được hiểu như thế nào là đúng?",
+    "options": [
+      "A. Gồm xe đạp (kể cả xe đạp máy, xe đạp điện), xe xích lô, xe lăn dùng cho người khuyết tật, xe súc vật kéo và các loại xe tương tự.",
+      "B. Gồm xe đạp (kể cả xe đạp máy, xe đạp điện), xe gắn máy, xe cơ giới dùng cho người khuyết tật và xe máy chuyên dùng.",
+      "C. Gồm xe ô tô, máy kéo, rơ moóc hoặc sơ mi rơ moóc được kéo bởi xe ô tô, máy kéo."
+    ],
+    "answer": "A",
+    "image": ""
+  },
+  {
+    "question": "9. “Phương tiện tham gia giao thông đường bộ” gồm những loại nào?",
+    "options": [
+      "A. Phương tiện giao thông cơ giới đường bộ.",
+      "B. Phương tiện giao thông thô sơ đường bộ và xe máy chuyên dùng.",
+      "C. Cả ý 1 và ý 2."
+    ],
+    "answer": "C",
+    "image": ""
+  },
+  {
+    "question": "10. “Người tham gia giao thông đường bộ” gồm những đối tượng nào?",
+    "options": [
+      "A. Người điều khiển, người sử dụng phương tiện tham gia giao thông đường bộ.",
+      "B. Người điều khiển, dẫn dắt súc vật; người đi bộ trên đường bộ.",
+      "C. Cả ý 1 và ý 2."
+    ],
+    "answer": "C",
+    "image": ""
+  },
     {
       "question": "11. Người điều khiển phương tiện tham gia giao thông đường bộ gồm những đối tượng nào dưới đây?",
       "options": [
@@ -1023,6 +1023,957 @@
     ],
     "answer": "A",
     "image": ""
+  },
+  {
+    "question": "101. Biển nào dưới đây xe gắn máy được phép đi vào?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Cả hai biển."
+    ],
+    "answer": "C",
+    "image": "ha101"
+  },
+  {
+    "question": "102. Biển nào báo hiệu cấm xe mô tô hai bánh đi vào?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Biển 3."
+    ],
+    "answer": "A",
+    "image": "ha102"
+  },
+  {
+    "question": "103. Khi gặp biển nào thì xe mô tô hai bánh được đi vào?",
+    "options": [
+      "A. Không biển nào.",
+      "B. Biển 1 và 2.",
+      "C. Biển 2 và 3.",
+      "D. Cả ba biển."
+    ],
+    "answer": "D",
+    "image": "ha103"
+  },
+  {
+    "question": "104. Biển nào cấm quay đầu xe?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Không biển nào.",
+      "D. Cả hai biển."
+    ],
+    "answer": "B",
+    "image": "ha104"
+  },
+  {
+    "question": "105. Biển nào cấm xe rẽ trái?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Cả hai biển."
+    ],
+    "answer": "A",
+    "image": "ha105"
+  },
+  {
+    "question": "106. Khi gặp biển nào xe được rẽ trái?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Không biển nào."
+    ],
+    "answer": "B",
+    "image": "ha106"
+  },
+  {
+    "question": "107. Biển nào cấm các phương tiện giao thông đường bộ rẽ phải?",
+    "options": [
+      "A. Biển 1 và 2.",
+      "B. Biển 1 và 3.",
+      "C. Biển 2 và 3.",
+      "D. Cả ba biển."
+    ],
+    "answer": "A",
+    "image": "ha107"
+  },
+  {
+    "question": "108. Biển nào cấm các phương tiện giao thông đường bộ rẽ trái?",
+    "options": [
+      "A. Biển 1 và 2.",
+      "B. Biển 1 và 3.",
+      "C. Biển 2 và 3.",
+      "D. Cả ba biển."
+    ],
+    "answer": "A",
+    "image": "ha108"
+  },
+  {
+    "question": "109. Biển nào cho phép xe rẽ trái?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Không biển nào."
+    ],
+    "answer": "B",
+    "image": "ha109"
+  },
+  {
+    "question": "110. Biển nào xe được phép quay đầu nhưng không được rẽ trái?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Cả hai biển."
+    ],
+    "answer": "C",
+    "image": "ha110"
+  },
+  {
+    "question": "111. Biển nào xe được phép quay đầu nhưng không được rẽ trái?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Cả hai biển."
+    ],
+    "answer": "A",
+    "image": "ha111"
+  },
+  {
+    "question": "112. Biển nào là biển “Cấm đi ngược chiều”?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Cả ba biển."
+    ],
+    "answer": "B",
+    "image": "ha112"
+  },
+  {
+    "question": "113. Biển nào dưới đây các phương tiện không được phép đi vào?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Biển 1 và 2."
+    ],
+    "answer": "C",
+    "image": "ha113"
+  },
+  {
+    "question": "114. Khi gặp biển nào xe ưu tiên theo luật định vẫn phải dừng lại?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Cả ba biển."
+    ],
+    "answer": "B",
+    "image": "ha114"
+  },
+  {
+    "question": "115. Biển nào cấm tất cả các loại xe cơ giới và thô sơ đi lại trên đường, trừ xe ưu tiên theo luật định (nếu đường vẫn cho xe chạy được)?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Cả hai biển."
+    ],
+    "answer": "A",
+    "image": "ha115"
+  },
+  {
+    "question": "116. Gặp biển nào xe xích lô được phép đi vào?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Biển 3.",
+      "D. Biển 1 và biển 2."
+    ],
+    "answer": "D",
+    "image": "ha116"
+  },
+  {
+    "question": "117. Gặp biển nào xe lam, xe xích lô máy được phép đi vào?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Biển 3."
+    ],
+    "answer": "C",
+    "image": "ha117"
+  },
+  {
+    "question": "118. Biển báo này có ý nghĩa như thế nào?",
+    "options": [
+      "A. Tốc độ tối đa cho phép về ban đêm cho các phương tiện là 70 km/h.",
+      "B. Tốc độ tối thiểu cho phép về ban đêm cho các phương tiện là 70 km/h."
+    ],
+    "answer": "A",
+    "image": "ha118"
+  },
+  {
+    "question": "119. Chiều dài đoạn đường 500m từ nơi đặt biển này, người lái xe có được phép bấm còi không?",
+    "options": [
+      "A. Được phép.",
+      "B. Không được phép."
+    ],
+    "answer": "B",
+    "image": "ha119"
+  },
+  {
+    "question": "120. Biển nào xe mô tô hai bánh được đi vào?",
+    "options": [
+      "A. Biển 1 và 2.",
+      "B. Biển 1 và 3.",
+      "C. Biển 2 và 3."
+    ],
+    "answer": "B",
+    "image": "ha120"
+  },
+  {
+    "question": "121. Biển nào xe mô tô hai bánh không được đi vào?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Biển 3."
+    ],
+    "answer": "B",
+    "image": "ha121"
+  },
+  {
+    "question": "122. Biển báo nào báo hiệu bắt đầu đoạn đường vào phạm vi khu dân cư, các phương tiện tham gia giao thông phải tuân theo các quy định đi đường được áp dụng ở khu đông dân cư?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2."
+    ],
+    "answer": "A",
+    "image": "ha122"
+  },
+  {
+    "question": "123. Gặp biển nào người lái xe phải nhường đường cho người đi bộ?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Biển 3.",
+      "D. Biển 1 và 3."
+    ],
+    "answer": "D",
+    "image": "ha123"
+  },
+  {
+    "question": "124. Biển nào chỉ đường dành cho người đi bộ, các loại xe không được đi vào khi gặp biển này?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 1 và 3.",
+      "C. Biển 3.",
+      "D. Cả ba biển."
+    ],
+    "answer": "C",
+    "image": "ha124"
+  },
+  {
+    "question": "125. Biển nào báo hiệu 'Đường dành cho xe thô sơ'?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Biển 3."
+    ],
+    "answer": "A",
+    "image": "ha125"
+  },
+  {
+    "question": "126. Biển nào báo hiệu sắp đến chỗ giao nhau nguy hiểm?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 1 và 2.",
+      "C. Biển 2 và 3.",
+      "D. Cả ba biển."
+    ],
+    "answer": "D",
+    "image": "ha126"
+  },
+  {
+    "question": "127. Biển nào báo hiệu 'Giao nhau với đường sắt có rào chắn'?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2 và 3.",
+      "C. Biển 3."
+    ],
+    "answer": "A",
+    "image": "ha127"
+  },
+  {
+    "question": "128. Biển nào báo hiệu 'Giao nhau với tín hiệu đèn'?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Biển 3.",
+      "D. Cả ba biển."
+    ],
+    "answer": "C",
+    "image": "ha128"
+  },
+  {
+    "question": "129. Biển nào báo hiệu nguy hiểm giao nhau với đường sắt?",
+    "options": [
+      "A. Biển 1 và 2.",
+      "B. Biển 1 và 3.",
+      "C. Biển 2 và 3.",
+      "D. Cả ba biển."
+    ],
+    "answer": "B",
+    "image": "ha129"
+  },
+  {
+    "question": "130. Biển nào báo hiệu đường sắt giao nhau với đường bộ không có rào chắn?",
+    "options": [
+      "A. Biển 1 và 2.",
+      "B. Biển 1 và 3.",
+      "C. Biển 2 và 3.",
+      "D. Cả ba biển."
+    ],
+    "answer": "C",
+    "image": "ha130"
+  },
+  {
+    "question": "131. Biển nào báo hiệu sắp đến chỗ giao nhau giữa đường bộ và đường sắt?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Biển 3.",
+      "D. Biển 1 và 3."
+    ],
+    "answer": "D",
+    "image": "ha131"
+  },
+  {
+    "question": "132. Biển nào báo hiệu, chỉ dẫn xe đi trên đường này được quyền ưu tiên qua nơi giao nhau?",
+    "options": [
+      "A. Biển 1 và 2.",
+      "B. Biển 1 và 3.",
+      "C. Biển 2 và 3.",
+      "D. Cả ba biển."
+    ],
+    "answer": "B",
+    "image": "ha132"
+  },
+  {
+    "question": "133. Biển nào báo hiệu 'Giao nhau với đường không ưu tiên'?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Biển 3.",
+      "D. Biển 2 và 3."
+    ],
+    "answer": "A",
+    "image": "ha133"
+  },
+  {
+    "question": "134. Biển nào báo hiệu 'Giao nhau với đường ưu tiên'?",
+    "options": [
+      "A. Biển 1 và 3.",
+      "B. Biển 2.",
+      "C. Biển 3."
+    ],
+    "answer": "B",
+    "image": "ha134"
+  },
+  {
+    "question": "135. Biển nào báo hiệu 'Đường bị thu hẹp'?",
+    "options": [
+      "A. Biển 1 và 2.",
+      "B. Biển 1 và 3.",
+      "C. Biển 2 và 3.",
+      "D. Cả ba biển."
+    ],
+    "answer": "A",
+    "image": "ha135"
+  },
+  {
+    "question": "136. Khi gặp biển nào, người lái xe phải giảm tốc độ, chú ý xe đi ngược chiều, xe đi ở phía đường bị hẹp phải nhường đường cho xe đi ngược chiều?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 1 và 3.",
+      "C. Biển 2 và 3.",
+      "D. Cả ba biển."
+    ],
+    "answer": "C",
+    "image": "ha136"
+  },
+  {
+    "question": "137. Biển nào báo hiệu 'Đường giao nhau' của các tuyến đường cùng cấp?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Biển 3."
+    ],
+    "answer": "A",
+    "image": "ha137"
+  },
+  {
+    "question": "138. Biển nào báo hiệu 'Đường đôi'?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Biển 3."
+    ],
+    "answer": "C",
+    "image": "ha138"
+  },
+  {
+    "question": "139. Biển nào báo hiệu 'Đường đôi'?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Biển 3."
+    ],
+    "answer": "A",
+    "image": "ha139"
+  },
+  {
+    "question": "140. Biển nào báo hiệu 'Giao nhau với đường hai chiều'?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Biển 3."
+    ],
+    "answer": "C",
+    "image": "ha140"
+  },
+  {
+    "question": "141. Biển nào báo hiệu “Đường hai chiều”?",
+    "options": ["A. Biển 1.", "B. Biển 2.", "C. Biển 3."],
+    "answer": "C",
+    "image": "ha141"
+  },
+  {
+    "question": "142. Biển nào báo hiệu “Giao nhau với đường hai chiều”?",
+    "options": ["A. Biển 1.", "B. Biển 2.", "C. Biển 3."],
+    "answer": "B",
+    "image": "ha142"
+  },
+  {
+    "question": "143. Biển nào báo hiệu “Chú ý chướng ngại vật”?",
+    "options": ["A. Biển 1.", "B. Biển 2 và 3.", "C. Cả ba biển."],
+    "answer": "B",
+    "image": "ha143"
+  },
+  {
+    "question": "144. Gặp biển nào người tham gia giao thông phải đi chậm và thận trọng đề phòng khả năng xuất hiện và di chuyển bất ngờ của trẻ em trên mặt đường?",
+    "options": ["A. Biển 1.", "B. Biển 2."],
+    "answer": "A",
+    "image": "ha144"
+  },
+  {
+    "question": "145. Biển nào chỉ dẫn nơi bắt đầu đoạn đường dành cho người đi bộ?",
+    "options": ["A. Biển 1.", "B. Biển 2.", "C. Biển 3."],
+    "answer": "B",
+    "image": "ha145"
+  },
+  {
+    "question": "146. Biển báo này có ý nghĩa gì?",
+    "options": ["A. Báo hiệu đường có ổ gà, lồi lõm.", "B. Báo hiệu đường có gồ giảm tốc phía trước."],
+    "answer": "B",
+    "image": "ha146"
+  },
+  {
+    "question": "147. Biển nào (đặt trước ngã ba, ngã tư) cho phép xe được rẽ sang hướng khác?",
+    "options": ["A. Biển 1.", "B. Biển 2.", "C. Không biển nào."],
+    "answer": "C",
+    "image": "ha147"
+  },
+  {
+    "question": "148. Biển nào báo hiệu “Hướng đi thẳng phải theo”?",
+    "options": ["A. Biển 1.", "B. Biển 2."],
+    "answer": "A",
+    "image": "ha148"
+  },
+  {
+    "question": "149. Biển nào báo hiệu “Đường một chiều”?",
+    "options": ["A. Biển 1.", "B. Biển 2.", "C. Cả hai biển."],
+    "answer": "B",
+    "image": "ha149"
+  },
+  {
+    "question": "150. Trong các biển dưới đây biển nào là biển “Hết tốc độ tối đa cho phép”?",
+    "options": ["A. Biển 1.", "B. Biển 2.", "C. Biển 3.", "D. Cả ba biển."],
+    "answer": "A",
+    "image": "ha150"
+  },
+  {
+    "question": "151. Hiệu lực của biển “Tốc độ tối đa cho phép” hết tác dụng khi gặp biển nào dưới đây?",
+    "options": ["A. Biển 1.", "B. Biển 2.", "C. Biển 3.", "D. Biển 1 và 2."],
+    "answer": "D",
+    "image": "ha151"
+  },
+  {
+    "question": "152. Trong các biển dưới đây biển nào là biển “Hết tốc độ tối thiểu”?",
+    "options": ["A. Biển 1.", "B. Biển 2.", "C. Biển 3.", "D. Cả ba biển."],
+    "answer": "C",
+    "image": "ha152"
+  },
+  {
+    "question": "153. Biển nào dưới đây báo hiệu hết cấm vượt?",
+    "options": ["A. Biển 1.", "B. Biển 2.", "C. Biển 3.", "D. Biển 2 và 3."],
+    "answer": "D",
+    "image": "ha153"
+  },
+  {
+    "question": "154. Trong các biển dưới đây biển nào là biển “Hết mọi lệnh cấm”?",
+    "options": ["A. Biển 1.", "B. Biển 2.", "C. Biển 3.", "D. Cả ba biển."],
+    "answer": "B",
+    "image": "ha154"
+  },
+  {
+    "question": "155. Biển nào chỉ dẫn cho người đi bộ sử dụng cầu vượt qua đường?",
+    "options": ["A. Biển 1.", "B. Biển 2.", "C. Cả hai biển.", "D. Không biển nào."],
+    "answer": "A",
+    "image": "ha155"
+  },
+  {
+    "question": "156. Biển nào chỉ dẫn cho người đi bộ sử dụng hầm chui qua đường?",
+    "options": ["A. Biển 1.", "B. Biển 2.", "C. Cả hai biển.", "D. Không biển nào."],
+    "answer": "B",
+    "image": "ha156"
+  },
+  {
+    "question": "157. Biển nào báo hiệu “Nơi đỗ xe dành cho người khuyết tật”?",
+    "options": ["A. Biển 1.", "B. Biển 2.", "C. Biển 3."],
+    "answer": "C",
+    "image": "ha157"
+  },
+  {
+    "question": "158. Gặp biển báo này, người tham gia giao thông phải xử lý như thế nào?",
+    "options": [
+      "A. Dừng xe tại khu vực có trạm Cảnh sát giao thông.",
+      "B. Tiếp tục lưu thông với tốc độ bình thường.",
+      "C. Phải giảm tốc độ đến mức an toàn và không được vượt khi đi qua khu vực này."
+    ],
+    "answer": "C",
+    "image": "ha158"
+  },
+  {
+    "question": "159. Biển số 1 có ý nghĩa gì?",
+    "options": [
+      "A. Đi thẳng hoặc rẽ trái trên cầu vượt.",
+      "B. Đi thẳng hoặc rẽ phải trên cầu vượt.",
+      "C. Báo hiệu cầu vượt liên thông."
+    ],
+    "answer": "C",
+    "image": "ha159"
+  },
+  {
+    "question": "160. Vạch kẻ đường nào dưới đây là vạch phân chia các làn xe cùng chiều?",
+    "options": ["A. Vạch 1.", "B. Vạch 2.", "C. Vạch 3.", "D. Vạch 1 và 2."],
+    "answer": "D",
+    "image": "ha160"
+  },
+  {
+    "question": "161. Vạch kẻ đường nào dưới đây là vạch phân chia hai chiều xe chạy (vạch tim đường), xe không được lấn làn, không được đè lên vạch?",
+    "options": [
+      "A. Vạch 1.",
+      "B. Vạch 2.",
+      "C. Vạch 3.",
+      "D. Cả 3 vạch."
+    ],
+    "answer": "A",
+    "image": "ha161"
+  },
+  {
+    "question": "162. Vạch kẻ đường nào dưới đây là vạch phân chia hai chiều xe chạy (vạch tim đường)?",
+    "options": [
+      "A. Vạch 1.",
+      "B. Vạch 2.",
+      "C. Vạch 3.",
+      "D. Vạch 1 và 3."
+    ],
+    "answer": "D",
+    "image": "ha162"
+  },
+  {
+    "question": "163. Các vạch dưới đây có tác dụng gì?",
+    "options": [
+      "A. Phân chia hai chiều xe chạy ngược chiều nhau.",
+      "B. Phân chia các làn xe chạy cùng chiều nhau."
+    ],
+    "answer": "B",
+    "image": "ha163"
+  },
+  {
+    "question": "164. Khi gặp vạch kẻ đường nào các xe được phép đè vạch?",
+    "options": [
+      "A. Vạch 1.",
+      "B. Vạch 2.",
+      "C. Vạch 3.",
+      "D. Vạch 1 và vạch 3."
+    ],
+    "answer": "D",
+    "image": "ha164"
+  },
+  {
+    "question": "165. Vạch dưới đây có ý nghĩa gì?",
+    "options": [
+      "A. Vị trí dừng xe của các phương tiện vận tải hành khách công cộng.",
+      "B. Báo cho người điều khiển được dừng phương tiện trong phạm vi phần mặt đường có bố trí vạch để tránh ùn tắc giao thông.",
+      "C. Dùng để xác định vị trí giữa các phương tiện trên đường."
+    ],
+    "answer": "A",
+    "image": "ha165"
+  },
+  {
+    "question": "166. Thứ tự các xe đi như thế nào là đúng quy tắc giao thông?",
+    "options": [
+      "A. Xe tải, xe khách, xe con, mô tô.",
+      "B. Xe tải, mô tô, xe khách, xe con.",
+      "C. Xe khách, xe tải, xe con, mô tô.",
+      "D. Mô tô, xe khách, xe tải, xe con."
+    ],
+    "answer": "A",
+    "image": "ha166"
+  },
+  {
+    "question": "167. Thứ tự các xe đi như thế nào là đúng quy tắc giao thông?",
+    "options": [
+      "A. Xe tải, xe con, mô tô.",
+      "B. Xe con, xe tải, mô tô.",
+      "C. Mô tô, xe con, xe tải.",
+      "D. Xe con, mô tô, xe tải."
+    ],
+    "answer": "C",
+    "image": "ha167"
+  },
+  {
+    "question": "168. Trường hợp này xe nào được quyền đi trước?",
+    "options": [
+      "A. Mô tô.",
+      "B. Xe con."
+    ],
+    "answer": "B",
+    "image": "ha168"
+  },
+  {
+    "question": "169. Xe nào được quyền đi trước trong trường hợp này?",
+    "options": [
+      "A. Mô tô.",
+      "B. Xe cứu thương."
+    ],
+    "answer": "B",
+    "image": "ha169"
+  },
+  {
+    "question": "170. Theo tín hiệu đèn, xe nào được phép đi?",
+    "options": [
+      "A. Xe con và xe khách.",
+      "B. Mô tô."
+    ],
+    "answer": "A",
+    "image": "ha170"
+  },
+  {
+    "question": "171. Các xe đi theo hướng mũi tên, xe nào vi phạm quy tắc giao thông?",
+    "options": [
+      "A. Xe khách, xe tải, mô tô.",
+      "B. Xe tải, xe con, mô tô.",
+      "C. Xe khách, xe con, mô tô."
+    ],
+    "answer": "A",
+    "image": "ha171"
+  },
+  {
+    "question": "172. Thứ tự các xe đi như thế nào là đúng quy tắc giao thông?",
+    "options": [
+      "A. Xe khách, xe tải, mô tô, xe con.",
+      "B. Xe con, xe khách, xe tải, mô tô.",
+      "C. Mô tô, xe tải, xe khách, xe con.",
+      "D. Mô tô, xe tải, xe con, xe khách."
+    ],
+    "answer": "D",
+    "image": "ha172"
+  },
+  {
+    "question": "173. Trong trường hợp này xe nào đỗ vi phạm quy tắc giao thông?",
+    "options": [
+      "A. Xe tải.",
+      "B. Xe con và mô tô.",
+      "C. Cả ba xe.",
+      "D. Xe con và xe tải."
+    ],
+    "answer": "A",
+    "image": "ha173"
+  },
+  {
+    "question": "174. Theo hướng mũi tên, những hướng nào xe gắn máy đi được?",
+    "options": [
+      "A. Cả ba hướng.",
+      "B. Chỉ hướng 1 và 3.",
+      "C. Chỉ hướng 1."
+    ],
+    "answer": "A",
+    "image": "ha174"
+  },
+  {
+    "question": "175. Xe nào đỗ vi phạm quy tắc giao thông?",
+    "options": [
+      "A. Cả hai xe.",
+      "B. Không xe nào vi phạm.",
+      "C. Chỉ xe mô tô vi phạm.",
+      "D. Chỉ xe tải vi phạm."
+    ],
+    "answer": "A",
+    "image": "ha175"
+  },
+  {
+    "question": "176. Xe nào đỗ vi phạm quy tắc giao thông?",
+    "options": [
+      "A. Chỉ mô tô.",
+      "B. Chỉ xe tải.",
+      "C. Cả ba xe.",
+      "D. Chỉ mô tô và xe tải."
+    ],
+    "answer": "C",
+    "image": "ha176"
+  },
+  {
+    "question": "177. Xe tải kéo mô tô ba bánh như hình này có đúng quy tắc giao thông không?",
+    "options": [
+      "A. Đúng.",
+      "B. Không đúng."
+    ],
+    "answer": "B",
+    "image": "ha177"
+  },
+  {
+    "question": "178. Xe nào được quyền đi trước trong trường hợp này?",
+    "options": [
+      "A. Xe con.",
+      "B. Xe mô tô."
+    ],
+    "answer": "B",
+    "image": "ha178"
+  },
+  {
+    "question": "179. Thứ tự các xe đi như thế nào là đúng quy tắc giao thông?",
+    "options": [
+      "A. Xe con (A), mô tô, xe con (B), xe đạp.",
+      "B. Xe con (B), xe đạp, mô tô, xe con (A).",
+      "C. Xe con (A), xe con (B), mô tô  + xe đạp.",
+      "D. Mô tô + xe đạp, xe con (A), xe con (B)."
+    ],
+    "answer": "D",
+    "image": "ha179"
+  },
+  {
+    "question": "180. Xe nào được quyền đi trước trong trường hợp này?",
+    "options": [
+      "A. Mô tô.",
+      "B. Xe con."
+    ],
+    "answer": "A",
+    "image": "ha180"
+  },
+  {
+    "question": "181. Xe nào vi phạm quy tắc giao thông?",
+    "options": [
+      "A. Xe khách.",
+      "B. Mô tô.",
+      "C. Xe con.",
+      "D. Xe con và mô tô."
+    ],
+    "answer": "C",
+    "image": "ha181"
+  },
+  {
+    "question": "182. Các xe đi như thế nào là đúng quy tắc giao thông?",
+    "options": [
+      "A. Các xe ở phía tay phải và tay trái của người điều khiển được phép đi thẳng.",
+      "B. Cho phép các xe ở mọi hướng được rẽ phải.",
+      "C. Tất cả các xe phải dừng lại trước ngã tư, trừ những xe đã ở trong ngã tư được phép tiếp tục đi."
+    ],
+    "answer": "C",
+    "image": "ha182"
+  },
+  {
+    "question": "183. Theo hướng mũi tên, xe nào được phép đi?",
+    "options": [
+      "A. Mô tô, xe con.",
+      "B. Xe con, xe tải.",
+      "C. Mô tô, xe tải.",
+      "D. Cả ba xe."
+    ],
+    "answer": "C",
+    "image": "ha183"
+  },
+  {
+    "question": "184. Trong hình dưới đây, xe nào chấp hành đúng quy tắc giao thông?",
+    "options": [
+      "A. Chỉ xe khách, mô tô.",
+      "B. Tất cả các loại xe trên.",
+      "C. Không xe nào chấp hành đúng quy tắc giao thông."
+    ],
+    "answer": "B",
+    "image": "ha184"
+  },
+  {
+    "question": "185. Theo hướng mũi tên, những hướng nào xe mô tô được phép đi?",
+    "options": [
+      "A. Cả ba hướng.",
+      "B. Hướng 1 và 2.",
+      "C. Hướng 1 và 3.",
+      "D. Hướng 2 và 3."
+    ],
+    "answer": "C",
+    "image": "ha185"
+  },
+  {
+    "question": "186. Trong trường hợp này, thứ tự xe đi như thế nào là đúng quy tắc giao thông?",
+    "options": [
+      "A. Xe công an, xe quân sự, xe con + mô tô.",
+      "B. Xe quân sự, xe công an, xe con + mô tô.",
+      "C. Xe mô tô + xe con, xe quân sự, xe công an."
+    ],
+    "answer": "B",
+    "image": "ha186"
+  },
+  {
+    "question": "187. Trong hình dưới, những xe nào vi phạm quy tắc giao thông?",
+    "options": [
+      "A. Xe con (E), mô tô (C).",
+      "B. Xe tải (A), mô tô (D).",
+      "C. Xe khách (B), mô tô (C).",
+      "D. Xe khách (B), mô tô (D)."
+    ],
+    "answer": "A",
+    "image": "ha187"
+  },
+  {
+    "question": "188. Trong hình dưới, những xe nào vi phạm quy tắc giao thông?",
+    "options": [
+      "A. Xe con (B), mô tô (C).",
+      "B. Xe con (A), mô tô (C).",
+      "C. Xe con (E), mô tô (D).",
+      "D. Tất cả các loại xe trên."
+    ],
+    "answer": "C",
+    "image": "ha188"
+  },
+  {
+    "question": "189. Bạn có được phép vượt xe mô tô phía trước không?",
+    "options": [
+      "A. Cho phép.",
+      "B. Không được vượt."
+    ],
+    "answer": "B",
+    "image": "ha189"
+  },
+  {
+    "question": "190. Theo tín hiệu đèn của xe cơ giới, xe nào vi phạm quy tắc giao thông?",
+    "options": [
+      "A. Xe mô tô.",
+      "B. Xe ô tô con.",
+      "C. Không xe nào vi phạm.",
+      "D. Cả hai xe."
+    ],
+    "answer": "D",
+    "image": "ha190"
+  },
+  {
+    "question": "191. Các xe đi theo hướng mũi tên, xe nào vi phạm quy tắc giao thông?",
+    "options": [
+      "A. Xe con.",
+      "B. Xe tải.",
+      "C. Xe con, xe tải."
+    ],
+    "answer": "B",
+    "image": "ha191"
+  },
+  {
+    "question": "192. Các xe đi theo hướng mũi tên, xe nào vi phạm quy tắc giao thông?",
+    "options": [
+      "A. Xe tải, xe con.",
+      "B. Xe khách, xe con.",
+      "C. Xe khách, xe tải."
+    ],
+    "answer": "C",
+    "image": "ha192"
+  },
+  {
+    "question": "193. Các xe đi theo hướng mũi tên, xe nào vi phạm quy tắc giao thông?",
+    "options": [
+      "A. Xe con, xe khách, xe tải.",
+      "B. Xe tải, xe khách, xe mô tô.",
+      "C. Xe khách, xe mô tô, xe con.",
+      "D. Cả bốn xe."
+    ],
+    "answer": "B",
+    "image": "ha193"
+  },
+  {
+    "question": "194. Các xe đi theo hướng mũi tên, xe nào chấp hành đúng quy tắc giao thông?",
+    "options": [
+      "A. Xe tải, mô tô.",
+      "B. Xe khách, mô tô.",
+      "C. Xe tải, xe con.",
+      "D. Mô tô, xe con."
+    ],
+    "answer": "B",
+    "image": "ha194"
+  },
+  {
+    "question": "195. Các xe đi theo thứ tự nào là đúng quy tắc giao thông đường bộ?",
+    "options": [
+      "A. Xe của bạn, mô tô, xe con.",
+      "B. Xe con, xe của bạn, mô tô.",
+      "C. Mô tô, xe con, xe của bạn."
+    ],
+    "answer": "C",
+    "image": "ha195"
+  },
+  {
+    "question": "196. Các xe đi theo thứ tự nào là đúng quy tắc giao thông đường bộ?",
+    "options": [
+      "A. Xe của bạn, mô tô, xe con.",
+      "B. Xe con, xe của bạn, mô tô.",
+      "C. Mô tô, xe con, xe của bạn."
+    ],
+    "answer": "A",
+    "image": "ha196"
+  },
+  {
+    "question": "197. Bạn xử lý như thế nào trong trường hợp này?",
+    "options": [
+      "A. Tăng tốc độ, rẽ phải trước xe tải và xe đạp.",
+      "B. Giảm tốc độ, rẽ phải sau xe tải và xe đạp.",
+      "C. Tăng tốc độ, rẽ phải trước xe đạp."
+    ],
+    "answer": "B",
+    "image": "ha197"
+  },
+  {
+    "question": "198. Xe nào dừng đúng theo quy tắc giao thông?",
+    "options": [
+      "A. Xe con.",
+      "B. Xe mô tô.",
+      "C. Cả hai xe đều đúng."
+    ],
+    "answer": "A",
+    "image": "ha198"
+  },
+  {
+    "question": "199. Xe của bạn đang di chuyển gần đến khu vực giao cắt với đường sắt, khi rào chắn đang dịch chuyển, bạn điều khiển xe như nào là đúng quy tắc giao thông?",
+    "options": [
+      "A. Quan sát nếu thấy không có tàu thì tăng tốc cho xe vượt qua đường sắt.",
+      "B. Dừng lại trước rào chắn một khoảng cách an toàn.",
+      "C. Ra tín hiệu, yêu cầu người gác chắn tàu kéo chậm Barie để xe bạn qua."
+    ],
+    "answer": "B",
+    "image": "ha199"
+  },
+  {
+    "question": "200. Trong tình huống dưới đây, xe đầu kéo kéo rơ moóc (xe container) đang rẽ phải, xe con màu xanh và xe máy phía sau xe container đi như thế nào để đảm bảo an toàn?",
+    "options": [
+      "A. Vượt về phía bên phải để đi tiếp.",
+      "B. Giảm tốc độ chờ xe container rẽ xong rồi tiếp tục đi.",
+      "C. Vượt về phía bên trái để đi tiếp."
+    ],
+    "answer": "B",
+    "image": "ha200"
   }
 
 ]
