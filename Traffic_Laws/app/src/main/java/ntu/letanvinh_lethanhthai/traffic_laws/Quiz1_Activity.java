@@ -20,7 +20,7 @@ import java.util.List;
 
 public class Quiz1_Activity extends AppCompatActivity  {
     private RecyclerView recyclerView;
-    private QuestionAdapter adapter;
+    private QuizAdapter adapter;
     private List<All_Question> questionList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +41,7 @@ public class Quiz1_Activity extends AppCompatActivity  {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         // Gắn adapter
-        adapter = new QuestionAdapter(questionList);
+        adapter = new QuizAdapter(questionList);
         recyclerView.setAdapter(adapter);
     }
     private List<All_Question> loadQuestionsFromAssets() {
