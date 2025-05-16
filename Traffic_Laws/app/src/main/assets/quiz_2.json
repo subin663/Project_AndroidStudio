@@ -1,0 +1,78 @@
+[{
+  "question": "153. Biển nào dưới đây báo hiệu hết cấm vượt?",
+  "options": ["A. Biển 1.", "B. Biển 2.", "C. Biển 3.", "D. Biển 2 và 3."],
+  "answer": "D",
+  "image": "ha153"
+},
+  {
+    "question": "154. Trong các biển dưới đây biển nào là biển “Hết mọi lệnh cấm”?",
+    "options": ["A. Biển 1.", "B. Biển 2.", "C. Biển 3.", "D. Cả ba biển."],
+    "answer": "B",
+    "image": "ha154"
+  },
+  {
+    "question": "155. Biển nào chỉ dẫn cho người đi bộ sử dụng cầu vượt qua đường?",
+    "options": ["A. Biển 1.", "B. Biển 2.", "C. Cả hai biển.", "D. Không biển nào."],
+    "answer": "A",
+    "image": "ha155"
+  },
+  {
+    "question": "156. Biển nào chỉ dẫn cho người đi bộ sử dụng hầm chui qua đường?",
+    "options": ["A. Biển 1.", "B. Biển 2.", "C. Cả hai biển.", "D. Không biển nào."],
+    "answer": "B",
+    "image": "ha156"
+  },
+  {
+    "question": "157. Biển nào báo hiệu “Nơi đỗ xe dành cho người khuyết tật”?",
+    "options": ["A. Biển 1.", "B. Biển 2.", "C. Biển 3."],
+    "answer": "C",
+    "image": "ha157"
+  },
+  {
+    "question": "158. Gặp biển báo này, người tham gia giao thông phải xử lý như thế nào?",
+    "options": [
+      "A. Dừng xe tại khu vực có trạm Cảnh sát giao thông.",
+      "B. Tiếp tục lưu thông với tốc độ bình thường.",
+      "C. Phải giảm tốc độ đến mức an toàn và không được vượt khi đi qua khu vực này."
+    ],
+    "answer": "C",
+    "image": "ha158"
+  },
+  {
+    "question": "159. Biển số 1 có ý nghĩa gì?",
+    "options": [
+      "A. Đi thẳng hoặc rẽ trái trên cầu vượt.",
+      "B. Đi thẳng hoặc rẽ phải trên cầu vượt.",
+      "C. Báo hiệu cầu vượt liên thông."
+    ],
+    "answer": "C",
+    "image": "ha159"
+  },
+  {
+    "question": "160. Vạch kẻ đường nào dưới đây là vạch phân chia các làn xe cùng chiều?",
+    "options": ["A. Vạch 1.", "B. Vạch 2.", "C. Vạch 3.", "D. Vạch 1 và 2."],
+    "answer": "D",
+    "image": "ha160"
+  },
+  {
+    "question": "161. Vạch kẻ đường nào dưới đây là vạch phân chia hai chiều xe chạy (vạch tim đường), xe không được lấn làn, không được đè lên vạch?",
+    "options": [
+      "A. Vạch 1.",
+      "B. Vạch 2.",
+      "C. Vạch 3.",
+      "D. Cả 3 vạch."
+    ],
+    "answer": "A",
+    "image": "ha161"
+  },
+  {
+    "question": "162. Vạch kẻ đường nào dưới đây là vạch phân chia hai chiều xe chạy (vạch tim đường)?",
+    "options": [
+      "A. Vạch 1.",
+      "B. Vạch 2.",
+      "C. Vạch 3.",
+      "D. Vạch 1 và 3."
+    ],
+    "answer": "D",
+    "image": "ha162"
+  }]

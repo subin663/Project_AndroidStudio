@@ -133,7 +133,7 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.Questi
     }
 
     // ViewHolder để lưu trữ các view trong mỗi item
-    class QuestionViewHolder extends RecyclerView.ViewHolder {
+    public static class QuestionViewHolder extends RecyclerView.ViewHolder {
         public TextView questionText;
         public TextView optionsText;
         public TextView answerText;
@@ -143,7 +143,7 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.Questi
             super(itemView);
             questionText = itemView.findViewById(R.id.question_text);
             optionsText = itemView.findViewById(R.id.options_text);
-            //answerText = itemView.findViewById(R.id.answer_text);
+            answerText = itemView.findViewById(R.id.answer_text);
             imageText = itemView.findViewById(R.id.image_text);
 
         }
