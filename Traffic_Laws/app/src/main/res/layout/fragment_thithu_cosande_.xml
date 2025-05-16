@@ -52,6 +52,7 @@
                     android:background="@drawable/custom_edittext">
 
                     <Button
+                        android:id="@+id/btnDe1"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -70,6 +71,7 @@
                     android:background="@drawable/custom_edittext">
 
                     <Button
+                        android:id="@+id/btnDe2"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -97,6 +99,7 @@
                     android:background="@drawable/custom_edittext">
 
                     <Button
+                        android:id="@+id/btnDe3"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -115,6 +118,7 @@
                     android:background="@drawable/custom_edittext">
 
                     <Button
+                        android:id="@+id/btnDe4"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -142,6 +146,7 @@
                     android:background="@drawable/custom_edittext">
 
                     <Button
+                        android:id="@+id/btnDe5"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -160,6 +165,7 @@
                     android:background="@drawable/custom_edittext">
 
                     <Button
+                        android:id="@+id/btnDe6"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -186,6 +192,7 @@
                     android:background="@drawable/custom_edittext">
 
                     <Button
+                        android:id="@+id/btnDe7"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -204,6 +211,7 @@
                     android:background="@drawable/custom_edittext">
 
                     <Button
+                        android:id="@+id/btnDe8"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"

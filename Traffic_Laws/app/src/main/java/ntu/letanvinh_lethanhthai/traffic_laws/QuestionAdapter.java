@@ -133,7 +133,7 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.Questi
     }
 
     // ViewHolder để lưu trữ các view trong mỗi item
-    public static class QuestionViewHolder extends RecyclerView.ViewHolder {
+    class QuestionViewHolder extends RecyclerView.ViewHolder {
         public TextView questionText;
         public TextView optionsText;
         public TextView answerText;

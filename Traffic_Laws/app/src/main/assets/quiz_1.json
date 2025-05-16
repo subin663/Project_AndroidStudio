@@ -1,0 +1,83 @@
+[
+
+  {
+    "question": "164. Khi gặp vạch kẻ đường nào các xe được phép đè vạch?",
+    "options": [
+      "A. Vạch 1.",
+      "B. Vạch 2.",
+      "C. Vạch 3.",
+      "D. Vạch 1 và vạch 3."
+    ],
+    "answer": "D",
+    "image": "ha164"
+  },
+  {
+    "question": "165. Vạch dưới đây có ý nghĩa gì?",
+    "options": [
+      "A. Vị trí dừng xe của các phương tiện vận tải hành khách công cộng.",
+      "B. Báo cho người điều khiển được dừng phương tiện trong phạm vi phần mặt đường có bố trí vạch để tránh ùn tắc giao thông.",
+      "C. Dùng để xác định vị trí giữa các phương tiện trên đường."
+    ],
+    "answer": "A",
+    "image": "ha165"
+  },
+  {
+    "question": "166. Thứ tự các xe đi như thế nào là đúng quy tắc giao thông?",
+    "options": [
+      "A. Xe tải, xe khách, xe con, mô tô.",
+      "B. Xe tải, mô tô, xe khách, xe con.",
+      "C. Xe khách, xe tải, xe con, mô tô.",
+      "D. Mô tô, xe khách, xe tải, xe con."
+    ],
+    "answer": "A",
+    "image": "ha166"
+  },
+  {
+    "question": "167. Thứ tự các xe đi như thế nào là đúng quy tắc giao thông?",
+    "options": [
+      "A. Xe tải, xe con, mô tô.",
+      "B. Xe con, xe tải, mô tô.",
+      "C. Mô tô, xe con, xe tải.",
+      "D. Xe con, mô tô, xe tải."
+    ],
+    "answer": "C",
+    "image": "ha167"
+  },
+  {
+    "question": "168. Trường hợp này xe nào được quyền đi trước?",
+    "options": [
+      "A. Mô tô.",
+      "B. Xe con."
+    ],
+    "answer": "B",
+    "image": "ha168"
+  },
+  {
+    "question": "169. Xe nào được quyền đi trước trong trường hợp này?",
+    "options": [
+      "A. Mô tô.",
+      "B. Xe cứu thương."
+    ],
+    "answer": "B",
+    "image": "ha169"
+  },
+  {
+    "question": "170. Theo tín hiệu đèn, xe nào được phép đi?",
+    "options": [
+      "A. Xe con và xe khách.",
+      "B. Mô tô."
+    ],
+    "answer": "A",
+    "image": "ha170"
+  },
+  {
+    "question": "200. Trong tình huống dưới đây, xe đầu kéo kéo rơ moóc (xe container) đang rẽ phải, xe con màu xanh và xe máy phía sau xe container đi như thế nào để đảm bảo an toàn?",
+    "options": [
+      "A. Vượt về phía bên phải để đi tiếp.",
+      "B. Giảm tốc độ chờ xe container rẽ xong rồi tiếp tục đi.",
+      "C. Vượt về phía bên trái để đi tiếp."
+    ],
+    "answer": "B",
+    "image": "ha200"
+  }
+]
