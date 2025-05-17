@@ -62,7 +62,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/lnLt2"
+                android:id="@+id/Khainiemquytacgiaothong"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
                 android:orientation="vertical"
@@ -80,56 +80,12 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="83 câu hỏi bao gồm 18 câu điểm liệt"
-                    android:textSize="18dp"/>
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/lnLt3"
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:orientation="vertical"
-                android:paddingHorizontal="20dp"
-                android:gravity="center_vertical"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/custom_edittext">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Văn hoá và đạo đức"
-                    android:textSize="20dp"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="5 câu hỏi gồm 0 câu điểm liệt"
-                    android:textSize="18dp"/>
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/lnLt4"
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:orientation="vertical"
-                android:paddingHorizontal="20dp"
-                android:gravity="center_vertical"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/custom_edittext">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Kỹ thuật lái xe"
-                    android:textSize="20dp"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="12 câu hỏi bao gồm 2 câu điểm liệt"
+                    android:text="94 câu hỏi bao gồm 18 câu điểm liệt"
                     android:textSize="18dp"/>
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/lnLt5"
+                android:id="@+id/Bienbaoduongbo"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
                 android:layout_marginHorizontal="20dp"
@@ -149,13 +105,13 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="65 câu hỏi bao gồm 0 câu điểm liệt"
+                    android:text="71 câu hỏi bao gồm 0 câu điểm liệt"
                     android:textSize="18dp" />
             </LinearLayout>
 
             <LinearLayout
 
-                android:id="@+id/lnLt6"
+                android:id="@+id/Sahinh"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
                 android:orientation="vertical"

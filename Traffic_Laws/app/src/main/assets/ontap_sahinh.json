@@ -1,0 +1,360 @@
+[
+    {
+    "question": "166. Thứ tự các xe đi như thế nào là đúng quy tắc giao thông?",
+    "options": [
+      "A. Xe tải, xe khách, xe con, mô tô.",
+      "B. Xe tải, mô tô, xe khách, xe con.",
+      "C. Xe khách, xe tải, xe con, mô tô.",
+      "D. Mô tô, xe khách, xe tải, xe con."
+    ],
+    "answer": "A",
+    "image": "ha166"
+  },
+  {
+    "question": "167. Thứ tự các xe đi như thế nào là đúng quy tắc giao thông?",
+    "options": [
+      "A. Xe tải, xe con, mô tô.",
+      "B. Xe con, xe tải, mô tô.",
+      "C. Mô tô, xe con, xe tải.",
+      "D. Xe con, mô tô, xe tải."
+    ],
+    "answer": "C",
+    "image": "ha167"
+  },
+  {
+    "question": "168. Trường hợp này xe nào được quyền đi trước?",
+    "options": [
+      "A. Mô tô.",
+      "B. Xe con."
+    ],
+    "answer": "B",
+    "image": "ha168"
+  },
+  {
+    "question": "169. Xe nào được quyền đi trước trong trường hợp này?",
+    "options": [
+      "A. Mô tô.",
+      "B. Xe cứu thương."
+    ],
+    "answer": "B",
+    "image": "ha169"
+  },
+  {
+    "question": "170. Theo tín hiệu đèn, xe nào được phép đi?",
+    "options": [
+      "A. Xe con và xe khách.",
+      "B. Mô tô."
+    ],
+    "answer": "A",
+    "image": "ha170"
+  },
+  {
+    "question": "171. Các xe đi theo hướng mũi tên, xe nào vi phạm quy tắc giao thông?",
+    "options": [
+      "A. Xe khách, xe tải, mô tô.",
+      "B. Xe tải, xe con, mô tô.",
+      "C. Xe khách, xe con, mô tô."
+    ],
+    "answer": "A",
+    "image": "ha171"
+  },
+  {
+    "question": "172. Thứ tự các xe đi như thế nào là đúng quy tắc giao thông?",
+    "options": [
+      "A. Xe khách, xe tải, mô tô, xe con.",
+      "B. Xe con, xe khách, xe tải, mô tô.",
+      "C. Mô tô, xe tải, xe khách, xe con.",
+      "D. Mô tô, xe tải, xe con, xe khách."
+    ],
+    "answer": "C",
+    "image": "ha172"
+  },
+  {
+    "question": "173. Trong trường hợp này xe nào đỗ vi phạm quy tắc giao thông?",
+    "options": [
+      "A. Xe tải.",
+      "B. Xe con và mô tô.",
+      "C. Cả ba xe.",
+      "D. Xe con và xe tải."
+    ],
+    "answer": "A",
+    "image": "ha173"
+  },
+  {
+    "question": "174. Theo hướng mũi tên, những hướng nào xe gắn máy đi được?",
+    "options": [
+      "A. Cả ba hướng.",
+      "B. Chỉ hướng 1 và 3.",
+      "C. Chỉ hướng 1."
+    ],
+    "answer": "A",
+    "image": "ha174"
+  },
+  {
+    "question": "175. Xe nào đỗ vi phạm quy tắc giao thông?",
+    "options": [
+      "A. Cả hai xe.",
+      "B. Không xe nào vi phạm.",
+      "C. Chỉ xe mô tô vi phạm.",
+      "D. Chỉ xe tải vi phạm."
+    ],
+    "answer": "A",
+    "image": "ha175"
+  },
+  {
+    "question": "176. Xe nào đỗ vi phạm quy tắc giao thông?",
+    "options": [
+      "A. Chỉ mô tô.",
+      "B. Chỉ xe tải.",
+      "C. Cả ba xe.",
+      "D. Chỉ mô tô và xe tải."
+    ],
+    "answer": "C",
+    "image": "ha176"
+  },
+  {
+    "question": "177. Xe tải kéo mô tô ba bánh như hình này có đúng quy tắc giao thông không?",
+    "options": [
+      "A. Đúng.",
+      "B. Không đúng."
+    ],
+    "answer": "B",
+    "image": "ha177"
+  },
+  {
+    "question": "178. Xe nào được quyền đi trước trong trường hợp này?",
+    "options": [
+      "A. Xe con.",
+      "B. Xe mô tô."
+    ],
+    "answer": "B",
+    "image": "ha178"
+  },
+  {
+    "question": "179. Thứ tự các xe đi như thế nào là đúng quy tắc giao thông?",
+    "options": [
+      "A. Xe con (A), mô tô, xe con (B), xe đạp.",
+      "B. Xe con (B), xe đạp, mô tô, xe con (A).",
+      "C. Xe con (A), xe con (B), mô tô  + xe đạp.",
+      "D. Mô tô + xe đạp, xe con (A), xe con (B)."
+    ],
+    "answer": "D",
+    "image": "ha179"
+  },
+  {
+    "question": "180. Xe nào được quyền đi trước trong trường hợp này?",
+    "options": [
+      "A. Mô tô.",
+      "B. Xe con."
+    ],
+    "answer": "A",
+    "image": "ha180"
+  },
+  {
+    "question": "181. Xe nào vi phạm quy tắc giao thông?",
+    "options": [
+      "A. Xe khách.",
+      "B. Mô tô.",
+      "C. Xe con.",
+      "D. Xe con và mô tô."
+    ],
+    "answer": "C",
+    "image": "ha181"
+  },
+  {
+    "question": "182. Các xe đi như thế nào là đúng quy tắc giao thông?",
+    "options": [
+      "A. Các xe ở phía tay phải và tay trái của người điều khiển được phép đi thẳng.",
+      "B. Cho phép các xe ở mọi hướng được rẽ phải.",
+      "C. Tất cả các xe phải dừng lại trước ngã tư, trừ những xe đã ở trong ngã tư được phép tiếp tục đi."
+    ],
+    "answer": "C",
+    "image": "ha182"
+  },
+  {
+    "question": "183. Theo hướng mũi tên, xe nào được phép đi?",
+    "options": [
+      "A. Mô tô, xe con.",
+      "B. Xe con, xe tải.",
+      "C. Mô tô, xe tải.",
+      "D. Cả ba xe."
+    ],
+    "answer": "C",
+    "image": "ha183"
+  },
+  {
+    "question": "184. Trong hình dưới đây, xe nào chấp hành đúng quy tắc giao thông?",
+    "options": [
+      "A. Chỉ xe khách, mô tô.",
+      "B. Tất cả các loại xe trên.",
+      "C. Không xe nào chấp hành đúng quy tắc giao thông."
+    ],
+    "answer": "B",
+    "image": "ha184"
+  },
+  {
+    "question": "185. Theo hướng mũi tên, những hướng nào xe mô tô được phép đi?",
+    "options": [
+      "A. Cả ba hướng.",
+      "B. Hướng 1 và 2.",
+      "C. Hướng 1 và 3.",
+      "D. Hướng 2 và 3."
+    ],
+    "answer": "C",
+    "image": "ha185"
+  },
+  {
+    "question": "186. Trong trường hợp này, thứ tự xe đi như thế nào là đúng quy tắc giao thông?",
+    "options": [
+      "A. Xe công an, xe quân sự, xe con + mô tô.",
+      "B. Xe quân sự, xe công an, xe con + mô tô.",
+      "C. Xe mô tô + xe con, xe quân sự, xe công an."
+    ],
+    "answer": "B",
+    "image": "ha186"
+  },
+  {
+    "question": "187. Trong hình dưới, những xe nào vi phạm quy tắc giao thông?",
+    "options": [
+      "A. Xe con (E), mô tô (C).",
+      "B. Xe tải (A), mô tô (D).",
+      "C. Xe khách (B), mô tô (C).",
+      "D. Xe khách (B), mô tô (D)."
+    ],
+    "answer": "A",
+    "image": "ha187"
+  },
+  {
+    "question": "188. Trong hình dưới, những xe nào vi phạm quy tắc giao thông?",
+    "options": [
+      "A. Xe con (B), mô tô (C).",
+      "B. Xe con (A), mô tô (C).",
+      "C. Xe con (E), mô tô (D).",
+      "D. Tất cả các loại xe trên."
+    ],
+    "answer": "C",
+    "image": "ha188"
+  },
+  {
+    "question": "189. Bạn có được phép vượt xe mô tô phía trước không?",
+    "options": [
+      "A. Cho phép.",
+      "B. Không được vượt."
+    ],
+    "answer": "B",
+    "image": "ha189"
+  },
+  {
+    "question": "190. Theo tín hiệu đèn của xe cơ giới, xe nào vi phạm quy tắc giao thông?",
+    "options": [
+      "A. Xe mô tô.",
+      "B. Xe ô tô con.",
+      "C. Không xe nào vi phạm.",
+      "D. Cả hai xe."
+    ],
+    "answer": "D",
+    "image": "ha190"
+  },
+  {
+    "question": "191. Các xe đi theo hướng mũi tên, xe nào vi phạm quy tắc giao thông?",
+    "options": [
+      "A. Xe con.",
+      "B. Xe tải.",
+      "C. Xe con, xe tải."
+    ],
+    "answer": "B",
+    "image": "ha191"
+  },
+  {
+    "question": "192. Các xe đi theo hướng mũi tên, xe nào vi phạm quy tắc giao thông?",
+    "options": [
+      "A. Xe tải, xe con.",
+      "B. Xe khách, xe con.",
+      "C. Xe khách, xe tải."
+    ],
+    "answer": "C",
+    "image": "ha192"
+  },
+  {
+    "question": "193. Các xe đi theo hướng mũi tên, xe nào vi phạm quy tắc giao thông?",
+    "options": [
+      "A. Xe con, xe khách, xe tải.",
+      "B. Xe tải, xe khách, xe mô tô.",
+      "C. Xe khách, xe mô tô, xe con.",
+      "D. Cả bốn xe."
+    ],
+    "answer": "B",
+    "image": "ha193"
+  },
+  {
+    "question": "194. Các xe đi theo hướng mũi tên, xe nào chấp hành đúng quy tắc giao thông?",
+    "options": [
+      "A. Xe tải, mô tô.",
+      "B. Xe khách, mô tô.",
+      "C. Xe tải, xe con.",
+      "D. Mô tô, xe con."
+    ],
+    "answer": "B",
+    "image": "ha194"
+  },
+  {
+    "question": "195. Các xe đi theo thứ tự nào là đúng quy tắc giao thông đường bộ?",
+    "options": [
+      "A. Xe của bạn, mô tô, xe con.",
+      "B. Xe con, xe của bạn, mô tô.",
+      "C. Mô tô, xe con, xe của bạn."
+    ],
+    "answer": "C",
+    "image": "ha195"
+  },
+  {
+    "question": "196. Các xe đi theo thứ tự nào là đúng quy tắc giao thông đường bộ?",
+    "options": [
+      "A. Xe của bạn, mô tô, xe con.",
+      "B. Xe con, xe của bạn, mô tô.",
+      "C. Mô tô, xe con, xe của bạn."
+    ],
+    "answer": "B",
+    "image": "ha196"
+  },
+  {
+    "question": "197. Bạn xử lý như thế nào trong trường hợp này?",
+    "options": [
+      "A. Tăng tốc độ, rẽ phải trước xe tải và xe đạp.",
+      "B. Giảm tốc độ, rẽ phải sau xe tải và xe đạp.",
+      "C. Tăng tốc độ, rẽ phải trước xe đạp."
+    ],
+    "answer": "B",
+    "image": "ha197"
+  },
+  {
+    "question": "198. Xe nào dừng đúng theo quy tắc giao thông?",
+    "options": [
+      "A. Xe con.",
+      "B. Xe mô tô.",
+      "C. Cả hai xe đều đúng."
+    ],
+    "answer": "A",
+    "image": "ha198"
+  },
+  {
+    "question": "199. Xe của bạn đang di chuyển gần đến khu vực giao cắt với đường sắt, khi rào chắn đang dịch chuyển, bạn điều khiển xe như nào là đúng quy tắc giao thông?",
+    "options": [
+      "A. Quan sát nếu thấy không có tàu thì tăng tốc cho xe vượt qua đường sắt.",
+      "B. Dừng lại trước rào chắn một khoảng cách an toàn.",
+      "C. Ra tín hiệu, yêu cầu người gác chắn tàu kéo chậm Barie để xe bạn qua."
+    ],
+    "answer": "B",
+    "image": "ha199"
+  },
+  {
+    "question": "200. Trong tình huống dưới đây, xe đầu kéo kéo rơ moóc (xe container) đang rẽ phải, xe con màu xanh và xe máy phía sau xe container đi như thế nào để đảm bảo an toàn?",
+    "options": [
+      "A. Vượt về phía bên phải để đi tiếp.",
+      "B. Giảm tốc độ chờ xe container rẽ xong rồi tiếp tục đi.",
+      "C. Vượt về phía bên trái để đi tiếp."
+    ],
+    "answer": "B",
+    "image": "ha200"
+  }
+]

@@ -13,6 +13,7 @@ import android.widget.LinearLayout;
 public class OntapFragment extends Fragment {
 
     LinearLayout Toanbocauhoi;
+    LinearLayout Khainiemquytacgiaothong, Bienbaoduongbo, Sahinh;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -20,11 +21,47 @@ public class OntapFragment extends Fragment {
 
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_ontap, container, false);
+
+        //Tìm kiếm đối tượng
         Toanbocauhoi = view.findViewById(R.id.Toanbocauhoi);
+        Khainiemquytacgiaothong = view.findViewById(R.id.Khainiemquytacgiaothong);
+        Bienbaoduongbo = view.findViewById(R.id.Bienbaoduongbo);
+        Sahinh = view.findViewById(R.id.Sahinh);
+
+        // Thực hiện chức năng chuyển trang qua câu hỏi
+
+        // Trang Tất cả 200 câu hỏi
         Toanbocauhoi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), All_QuestionActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // Trang Khái niệm và Quy tắc giao thông
+        Khainiemquytacgiaothong.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), OnTap_KhainiemquytacgiaothongActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // Trang Ôn tập bển báo đường bộ
+        Bienbaoduongbo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), OnTap_BienbaoduongboActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // Trang Ôn tập Sa hình
+        Sahinh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), OnTap_SaHinhActivity.class);
                 startActivity(intent);
             }
         });

@@ -1,0 +1,662 @@
+[
+    {
+      "question": "39: Biển báo hiệu có dạng hình tròn, viền đỏ, nền trắng, trên nền có hình vẽ hoặc chữ số, chữ viết màu đen là loại biển gì dưới đây?",
+      "options": [
+        "A. Biển báo nguy hiểm.",
+        "B. Biển báo hiệu lệnh.",
+        "C. Biển báo chỉ dẫn."
+      ],
+      "answer": "B",
+      "image": "ha39"
+      
+    },
+    {
+      "question": "40: Biển báo hiệu có dạng tam giác đều, viền đỏ, nền màu vàng, trên có hình vẽ màu đen là loại biển gì dưới đây?",
+      "options": [
+        "A. Biển báo nguy hiểm.",
+        "B. Biển báo cấm.",
+        "C. Biển báo hiệu lệnh.",
+        "D. Biển báo chỉ dẫn."
+      ],
+      "answer": "A",
+      "image": "ha40"
+      
+    },
+    {
+      "question": "41: Biển báo hiệu hình tròn có nền xanh lam có hình vẽ màu trắng là loại biển gì dưới đây?",
+      "options": [
+        "A. Biển báo nguy hiểm.",
+        "B. Biển báo cấm.",
+        "C. Biển báo hiệu lệnh phải thi hành.",
+        "D. Biển báo chỉ dẫn."
+      ],
+      "answer": "C",
+      "image": "ha41"
+    },
+    {
+      "question": "42: Biển báo hiệu hình chữ nhật hoặc hình vuông hoặc hình mũi tên nền xanh lam là loại biển gì dưới đây?",
+      "options": [
+        "A. Biển báo nguy hiểm.",
+        "B. Biển báo cấm.",
+        "C. Biển báo hiệu lệnh phải thi hành.",
+        "D. Biển báo chỉ dẫn."
+      ],
+      "answer": "D",
+      "image": "ha42"
+    },
+    {
+      "question": "44: Khi gặp hiệu lệnh như dưới đây của cảnh sát giao thông thì người tham gia giao thông phải đi như thế nào là đúng quy tắc giao thông?",
+      "options": [
+        "A. Người tham gia giao thông ở các hướng phải dừng lại.",
+        "B. Người tham gia giao thông ở các hướng được đi theo chiều gậy chỉ của cảnh sát giao thông.",
+        "C. Người tham gia giao thông ở phía trước và phía sau người điều khiển được đi tất cả các hướng; người tham gia giao thông ở phía bên phải và phía bên trái người điều khiển phải dừng lại.",
+        "D. Người tham gia giao thông ở phía trước và phía sau người điều khiển phải dừng lại; người tham gia giao thông ở phía bên phải và phía bên trái người điều khiển được đi tất cả các hướng."
+      ],
+      "answer": "D",
+      "image": "ha44"
+    },
+    {
+      "question": "45: Khi gặp hiệu lệnh như dưới đây của cảnh sát giao thông thì người tham gia giao thông phải đi như thế nào là đúng quy tắc giao thông?",
+      "options": [
+        "A. Người tham gia giao thông ở hướng đối diện cảnh sát giao thông được đi, các hướng khác cần phải dừng lại.",
+        "B. Người tham gia giao thông được rẽ phải theo chiều mũi tên màu xanh ở bục cảnh sát giao thông.",
+        "C. Người tham gia giao thông ở các hướng đều phải dừng lại trừ các  xe ở trong khu vực giao nhau.",
+        "D. Người ở hướng đối diện cảnh sát giao thông phải dừng lại, các hướng khác được đi trong đó có bạn."
+      ],
+      "answer": "C",
+      "image": "ha45"
+    },
+    {
+    "question": "101. Biển nào dưới đây xe gắn máy được phép đi vào?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Cả hai biển."
+    ],
+    "answer": "C",
+    "image": "ha101"
+  },
+  {
+    "question": "102. Biển nào báo hiệu cấm xe mô tô hai bánh đi vào?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Biển 3."
+    ],
+    "answer": "A",
+    "image": "ha102"
+  },
+  {
+    "question": "103. Khi gặp biển nào thì xe mô tô hai bánh được đi vào?",
+    "options": [
+      "A. Không biển nào.",
+      "B. Biển 1 và 2.",
+      "C. Biển 2 và 3.",
+      "D. Cả ba biển."
+    ],
+    "answer": "C",
+    "image": "ha103"
+  },
+  {
+    "question": "104. Biển nào cấm quay đầu xe?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Không biển nào.",
+      "D. Cả hai biển."
+    ],
+    "answer": "B",
+    "image": "ha104"
+  },
+  {
+    "question": "105. Biển nào cấm xe rẽ trái?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Cả hai biển."
+    ],
+    "answer": "A",
+    "image": "ha105"
+  },
+  {
+    "question": "106. Khi gặp biển nào xe được rẽ trái?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Không biển nào."
+    ],
+    "answer": "B",
+    "image": "ha106"
+  },
+  {
+    "question": "107. Biển nào cấm các phương tiện giao thông đường bộ rẽ phải?",
+    "options": [
+      "A. Biển 1 và 2.",
+      "B. Biển 1 và 3.",
+      "C. Biển 2 và 3.",
+      "D. Cả ba biển."
+    ],
+    "answer": "A",
+    "image": "ha107"
+  },
+  {
+    "question": "108. Biển nào cấm các phương tiện giao thông đường bộ rẽ trái?",
+    "options": [
+      "A. Biển 1 và 2.",
+      "B. Biển 1 và 3.",
+      "C. Biển 2 và 3.",
+      "D. Cả ba biển."
+    ],
+    "answer": "A",
+    "image": "ha108"
+  },
+  {
+    "question": "109. Biển nào cho phép xe rẽ trái?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Không biển nào."
+    ],
+    "answer": "B",
+    "image": "ha109"
+  },
+  {
+    "question": "110. Biển nào xe được phép quay đầu nhưng không được rẽ trái?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Cả hai biển."
+    ],
+    "answer": "A",
+    "image": "ha110"
+  },
+  {
+    "question": "111. Biển nào xe được phép quay đầu nhưng không được rẽ trái?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Cả hai biển."
+    ],
+    "answer": "A",
+    "image": "ha111"
+  },
+  {
+    "question": "112. Biển nào là biển “Cấm đi ngược chiều”?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Cả ba biển."
+    ],
+    "answer": "B",
+    "image": "ha112"
+  },
+  {
+    "question": "113. Biển nào dưới đây các phương tiện không được phép đi vào?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Biển 1 và 2."
+    ],
+    "answer": "C",
+    "image": "ha113"
+  },
+  {
+    "question": "114. Khi gặp biển nào xe ưu tiên theo luật định vẫn phải dừng lại?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Cả ba biển."
+    ],
+    "answer": "B",
+    "image": "ha114"
+  },
+  {
+    "question": "115. Biển nào cấm tất cả các loại xe cơ giới và thô sơ đi lại trên đường, trừ xe ưu tiên theo luật định (nếu đường vẫn cho xe chạy được)?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Cả hai biển."
+    ],
+    "answer": "A",
+    "image": "ha115"
+  },
+  {
+    "question": "116. Gặp biển nào xe xích lô được phép đi vào?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Biển 3.",
+      "D. Biển 1 và biển 2."
+    ],
+    "answer": "D",
+    "image": "ha116"
+  },
+  {
+    "question": "117. Gặp biển nào xe lam, xe xích lô máy được phép đi vào?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Biển 3."
+    ],
+    "answer": "C",
+    "image": "ha117"
+  },
+  {
+    "question": "118. Biển báo này có ý nghĩa như thế nào?",
+    "options": [
+      "A. Tốc độ tối đa cho phép về ban đêm cho các phương tiện là 70 km/h.",
+      "B. Tốc độ tối thiểu cho phép về ban đêm cho các phương tiện là 70 km/h."
+    ],
+    "answer": "A",
+    "image": "ha118"
+  },
+  {
+    "question": "119. Chiều dài đoạn đường 500m từ nơi đặt biển này, người lái xe có được phép bấm còi không?",
+    "options": [
+      "A. Được phép.",
+      "B. Không được phép."
+    ],
+    "answer": "B",
+    "image": "ha119"
+  },
+  {
+    "question": "120. Biển nào xe mô tô hai bánh được đi vào?",
+    "options": [
+      "A. Biển 1 và 2.",
+      "B. Biển 1 và 3.",
+      "C. Biển 2 và 3."
+    ],
+    "answer": "B",
+    "image": "ha120"
+  },
+  {
+    "question": "121. Biển nào xe mô tô hai bánh không được đi vào?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Biển 3."
+    ],
+    "answer": "B",
+    "image": "ha121"
+  },
+  {
+    "question": "122. Biển báo nào báo hiệu bắt đầu đoạn đường vào phạm vi khu dân cư, các phương tiện tham gia giao thông phải tuân theo các quy định đi đường được áp dụng ở khu đông dân cư?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2."
+    ],
+    "answer": "A",
+    "image": "ha122"
+  },
+  {
+    "question": "123. Gặp biển nào người lái xe phải nhường đường cho người đi bộ?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Biển 3.",
+      "D. Biển 1 và 3."
+    ],
+    "answer": "A",
+    "image": "ha123"
+  },
+  {
+    "question": "124. Biển nào chỉ đường dành cho người đi bộ, các loại xe không được đi vào khi gặp biển này?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 1 và 3.",
+      "C. Biển 3.",
+      "D. Cả ba biển."
+    ],
+    "answer": "C",
+    "image": "ha124"
+  },
+  {
+    "question": "125. Biển nào báo hiệu 'Đường dành cho xe thô sơ'?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Biển 3."
+    ],
+    "answer": "A",
+    "image": "ha125"
+  },
+  {
+    "question": "126. Biển nào báo hiệu sắp đến chỗ giao nhau nguy hiểm?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 1 và 2.",
+      "C. Biển 2 và 3.",
+      "D. Cả ba biển."
+    ],
+    "answer": "D",
+    "image": "ha126"
+  },
+  {
+    "question": "127. Biển nào báo hiệu 'Giao nhau với đường sắt có rào chắn'?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2 và 3.",
+      "C. Biển 3."
+    ],
+    "answer": "A",
+    "image": "ha127"
+  },
+  {
+    "question": "128. Biển nào báo hiệu 'Giao nhau với tín hiệu đèn'?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Biển 3.",
+      "D. Cả ba biển."
+    ],
+    "answer": "C",
+    "image": "ha128"
+  },
+  {
+    "question": "129. Biển nào báo hiệu nguy hiểm giao nhau với đường sắt?",
+    "options": [
+      "A. Biển 1 và 2.",
+      "B. Biển 1 và 3.",
+      "C. Biển 2 và 3.",
+      "D. Cả ba biển."
+    ],
+    "answer": "B",
+    "image": "ha129"
+  },
+  {
+    "question": "130. Biển nào báo hiệu đường sắt giao nhau với đường bộ không có rào chắn?",
+    "options": [
+      "A. Biển 1 và 2.",
+      "B. Biển 1 và 3.",
+      "C. Biển 2 và 3.",
+      "D. Cả ba biển."
+    ],
+    "answer": "C",
+    "image": "ha130"
+  },
+  {
+    "question": "131. Biển nào báo hiệu sắp đến chỗ giao nhau giữa đường bộ và đường sắt?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Biển 3.",
+      "D. Biển 1 và 3."
+    ],
+    "answer": "A",
+    "image": "ha131"
+  },
+  {
+    "question": "132. Biển nào báo hiệu, chỉ dẫn xe đi trên đường này được quyền ưu tiên qua nơi giao nhau?",
+    "options": [
+      "A. Biển 1 và 2.",
+      "B. Biển 1 và 3.",
+      "C. Biển 2 và 3.",
+      "D. Cả ba biển."
+    ],
+    "answer": "B",
+    "image": "ha132"
+  },
+  {
+    "question": "133. Biển nào báo hiệu 'Giao nhau với đường không ưu tiên'?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Biển 3.",
+      "D. Biển 2 và 3."
+    ],
+    "answer": "A",
+    "image": "ha133"
+  },
+  {
+    "question": "134. Biển nào báo hiệu 'Giao nhau với đường ưu tiên'?",
+    "options": [
+      "A. Biển 1 và 3.",
+      "B. Biển 2.",
+      "C. Biển 3."
+    ],
+    "answer": "B",
+    "image": "ha134"
+  },
+  {
+    "question": "135. Biển nào báo hiệu 'Đường bị thu hẹp'?",
+    "options": [
+      "A. Biển 1 và 2.",
+      "B. Biển 1 và 3.",
+      "C. Biển 2 và 3.",
+      "D. Cả ba biển."
+    ],
+    "answer": "A",
+    "image": "ha135"
+  },
+  {
+    "question": "136. Khi gặp biển nào, người lái xe phải giảm tốc độ, chú ý xe đi ngược chiều, xe đi ở phía đường bị hẹp phải nhường đường cho xe đi ngược chiều?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 1 và 3.",
+      "C. Biển 2 và 3.",
+      "D. Cả ba biển."
+    ],
+    "answer": "C",
+    "image": "ha136"
+  },
+  {
+    "question": "137. Biển nào báo hiệu 'Đường giao nhau' của các tuyến đường cùng cấp?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Biển 3."
+    ],
+    "answer": "A",
+    "image": "ha137"
+  },
+  {
+    "question": "138. Biển nào báo hiệu 'Đường đôi'?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Biển 3."
+    ],
+    "answer": "B",
+    "image": "ha138"
+  },
+  {
+    "question": "139. Biển nào báo hiệu 'Đường đôi'?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Biển 3."
+    ],
+    "answer": "C",
+    "image": "ha139"
+  },
+  {
+    "question": "140. Biển nào báo hiệu 'Giao nhau với đường hai chiều'?",
+    "options": [
+      "A. Biển 1.",
+      "B. Biển 2.",
+      "C. Biển 3."
+    ],
+    "answer": "A",
+    "image": "ha140"
+  },
+  {
+    "question": "141. Biển nào báo hiệu “Đường hai chiều”?",
+    "options": ["A. Biển 1.", "B. Biển 2.", "C. Biển 3."],
+    "answer": "B",
+    "image": "ha141"
+  },
+  {
+    "question": "142. Biển nào báo hiệu “Giao nhau với đường hai chiều”?",
+    "options": ["A. Biển 1.", "B. Biển 2.", "C. Biển 3."],
+    "answer": "B",
+    "image": "ha142"
+  },
+  {
+    "question": "143. Biển nào báo hiệu “Chú ý chướng ngại vật”?",
+    "options": ["A. Biển 1.", "B. Biển 2 và 3.", "C. Cả ba biển."],
+    "answer": "B",
+    "image": "ha143"
+  },
+  {
+    "question": "144. Gặp biển nào người tham gia giao thông phải đi chậm và thận trọng đề phòng khả năng xuất hiện và di chuyển bất ngờ của trẻ em trên mặt đường?",
+    "options": ["A. Biển 1.", "B. Biển 2."],
+    "answer": "B",
+    "image": "ha144"
+  },
+  {
+    "question": "145. Biển nào chỉ dẫn nơi bắt đầu đoạn đường dành cho người đi bộ?",
+    "options": ["A. Biển 1.", "B. Biển 2.", "C. Biển 3."],
+    "answer": "B",
+    "image": "ha145"
+  },
+  {
+    "question": "146. Biển báo này có ý nghĩa gì?",
+    "options": ["A. Báo hiệu đường có ổ gà, lồi lõm.", "B. Báo hiệu đường có gồ giảm tốc phía trước."],
+    "answer": "B",
+    "image": "ha146"
+  },
+  {
+    "question": "147. Biển nào (đặt trước ngã ba, ngã tư) cho phép xe được rẽ sang hướng khác?",
+    "options": ["A. Biển 1.", "B. Biển 2.", "C. Không biển nào."],
+    "answer": "C",
+    "image": "ha147"
+  },
+  {
+    "question": "148. Biển nào báo hiệu “Hướng đi thẳng phải theo”?",
+    "options": ["A. Biển 1.", "B. Biển 2."],
+    "answer": "A",
+    "image": "ha148"
+  },
+  {
+    "question": "149. Biển nào báo hiệu “Đường một chiều”?",
+    "options": ["A. Biển 1.", "B. Biển 2.", "C. Cả hai biển."],
+    "answer": "B",
+    "image": "ha149"
+  },
+  {
+    "question": "150. Trong các biển dưới đây biển nào là biển “Hết tốc độ tối đa cho phép”?",
+    "options": ["A. Biển 1.", "B. Biển 2.", "C. Biển 3.", "D. Cả ba biển."],
+    "answer": "A",
+    "image": "ha150"
+  },
+  {
+    "question": "151. Hiệu lực của biển “Tốc độ tối đa cho phép” hết tác dụng khi gặp biển nào dưới đây?",
+    "options": ["A. Biển 1.", "B. Biển 2.", "C. Biển 3.", "D. Biển 1 và 2."],
+    "answer": "D",
+    "image": "ha151"
+  },
+  {
+    "question": "152. Trong các biển dưới đây biển nào là biển “Hết tốc độ tối thiểu”?",
+    "options": ["A. Biển 1.", "B. Biển 2.", "C. Biển 3.", "D. Cả ba biển."],
+    "answer": "C",
+    "image": "ha152"
+  },
+  {
+    "question": "153. Biển nào dưới đây báo hiệu hết cấm vượt?",
+    "options": ["A. Biển 1.", "B. Biển 2.", "C. Biển 3.", "D. Biển 2 và 3."],
+    "answer": "D",
+    "image": "ha153"
+  },
+  {
+    "question": "154. Trong các biển dưới đây biển nào là biển “Hết mọi lệnh cấm”?",
+    "options": ["A. Biển 1.", "B. Biển 2.", "C. Biển 3.", "D. Cả ba biển."],
+    "answer": "B",
+    "image": "ha154"
+  },
+  {
+    "question": "155. Biển nào chỉ dẫn cho người đi bộ sử dụng cầu vượt qua đường?",
+    "options": ["A. Biển 1.", "B. Biển 2.", "C. Cả hai biển.", "D. Không biển nào."],
+    "answer": "A",
+    "image": "ha155"
+  },
+  {
+    "question": "156. Biển nào chỉ dẫn cho người đi bộ sử dụng hầm chui qua đường?",
+    "options": ["A. Biển 1.", "B. Biển 2.", "C. Cả hai biển.", "D. Không biển nào."],
+    "answer": "B",
+    "image": "ha156"
+  },
+  {
+    "question": "157. Biển nào báo hiệu “Nơi đỗ xe dành cho người khuyết tật”?",
+    "options": ["A. Biển 1.", "B. Biển 2.", "C. Biển 3."],
+    "answer": "B",
+    "image": "ha157"
+  },
+  {
+    "question": "158. Gặp biển báo này, người tham gia giao thông phải xử lý như thế nào?",
+    "options": [
+      "A. Dừng xe tại khu vực có trạm Cảnh sát giao thông.",
+      "B. Tiếp tục lưu thông với tốc độ bình thường.",
+      "C. Phải giảm tốc độ đến mức an toàn và không được vượt khi đi qua khu vực này."
+    ],
+    "answer": "C",
+    "image": "ha158"
+  },
+  {
+    "question": "159. Biển số 1 có ý nghĩa gì?",
+    "options": [
+      "A. Đi thẳng hoặc rẽ trái trên cầu vượt.",
+      "B. Đi thẳng hoặc rẽ phải trên cầu vượt.",
+      "C. Báo hiệu cầu vượt liên thông."
+    ],
+    "answer": "C",
+    "image": "ha159"
+  },
+  {
+    "question": "160. Vạch kẻ đường nào dưới đây là vạch phân chia các làn xe cùng chiều?",
+    "options": ["A. Vạch 1.", "B. Vạch 2.", "C. Vạch 3.", "D. Vạch 1 và 2."],
+    "answer": "D",
+    "image": "ha160"
+  },
+  {
+    "question": "161. Vạch kẻ đường nào dưới đây là vạch phân chia hai chiều xe chạy (vạch tim đường), xe không được lấn làn, không được đè lên vạch?",
+    "options": [
+      "A. Vạch 1.",
+      "B. Vạch 2.",
+      "C. Vạch 3.",
+      "D. Cả 3 vạch."
+    ],
+    "answer": "C",
+    "image": "ha161"
+  },
+  {
+    "question": "162. Vạch kẻ đường nào dưới đây là vạch phân chia hai chiều xe chạy (vạch tim đường)?",
+    "options": [
+      "A. Vạch 1.",
+      "B. Vạch 2.",
+      "C. Vạch 3.",
+      "D. Vạch 1 và 3."
+    ],
+    "answer": "D",
+    "image": "ha162"
+  },
+  {
+    "question": "163. Các vạch dưới đây có tác dụng gì?",
+    "options": [
+      "A. Phân chia hai chiều xe chạy ngược chiều nhau.",
+      "B. Phân chia các làn xe chạy cùng chiều nhau."
+    ],
+    "answer": "A",
+    "image": "ha163"
+  },
+  {
+    "question": "164. Khi gặp vạch kẻ đường nào các xe được phép đè vạch?",
+    "options": [
+      "A. Vạch 1.",
+      "B. Vạch 2.",
+      "C. Vạch 3.",
+      "D. Vạch 1 và vạch 3."
+    ],
+    "answer": "D",
+    "image": "ha164"
+  },
+  {
+    "question": "165. Vạch dưới đây có ý nghĩa gì?",
+    "options": [
+      "A. Vị trí dừng xe của các phương tiện vận tải hành khách công cộng.",
+      "B. Báo cho người điều khiển được dừng phương tiện trong phạm vi phần mặt đường có bố trí vạch để tránh ùn tắc giao thông.",
+      "C. Dùng để xác định vị trí giữa các phương tiện trên đường."
+    ],
+    "answer": "A",
+    "image": "ha165"
+  }
+]
