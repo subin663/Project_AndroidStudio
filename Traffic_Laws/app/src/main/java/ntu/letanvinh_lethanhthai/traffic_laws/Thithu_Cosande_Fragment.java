@@ -34,8 +34,8 @@ public class Thithu_Cosande_Fragment extends Fragment {
         de2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), Quiz2_Activity.class);
-                startActivity(intent);
+                //Intent intent = new Intent(getActivity(), Quiz2_Activity.class);
+                //startActivity(intent);
             }
         });
         de3.setOnClickListener(new View.OnClickListener() {

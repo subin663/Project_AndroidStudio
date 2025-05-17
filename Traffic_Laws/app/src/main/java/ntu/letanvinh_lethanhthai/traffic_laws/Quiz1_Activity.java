@@ -2,12 +2,11 @@ package ntu.letanvinh_lethanhthai.traffic_laws;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -22,38 +21,89 @@ public class Quiz1_Activity extends AppCompatActivity  {
     private RecyclerView recyclerView;
     private QuizAdapter adapter;
     private List<All_Question> questionList;
+    private List<String> userAnswers;
+    private Button submitButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_quiz1);
+        submitButton = findViewById(R.id.submitButton);
+        Log.d("DEBUG", "Quiz1_Activity được khởi chạy");
 
-        Log.d("DEBUG", "All_QuestionActivity được khởi chạy");
-
-        // Đọc dữ liệu câu hỏi
         questionList = loadQuestionsFromAssets();
 
-        // In log số lượng câu hỏi
-        Log.d("DEBUG", "Số câu hỏi load: " + questionList.size());
+        // Khởi tạo userAnswers sau khi đã có questionList
+        if (questionList != null) {
+            userAnswers = new ArrayList<>(questionList.size());
+            for (int i = 0; i < questionList.size(); i++) {
+                userAnswers.add(null);
+            }
+            Log.d("DEBUG", "userAnswers initialized with size: " + userAnswers.size());
 
-        // Gắn RecyclerView
-        recyclerView = findViewById(R.id.recyclerView);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+            // In log số lượng câu hỏi
+            Log.d("DEBUG", "Số câu hỏi load: " + questionList.size());
 
-        // Gắn adapter
-        adapter = new QuizAdapter(questionList);
-        recyclerView.setAdapter(adapter);
+            // Gắn RecyclerView
+            recyclerView = findViewById(R.id.recyclerView);
+            recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+            // Gắn adapter
+            adapter = new QuizAdapter(questionList, userAnswers, new QuizAdapter.OnAnswerSelectedListener() {
+                @Override
+                public void onAnswerSelected(int position, String selectedAnswer) {
+                    // Lưu trữ câu trả lời của người dùng
+                    userAnswers.set(position, selectedAnswer);
+                    Log.d("Quiz1_Activity", "Câu " + (position + 1) + " - Đã chọn: " + selectedAnswer);
+                    //Không cần gọi hàm checkAnswer() ở đây nữa
+                }
+            });
+            recyclerView.setAdapter(adapter);
+
+        } else {
+            Log.e("Quiz1_Activity", "Không thể load danh sách câu hỏi.");
+            Toast.makeText(this, "Không thể tải được câu hỏi. Vui lòng kiểm tra lại.", Toast.LENGTH_LONG).show();
+            finish();
+        }
+        //Ví dụ tính điểm khi người dùng hoàn thành xong
+        //Bạn có thể gọi cái này ở bất cứ đâu bạn muốn
+        //như là trong 1 button listener
+        int finalScore = adapter.getCorrectAnswersCount();
+        Log.d("Quiz1_Activity", "Final Score: " + finalScore + " out of " + questionList.size());
+
+        submitButton.setOnClickListener(v -> {
+            // Tính toán số câu trả lời đúng
+            int correctAnswers = adapter.getCorrectAnswersCount();
+            int totalQuestions = questionList.size();
+
+            // Xác định đậu hay rớt (ví dụ: cần trả lời đúng ít nhất 50% để đậu)
+            double passingPercentage = 0.5;
+            boolean isPassed = (double) correctAnswers / totalQuestions >= passingPercentage;
+
+            // Tạo thông báo đánh giá
+            String message;
+            if (isPassed) {
+                message = "Chúc mừng bạn đã đậu bài kiểm tra!\nBạn đã trả lời đúng " + correctAnswers + " / " + totalQuestions + " câu.";
+            } else {
+                message = "Rất tiếc, bạn đã rớt bài kiểm tra.\nBạn đã trả lời đúng " + correctAnswers + " / " + totalQuestions + " câu.\nVui lòng thử lại.";
+            }
+
+        });
     }
+
     private List<All_Question> loadQuestionsFromAssets() {
         List<All_Question> questions = new ArrayList<>();
         try {
             InputStream is = getAssets().open("quiz_1.json");
             int size = is.available();
+            Log.d("DEBUG", "Size of quiz_1.json: " + size);
             byte[] buffer = new byte[size];
-            is.read(buffer);
+            int read = is.read(buffer);
+            Log.d("DEBUG", "Bytes read from quiz_1.json: " + read);
             is.close();
             String json = new String(buffer, "UTF-8");
+            Log.d("DEBUG", "JSON content: " + json);
             JSONArray jsonArray = new JSONArray(json);
+            Log.d("DEBUG", "JSONArray length: " + jsonArray.length());
 
 
             for (int i = 0; i < jsonArray.length(); i++) {
@@ -65,10 +115,14 @@ public class Quiz1_Activity extends AppCompatActivity  {
                     options.add(opts.getString(j));
                 }
                 String image = obj.getString("image");
-                questions.add(new All_Question(qText, options, null, image));
+                String answer = obj.getString("answer");
+                questions.add(new All_Question(qText, options, answer, image));
             }
+            Log.d("DEBUG", "Number of questions loaded: " + questions.size());
         } catch (Exception e) {
+            Log.e("Quiz1_Activity", "Error loading questions: ", e);
             e.printStackTrace();
+            return null;
         }
         return questions;
     }

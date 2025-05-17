@@ -1,10 +1,12 @@
 package ntu.letanvinh_lethanhthai.traffic_laws;
 
-import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -13,38 +15,78 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 public class QuizAdapter extends RecyclerView.Adapter<QuizAdapter.QuestionViewHolder> {
-    private List<All_Question> questionList;
+    List<All_Question> questionList;
+    List<String> userAnswers;
+    OnAnswerSelectedListener listener;
+    int correctAnswersCount = 0;
 
-    public QuizAdapter(List<All_Question> questionList) {
+    public QuizAdapter(List<All_Question> questionList, List<String> userAnswers, OnAnswerSelectedListener listener) {
         this.questionList = questionList;
+        this.userAnswers = userAnswers;
+        this.listener = listener;
+    }
+
+    public interface OnAnswerSelectedListener {
+        void onAnswerSelected(int position, String selectedAnswer);
     }
 
     @NonNull
     @Override
     public QuestionViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.hienthicauhoi, parent, false); // Inflate layout của item
+                .inflate(R.layout.hienthicauhoi_quiz1, parent, false);
+        Log.d("DEBUG", "onCreateViewHolder called");
         return new QuestionViewHolder(itemView);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull QuestionViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull final QuestionViewHolder holder, int position) {
+        Log.d("DEBUG", "onBindViewHolder called for position: " + position);
         All_Question question = questionList.get(position);
         holder.questionText.setText(question.getQuestion());
 
-        // Hiển thị các lựa chọn (nếu có)
+        // Xóa tất cả các RadioButton cũ trước khi thêm mới
+        holder.optionsGroup.removeAllViews();
+        Log.d("DEBUG", "Cleared existing RadioButtons from optionsGroup");
+
+        // Thêm các RadioButton cho mỗi lựa chọn
         if (question.getOptions() != null) {
-            holder.optionsText.setText(TextUtils.join("\n", question.getOptions()));
-        } else {
-            holder.optionsText.setText(""); // Hoặc một giá trị mặc định khác
+            for (int i = 0; i < question.getOptions().size(); i++) {
+                String option = question.getOptions().get(i);
+                RadioButton radioButton = new RadioButton(holder.itemView.getContext());
+                radioButton.setText(option);
+                holder.optionsGroup.addView(radioButton);
+
+                // Kiểm tra nếu đây là câu trả lời đã được chọn trước đó
+                if (userAnswers.get(position) != null && userAnswers.get(position).equals(option)) {
+                    radioButton.setChecked(true);
+                    Log.d("DEBUG", "RadioButton checked for option: " + option + " at position: " + position);
+                }
+            }
+
+            holder.optionsGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+                @Override
+                public void onCheckedChanged(RadioGroup group, int checkedId) {
+                    RadioButton checkedRadioButton = group.findViewById(checkedId);
+                    if (checkedRadioButton != null) {
+                        String selectedAnswer = checkedRadioButton.getText().toString();
+                        int currentPosition = holder.getAdapterPosition();
+                        if (currentPosition != RecyclerView.NO_POSITION) {
+                            userAnswers.set(currentPosition, selectedAnswer);
+                            Log.d("DEBUG", "Câu " + (currentPosition + 1) + " - Đã chọn: " + selectedAnswer + " stored at position: " + currentPosition);
+                            listener.onAnswerSelected(currentPosition, selectedAnswer); // Gọi listener
+                            // Kiểm tra và tăng biến đếm
+                            if (selectedAnswer.equals(questionList.get(currentPosition).getAnswer())) {
+                                correctAnswersCount++;
+                                Log.d("DEBUG", "Correct answer at position " + currentPosition + ". Total correct answers: " + correctAnswersCount);
+                            }
+                        }
+                    }
+                }
+            });
         }
 
-        // Hiển thị đáp án (nếu có)
-        if (question.getAnswer() != null) {
-            holder.answerText.setText("Đáp án: " + question.getAnswer());
-        } else {
-            holder.answerText.setText(""); // Hoặc một giá trị mặc định khác
-        }
+        holder.answerText.setText("");
 
         // Hiển thị hình ảnh (nếu có)
         String imageName = question.getImage();
@@ -65,19 +107,23 @@ public class QuizAdapter extends RecyclerView.Adapter<QuizAdapter.QuestionViewHo
 
     @Override
     public int getItemCount() {
-        return questionList.size(); // Trả về kích thước của danh sách câu hỏi
+        return questionList.size();
     }
 
-    static class QuestionViewHolder extends RecyclerView.ViewHolder {
+    public int getCorrectAnswersCount() {
+        return correctAnswersCount;
+    }
+
+    class QuestionViewHolder extends RecyclerView.ViewHolder {
         public TextView questionText;
-        public TextView optionsText;
+        public RadioGroup optionsGroup;
         public TextView answerText;
         public ImageView imageText;
 
         public QuestionViewHolder(@NonNull View itemView) {
             super(itemView);
             questionText = itemView.findViewById(R.id.question_text);
-            optionsText = itemView.findViewById(R.id.options_text);
+            optionsGroup = itemView.findViewById(R.id.options_group);
             answerText = itemView.findViewById(R.id.answer_text);
             imageText = itemView.findViewById(R.id.image_text);
         }
