@@ -1052,7 +1052,7 @@
       "C. Biển 2 và 3.",
       "D. Cả ba biển."
     ],
-    "answer": "D",
+    "answer": "C",
     "image": "ha103"
   },
   {
@@ -1125,7 +1125,7 @@
       "B. Biển 2.",
       "C. Cả hai biển."
     ],
-    "answer": "C",
+    "answer": "A",
     "image": "ha110"
   },
   {
@@ -1254,7 +1254,7 @@
       "C. Biển 3.",
       "D. Biển 1 và 3."
     ],
-    "answer": "D",
+    "answer": "A",
     "image": "ha123"
   },
   {
@@ -1340,7 +1340,7 @@
       "C. Biển 3.",
       "D. Biển 1 và 3."
     ],
-    "answer": "D",
+    "answer": "A",
     "image": "ha131"
   },
   {
@@ -1414,7 +1414,7 @@
       "B. Biển 2.",
       "C. Biển 3."
     ],
-    "answer": "C",
+    "answer": "B",
     "image": "ha138"
   },
   {
@@ -1424,7 +1424,7 @@
       "B. Biển 2.",
       "C. Biển 3."
     ],
-    "answer": "A",
+    "answer": "C",
     "image": "ha139"
   },
   {
@@ -1434,13 +1434,13 @@
       "B. Biển 2.",
       "C. Biển 3."
     ],
-    "answer": "C",
+    "answer": "A",
     "image": "ha140"
   },
   {
     "question": "141. Biển nào báo hiệu “Đường hai chiều”?",
     "options": ["A. Biển 1.", "B. Biển 2.", "C. Biển 3."],
-    "answer": "C",
+    "answer": "B",
     "image": "ha141"
   },
   {
@@ -1458,7 +1458,7 @@
   {
     "question": "144. Gặp biển nào người tham gia giao thông phải đi chậm và thận trọng đề phòng khả năng xuất hiện và di chuyển bất ngờ của trẻ em trên mặt đường?",
     "options": ["A. Biển 1.", "B. Biển 2."],
-    "answer": "A",
+    "answer": "B",
     "image": "ha144"
   },
   {
@@ -1536,7 +1536,7 @@
   {
     "question": "157. Biển nào báo hiệu “Nơi đỗ xe dành cho người khuyết tật”?",
     "options": ["A. Biển 1.", "B. Biển 2.", "C. Biển 3."],
-    "answer": "C",
+    "answer": "B",
     "image": "ha157"
   },
   {
@@ -1573,7 +1573,7 @@
       "C. Vạch 3.",
       "D. Cả 3 vạch."
     ],
-    "answer": "A",
+    "answer": "C",
     "image": "ha161"
   },
   {
@@ -1593,7 +1593,7 @@
       "A. Phân chia hai chiều xe chạy ngược chiều nhau.",
       "B. Phân chia các làn xe chạy cùng chiều nhau."
     ],
-    "answer": "B",
+    "answer": "A",
     "image": "ha163"
   },
   {
@@ -1684,7 +1684,7 @@
       "C. Mô tô, xe tải, xe khách, xe con.",
       "D. Mô tô, xe tải, xe con, xe khách."
     ],
-    "answer": "D",
+    "answer": "C",
     "image": "ha172"
   },
   {
@@ -1932,7 +1932,7 @@
       "B. Xe con, xe của bạn, mô tô.",
       "C. Mô tô, xe con, xe của bạn."
     ],
-    "answer": "A",
+    "answer": "B",
     "image": "ha196"
   },
   {
