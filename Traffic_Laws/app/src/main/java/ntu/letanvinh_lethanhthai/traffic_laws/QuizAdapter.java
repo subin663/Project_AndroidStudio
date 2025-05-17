@@ -25,10 +25,12 @@ public class QuizAdapter extends RecyclerView.Adapter<QuizAdapter.QuestionViewHo
         this.userAnswers = userAnswers;
         this.listener = listener;
     }
-
+    //nterface này cho phép Activity hoặc Fragment lắng nghe sự kiện khi người dùng chọn một đáp án trong
+    //danh sách câu hỏi. Phương thức này nhận vào vị trí của câu hỏi và đáp án đã chọn.
     public interface OnAnswerSelectedListener {
         void onAnswerSelected(int position, String selectedAnswer);
     }
+
 
     @NonNull
     @Override
@@ -69,14 +71,22 @@ public class QuizAdapter extends RecyclerView.Adapter<QuizAdapter.QuestionViewHo
                 public void onCheckedChanged(RadioGroup group, int checkedId) {
                     RadioButton checkedRadioButton = group.findViewById(checkedId);
                     if (checkedRadioButton != null) {
-                        String selectedAnswer = checkedRadioButton.getText().toString();
+                        String selectedAnswerFullText = checkedRadioButton.getText().toString();
+                        String selectedAnswerKey = ""; // Biến để lưu 'A', 'B', 'C', hoặc 'D'
+
+                        // Trích xuất ký tự đầu tiên nếu nó là một chữ cái viết hoa
+                        if (selectedAnswerFullText.length() > 0 && Character.isUpperCase(selectedAnswerFullText.charAt(0))) {
+                            selectedAnswerKey = String.valueOf(selectedAnswerFullText.charAt(0));
+                        }
+
                         int currentPosition = holder.getAdapterPosition();
                         if (currentPosition != RecyclerView.NO_POSITION) {
-                            userAnswers.set(currentPosition, selectedAnswer);
-                            Log.d("DEBUG", "Câu " + (currentPosition + 1) + " - Đã chọn: " + selectedAnswer + " stored at position: " + currentPosition);
-                            listener.onAnswerSelected(currentPosition, selectedAnswer); // Gọi listener
-                            // Kiểm tra và tăng biến đếm
-                            if (selectedAnswer.equals(questionList.get(currentPosition).getAnswer())) {
+                            userAnswers.set(currentPosition, selectedAnswerFullText); // Lưu toàn bộ văn bản đã chọn
+                            Log.d("DEBUG", "Câu " + (currentPosition + 1) + " - Đã chọn: " + selectedAnswerFullText + " stored at position: " + currentPosition);
+                            listener.onAnswerSelected(currentPosition, selectedAnswerFullText); // Gọi listener
+
+                            // Kiểm tra và tăng biến đếm bằng cách so sánh ký tự đầu tiên
+                            if (selectedAnswerKey.equals(questionList.get(currentPosition).getAnswer())) {
                                 correctAnswersCount++;
                                 Log.d("DEBUG", "Correct answer at position " + currentPosition + ". Total correct answers: " + correctAnswersCount);
                             }

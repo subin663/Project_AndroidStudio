@@ -54,7 +54,6 @@ public class Quiz1_Activity extends AppCompatActivity  {
                     // Lưu trữ câu trả lời của người dùng
                     userAnswers.set(position, selectedAnswer);
                     Log.d("Quiz1_Activity", "Câu " + (position + 1) + " - Đã chọn: " + selectedAnswer);
-                    //Không cần gọi hàm checkAnswer() ở đây nữa
                 }
             });
             recyclerView.setAdapter(adapter);
@@ -86,7 +85,7 @@ public class Quiz1_Activity extends AppCompatActivity  {
             } else {
                 message = "Rất tiếc, bạn đã rớt bài kiểm tra.\nBạn đã trả lời đúng " + correctAnswers + " / " + totalQuestions + " câu.\nVui lòng thử lại.";
             }
-
+            Toast.makeText(Quiz1_Activity.this, message, Toast.LENGTH_LONG).show();
         });
     }
 
