@@ -20,7 +20,6 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:drawableLeft="@drawable/next"
                 android:gravity="center"
                 android:padding="15dp"
                 android:text="GPLX Bằng A1 năm 2025"

@@ -17,6 +17,7 @@
             android:layout_height="150dp">
         </ImageView>
         <LinearLayout
+            android:layout_marginTop="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -32,8 +33,9 @@
                 android:textSize="20dp"
                 android:text="Đây là item text"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:ellipsize="end"/>
         </LinearLayout>
-
     </LinearLayout>
 </androidx.cardview.widget.CardView>

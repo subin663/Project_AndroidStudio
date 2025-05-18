@@ -2,6 +2,7 @@ package ntu.letanvinh_lethanhthai.traffic_laws;
 
 import android.content.Context;
 import android.content.Intent;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,6 +44,10 @@ public class BienbaoAdapter extends RecyclerView.Adapter<BienbaoAdapter.itemBien
 
         //Đặt các trường thông tin của holder
         holder.tvTenBien.setText(ctTenbien);
+
+        // **Thiết lập maxLines và ellipsize cho tvMota**
+        holder.tvMota.setMaxLines(3);
+        holder.tvMota.setEllipsize(TextUtils.TruncateAt.END);
         holder.tvMota.setText(ctMota);
 
         //Đặt ảnh
@@ -79,6 +84,3 @@ public class BienbaoAdapter extends RecyclerView.Adapter<BienbaoAdapter.itemBien
         }
     }
 }
-
-
-
