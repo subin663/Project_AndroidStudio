@@ -1,5 +1,6 @@
 package ntu.letanvinh_lethanhthai.traffic_laws;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
@@ -18,17 +19,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Quiz1_Activity extends AppCompatActivity  {
-    private RecyclerView recyclerView;
-    private QuizAdapter adapter;
-    private List<All_Question> questionList;
-    private List<String> userAnswers;
-    private Button submitButton;
+    RecyclerView recyclerView;
+    QuizAdapter adapter;
+    List<All_Question> questionList;
+    List<String> userAnswers;
+    Button submitButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz1);
         submitButton = findViewById(R.id.submitButton);
-        Log.d("DEBUG", "Quiz1_Activity được khởi chạy");
 
         questionList = loadQuestionsFromAssets();
 
@@ -38,10 +38,6 @@ public class Quiz1_Activity extends AppCompatActivity  {
             for (int i = 0; i < questionList.size(); i++) {
                 userAnswers.add(null);
             }
-            Log.d("DEBUG", "userAnswers initialized with size: " + userAnswers.size());
-
-            // In log số lượng câu hỏi
-            Log.d("DEBUG", "Số câu hỏi load: " + questionList.size());
 
             // Gắn RecyclerView
             recyclerView = findViewById(R.id.recyclerView);
@@ -70,22 +66,13 @@ public class Quiz1_Activity extends AppCompatActivity  {
         Log.d("Quiz1_Activity", "Final Score: " + finalScore + " out of " + questionList.size());
 
         submitButton.setOnClickListener(v -> {
-            // Tính toán số câu trả lời đúng
             int correctAnswers = adapter.getCorrectAnswersCount();
             int totalQuestions = questionList.size();
 
-            // Xác định đậu hay rớt (ví dụ: cần trả lời đúng ít nhất 50% để đậu)
-            double passingPercentage = 0.5;
-            boolean isPassed = (double) correctAnswers / totalQuestions >= passingPercentage;
-
-            // Tạo thông báo đánh giá
-            String message;
-            if (isPassed) {
-                message = "Chúc mừng bạn đã đậu bài kiểm tra!\nBạn đã trả lời đúng " + correctAnswers + " / " + totalQuestions + " câu.";
-            } else {
-                message = "Rất tiếc, bạn đã rớt bài kiểm tra.\nBạn đã trả lời đúng " + correctAnswers + " / " + totalQuestions + " câu.\nVui lòng thử lại.";
-            }
-            Toast.makeText(Quiz1_Activity.this, message, Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(this, Answer_Activity.class);
+            intent.putExtra("correctAnswers", correctAnswers); // Truyền số câu đúng
+            intent.putExtra("totalQuestions", totalQuestions); // Truyền tổng số câu
+            startActivity(intent);
         });
     }
 
@@ -125,4 +112,5 @@ public class Quiz1_Activity extends AppCompatActivity  {
         }
         return questions;
     }
+
 }

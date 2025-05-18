@@ -13,13 +13,19 @@
         android:theme="@style/Theme.Traffic_Laws"
         tools:targetApi="31">
         <activity
-            android:name=".OnTap_BienbaoduongboActivity"
+            android:name=".MainActivity2"
             android:exported="false" />
         <activity
-            android:name=".OnTap_KhainiemquytacgiaothongActivity"
+            android:name=".Answer_Activity"
             android:exported="false" />
         <activity
-            android:name=".OnTap_SaHinhActivity"
+            android:name=".OT_BienbaoduongboActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OT_QuytacgiaothongActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OT_SaHinhActivity"
             android:exported="false" />
         <activity
             android:name=".Quiz2_Activity"

@@ -43,7 +43,7 @@ public class OntapFragment extends Fragment {
         Khainiemquytacgiaothong.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), OnTap_KhainiemquytacgiaothongActivity.class);
+                Intent intent = new Intent(getActivity(), OT_QuytacgiaothongActivity.class);
                 startActivity(intent);
             }
         });
@@ -52,7 +52,7 @@ public class OntapFragment extends Fragment {
         Bienbaoduongbo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), OnTap_BienbaoduongboActivity.class);
+                Intent intent = new Intent(getActivity(), OT_BienbaoduongboActivity.class);
                 startActivity(intent);
             }
         });
@@ -61,7 +61,7 @@ public class OntapFragment extends Fragment {
         Sahinh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), OnTap_SaHinhActivity.class);
+                Intent intent = new Intent(getActivity(), OT_SaHinhActivity.class);
                 startActivity(intent);
             }
         });

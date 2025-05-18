@@ -5,9 +5,6 @@ import android.util.Log;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -18,7 +15,7 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-public class OnTap_KhainiemquytacgiaothongActivity extends AppCompatActivity {
+public class OT_BienbaoduongboActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private QuestionAdapter adapter;
@@ -52,7 +49,7 @@ public class OnTap_KhainiemquytacgiaothongActivity extends AppCompatActivity {
     private List<All_Question> loadQuestionsFromAssets() {
         List<All_Question> questions = new ArrayList<>();
         try {
-            InputStream is = getAssets().open("ontap_khainiemquytacgiaothong.json");
+            InputStream is = getAssets().open("ontap_bienbaoduongbo.json");
             int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);
