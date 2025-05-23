@@ -13,6 +13,15 @@
         android:theme="@style/Theme.Traffic_Laws"
         tools:targetApi="31">
         <activity
+            android:name=".QuizRandom_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".AnswerDeLiet_Acivity"
+            android:exported="false" />
+        <activity
+            android:name=".DeLiet_Activity"
+            android:exported="false" />
+        <activity
             android:name=".Quiz4_Activity"
             android:exported="false" />
         <activity

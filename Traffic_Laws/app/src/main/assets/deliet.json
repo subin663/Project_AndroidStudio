@@ -1,0 +1,210 @@
+[
+  {
+    "question": "1. Sử dụng rượu, bia khi lái xe, nếu bị phát hiện thì bị xử lý như thế nào?",
+    "options": [
+      "A. Chỉ bị nhắc nhở.",
+      "B. Bị xử phạt hành chính hoặc có thể bị xử lý hình sự tùy theo mức độ vi phạm.",
+      "C. Không bị xử lý hình sự."
+    ],
+    "answer": "B",
+    "image": ""
+  },
+  {
+    "question": "2. Hành vi sử dụng xe mô tô để kéo, đẩy xe mô tô khác bị hết xăng đến trạm mua xăng có được phép hay không?",
+    "options": [
+      "A. Chỉ được kéo nếu đã nhìn thấy trạm xăng.",
+      "B. Chỉ được thực hiện trên đường vắng phương tiện cùng tham gia giao thông.",
+      "C. Không được phép."
+    ],
+    "answer": "C",
+    "image": ""
+  },
+  {
+    "question": "3. Khi điều khiển xe mô tô tay ga xuống đường dốc dài, độ dốc cao, người lái xe cần thực hiện các thao tác nào dưới đây để đảm bảo an toàn?",
+    "options": [
+      "A. Giữ tay ga ở mức độ phù hợp, sử dụng phanh trước và phanh sau để giảm tốc độ.",
+      "B. Nhả hết tay ga, tắt động c, sử dug phanh trước và phanh sau để giảm tốc độ.",
+      "C. Sử dụng phanh trước để giảm tốc độ kết hợp với tắt chìa khoá điện của xe."
+    ],
+    "answer": "A",
+    "image": ""
+  },
+  {
+    "question": "4. Theo luật phòng chống tác hại của rượu, bia, đối tượng nào dưới đây bị cấm sử dụng rượu, bia khi tham gia giao thông?",
+    "options": [
+      "A. Người điều khiển: Xe ô tô, xe mô tô, xe đạp, xe gắn máy.",
+      "B. Người ngồi phía sau người điều khiển xe cơ giới.",
+      "C. Người đi bộ.",
+      "D. Cả ý 1 và ý 2."
+    ],
+    "answer": "A",
+    "image": ""
+  },
+  {
+    "question": "5. Người điều khiển xe mô tô hai bánh, ba bánh, xe gắn máy có được phép sử dụng xe để kéo hoặc đẩy các phương tiện khác khi tham gia giao thông không?",
+    "options": [
+      "A. Được phép.",
+      "B. Nếu phương tiện được kéo, đẩy có khối lượng nhỏ hơn phương tiện của mình.",
+      "C. Tùy trường hợp.",
+      "D. Không được phép."
+    ],
+    "answer": "D",
+    "image": ""
+  },
+  {
+    "question": "6. Người ngồi trên xe mô tô 2 bánh, xe gắn máy phải đội mũ bảo hiểm có cài quai đúng quy cách khi nào?",
+    "options": [
+      "A. Khi tham gia giao thông đường bộ.",
+      "B. Chỉ khi đi trên đường chuyên dùng; đường cao tốc.",
+      "C. Khi tham gia giao thông trên đường tỉnh lộ hoặc quốc lộ."
+    ],
+    "answer": "A",
+    "image": ""
+  },
+  {
+    "question": "7. Hành vi điều khiển xe cơ giới chạy quá tốc độ quy định, giành đường, vượt ẩu có bị nghiêm cấm hay không?",
+    "options": [
+      "A. Bị nghiêm cấm tùy trường hợp.",
+      "B. Không bị nghiêm cấm.",
+      "C. Bị nghiêm cấm."
+    ],
+    "answer": "C",
+    "image": ""
+  },
+  {
+    "question": "8. Khi điều khiển xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy, những hành vi buông cả hai tay; sử dụng xe để kéo, đẩy xe khác, vật khác; sử dụng chân chống của xe quệt xuống đường khi xe đang chạy có được phép hay không?",
+    "options": [
+      "A. Được phép.",
+      "B. Tùy trường hợp.",
+      "C. Không được phép."
+    ],
+    "answer": "C",
+    "image": ""
+  },
+  {
+    "question": "9. Khi điều khiển xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy, những hành vi nào không được phép?",
+    "options": [
+      "A. Buông cả hai tay; sử dụng xe để kéo, đẩy xe khác, vật khác; sử dụng chân chống của xe quệt xuống đường khi xe đang chạy.",
+      "B. Buông một tay; sử dụng xe để chở người hoặc hàng hóa; để chân chạm xuống đất khi khởi hành.",
+      "C. Đội mũ bảo hiểm; chạy xe đúng tốc độ quy định và chấp hành đúng quy tắc giao thông đường bộ.",
+      "D. Chở người ngồi sau dưới 16 tuổi."
+    ],
+    "answer": "A",
+    "image": ""
+  },
+  {
+    "question": "10. Hành vi vận chuyển đồ vật cồng kềnh bằng xe mô tô, xe gắn máy khi tham gia giao thông có được phép hay không?",
+    "options": [
+      "A. Không được vận chuyển.",
+      "B. Chỉ được vận chuyển khi đã chằng buộc cẩn thận.",
+      "C. Chỉ được vận chuyển vật cồng kềnh trên xe máy nếu khoảng cách về nhà ngắn hơn 2 km."
+    ],
+    "answer": "A",
+    "image": ""
+  },
+  {
+    "question": "11. Người ngồi trên xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy khi tham gia giao thông có được mang, vác vật cồng kềnh hay không?",
+    "options": [
+      "A. Được mang, vác tùy trường hợp cụ thể.",
+      "B. Không được mang, vác.",
+      "C. Được mang, vác nhưng phải đảm bảo an toàn.",
+      "D. Được mang, vác tùy theo sức khỏe của bản thân."
+    ],
+    "answer": "B",
+    "image": ""
+  },
+  {
+    "question": "12. Người điều khiển xe mô tô hai bánh, xe gắn máy có được đi xe dàn hàng ngang; xe đi vào phần đường dành cho người đi bộ và phương tiện khác; sử dụng ô, điện thoại di động, thiết bị âm thanh (trừ thiết bị trợ thính) hay không?",
+    "options": [
+      "A. Được phép nhưng phải đảm bảo an toàn.",
+      "B. Không được phép.",
+      "C. Được phép tùy từng hoàn cảnh, điều kiện cụ thể."
+    ],
+    "answer": "B",
+    "image": ""
+  },
+  {
+    "question": "13. Khi xe ô tô, mô tô đến gần vị trí giao nhau giữa đường bộ và đường sắt không có rào chắn, khi đèn tín hiệu màu đỏ đã bật sáng hoặc khi có tiếng chuông báo hiệu, người lái xe xử lý như thế nào?",
+    "options": [
+      "A. Giảm tốc độ cho xe vượt qua đường sắt.",
+      "B. Nhanh chóng cho xe vượt qua đường sắt trước khi tàu hoả tới.",
+      "C. Giảm tốc độ cho xe vượt qua đường sắt trước khi tàu hoả tới.",
+      "D. Cho xe dừng ngay lại và giữ khoảng cách tối thiểu 5 mét tính từ ray gần nhất"
+    ],
+    "answer": "D",
+    "image": ""
+  },
+  {
+    "question": "14. Người ngồi trên xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy khi tham gia giao thông có được bám, kéo hoặc đẩy các phương tiện khác không?",
+    "options": [
+      "A. Được phép.",
+      "B. Được bám trong trường hợp phương tiện của mình bị hỏng.",
+      "C. Được kéo, đẩy trong trường hợp phương tiện khác bị hỏng.",
+      "D. Không được phép."
+    ],
+    "answer": "D",
+    "image": ""
+  },
+  {
+    "question": "15. Khi đang lái xe mô tô và ô tô, nếu có nhu cầu sử dụng điện thoại để nhắn tin hoặc gọi điện, người lái xe phải thực hiện như thế nào trong các tình huống nêu dưới đây?",
+    "options": [
+      "A. Giảm tốc độ để đảm bảo an toàn với xe phía trước và sử dụng điện thoại để liên lạc.",
+      "B. Giảm tc độ để dừng xe ở nơi cho phép dừng xe sau đó sử dụng điện thoại để liên lạc.",
+      "C. Tăng tốc độ để cách xa xe phía sau và sử dụng điện thoại để liên lạc."
+    ],
+    "answer": "B",
+    "image": ""
+  },
+  {
+    "question": "16. Cuộc đua xe chỉ được thực hiện khi nào?",
+    "options": [
+      "A. Diễn ra trên đường phố không có người qua lại.",
+      "B. Được người dân ủng hộ.",
+      "C. Được cơ quan có thẩm quyền cấp phép."
+    ],
+    "answer": "C",
+    "image": ""
+  },
+  {
+    "question": "17. Ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, đường cao tốc, đường hẹp, đường dốc, tại nơi đường bộ giao nhau cùng mức với đường sắc có được quay đầu xe hay không?",
+    "options": [
+      "A. Được phép.",
+      "B. Không được phép.",
+      "C. Tùy từng trường hợp."
+    ],
+    "answer": "B",
+    "image": ""
+  },
+  {
+    "question": "18. Người ngồi trên xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy khi tham gia giao thông có được sử dụng ô khi trời mưa hay không?",
+    "options": [
+      "A. Được sử dụng.",
+      "B. Chỉ người ngồi sau được sử dụng.",
+      "C. Không được sử dụng.",
+      "D. Được sử dụng nếu không có áo mưa."
+    ],
+    "answer": "C",
+    "image": ""
+  },
+  {
+    "question": "19. Người điều khiển phương tiện giao thông đường bộ mà trong cơ thể có chất ma túy có bị nghiêm cấm không?",
+    "options": [
+      "A. Bị nghiêm cấm.",
+      "B. Không bị nghiêm cấm.",
+      "C. Không bị nghiêm cấm, nếu có chất ma túy ở mức nhẹ, có thể điều khiển phương tiện tham gia giao thông."
+    ],
+    "answer": "A",
+    "image": ""
+  },
+  {
+    "question": "20. Khi đang lên dốc người ngồi trên xe mô tô có được kéo theo người đang điều khiển xe đạp hay không?",
+    "options": [
+      "A. Chỉ được phép nếu cả hai đội mũ bảo hiểm.",
+      "B. Không được phép.",
+      "C. Chỉ được thực hiện trên đường thật vắng.",
+      "D. Chỉ được phép khi người đi xe đạp đã quá mệt."
+    ],
+    "answer": "B",
+    "image": ""
+  }
+]

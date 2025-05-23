@@ -2,15 +2,20 @@ package ntu.letanvinh_lethanhthai.traffic_laws;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.CountDownTimer;
+import android.os.CountDownTimer; // Thêm import này
 import android.util.Log;
 import android.widget.Button;
-import android.widget.TextView;
+import android.widget.TextView; // Thêm import này
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity; // Đổi từ androidx.activity.EdgeToEdge
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+// Xóa các import không cần thiết nếu bạn đã dùng AppCompatActivity thay vì EdgeToEdge
+// import androidx.activity.EdgeToEdge;
+// import androidx.core.graphics.Insets;
+// import androidx.core.view.ViewCompat;
+// import androidx.core.view.WindowInsetsCompat;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -18,26 +23,29 @@ import org.json.JSONObject;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
-import java.util.concurrent.TimeUnit;
+import java.util.Locale; // Thêm import này
+import java.util.concurrent.TimeUnit; // Thêm import này
 
-public class Quiz1_Activity extends AppCompatActivity  {
+public class DeLiet_Activity extends AppCompatActivity {
     RecyclerView recyclerView;
     QuizAdapter adapter;
     List<All_Question> questionList;
     List<String> userAnswers;
     Button submitButton;
-    TextView timerTextView; // New TextView for timer
-    CountDownTimer countDownTimer; // New CountDownTimer object
-    private static final long QUIZ_DURATION_MILLIS = 1140000; // 5 minutes (5 * 60 * 1000)
+    TextView timerTextView; // Khai báo TextView cho timer
+    CountDownTimer countDownTimer; // Khai báo CountDownTimer
+    private static final long QUIZ_DURATION_MILLIS = 1140000; // 5 phút (5 * 60 * 1000)
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz1);
+        // Xóa EdgeToEdge hoặc giữ lại.
+        // EdgeToEdge.enable(this);
+        setContentView(R.layout.activity_quiz1); // Đảm bảo bạn đang sử dụng layout activity_de_liet.xml
 
-        submitButton = findViewById(R.id.submitButton);
-        timerTextView = findViewById(R.id.timer_text); // Initialize timer TextView
+
+           submitButton = findViewById(R.id.submitButton);
+           timerTextView = findViewById(R.id.timer_text); // Khởi tạo timer TextView
 
         questionList = loadQuestionsFromAssets();
 
@@ -52,19 +60,19 @@ public class Quiz1_Activity extends AppCompatActivity  {
 
             adapter = new QuizAdapter(questionList, userAnswers, (position, selectedAnswer) -> {
                 userAnswers.set(position, selectedAnswer);
-                Log.d("Quiz1_Activity", "Câu " + (position + 1) + " - Đã chọn: " + selectedAnswer);
+                Log.d("DeLiet_Activity", "Câu " + (position + 1) + " - Đã chọn: " + selectedAnswer); // Đổi tên Activity trong Log
             });
             recyclerView.setAdapter(adapter);
 
-            startQuizTimer();
+            startQuizTimer(); // Bắt đầu đếm giờ khi quiz được tải
 
         } else {
-            Log.e("Quiz1_Activity", "Không thể load danh sách câu hỏi.");
+            Log.e("DeLiet_Activity", "Không thể load danh sách câu hỏi."); // Đổi tên Activity trong Log
             Toast.makeText(this, "Không thể tải được câu hỏi. Vui lòng kiểm tra lại.", Toast.LENGTH_LONG).show();
             finish();
         }
 
-        submitButton.setOnClickListener(v -> submitQuiz());
+        submitButton.setOnClickListener(v -> submitQuiz()); // Gán Listener cho nút nộp bài
     }
 
     private void startQuizTimer() {
@@ -81,36 +89,46 @@ public class Quiz1_Activity extends AppCompatActivity  {
             @Override
             public void onFinish() {
                 timerTextView.setText("00:00");
-                Toast.makeText(Quiz1_Activity.this, "Hết giờ! Tự động nộp bài.", Toast.LENGTH_LONG).show();
-                submitQuiz();
+                Toast.makeText(DeLiet_Activity.this, "Hết giờ! Tự động nộp bài.", Toast.LENGTH_LONG).show();
+                submitQuiz(); // Tự động nộp bài khi hết giờ
             }
         }.start();
     }
 
     private void submitQuiz() {
         if (countDownTimer != null) {
-            countDownTimer.cancel();
+            countDownTimer.cancel(); // Dừng timer khi quiz được nộp
         }
 
         int correctAnswers = adapter.getCorrectAnswersCount();
         int totalQuestions = questionList.size();
 
-        Intent intent = new Intent(this, Answer_Activity.class);
-        intent.putExtra("correctAnswers", correctAnswers);
-        intent.putExtra("totalQuestions", totalQuestions);
+        // Thay đổi Intent để chuyển đến Answer_Activity (hoặc một Activity kết quả phù hợp)
+        Intent intent = new Intent(this, AnswerDeLiet_Acivity.class);
+        intent.putExtra("correctAnswers", correctAnswers); // Truyền số câu đúng
+        intent.putExtra("totalQuestions", totalQuestions); // Truyền tổng số câu
         startActivity(intent);
-        finish();
+        finish(); // Kết thúc Activity sau khi nộp bài
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (countDownTimer != null) {
+            countDownTimer.cancel(); // Đảm bảo timer bị hủy để tránh rò rỉ bộ nhớ
+        }
     }
 
     private List<All_Question> loadQuestionsFromAssets() {
         List<All_Question> questions = new ArrayList<>();
         try {
-            InputStream is = getAssets().open("quiz_1.json");
+            // RẤT QUAN TRỌNG: Thay đổi tên file JSON phù hợp với đề liệt của bạn
+            InputStream is = getAssets().open("quiz_1.json"); // Ví dụ: "de_liet.json"
             int size = is.available();
-            Log.d("DEBUG", "Size of quiz_1.json: " + size);
+            Log.d("DEBUG", "Size of de_liet.json: " + size); // Đổi tên file trong log
             byte[] buffer = new byte[size];
             int read = is.read(buffer);
-            Log.d("DEBUG", "Bytes read from quiz_1.json: " + read);
+            Log.d("DEBUG", "Bytes read from de_liet.json: " + read); // Đổi tên file trong log
             is.close();
             String json = new String(buffer, "UTF-8");
             Log.d("DEBUG", "JSON content: " + json);
@@ -132,18 +150,10 @@ public class Quiz1_Activity extends AppCompatActivity  {
             }
             Log.d("DEBUG", "Number of questions loaded: " + questions.size());
         } catch (Exception e) {
-            Log.e("Quiz1_Activity", "Error loading questions: ", e);
+            Log.e("DeLiet_Activity", "Error loading questions: ", e); // Đổi tên Activity trong Log
             e.printStackTrace();
             return null;
         }
         return questions;
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        if (countDownTimer != null) {
-            countDownTimer.cancel(); // Ensure timer is cancelled to prevent memory leaks
-        }
     }
 }

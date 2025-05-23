@@ -18,18 +18,15 @@ import java.util.List;
 
 public class All_QuestionActivity extends AppCompatActivity {
 
-//    QuestionAdapter questionAdapter;
-//    ArrayList<String> recyclerViewData;
-//    RecyclerView recyclerViewQuestion;
     private RecyclerView recyclerView;
     private QuestionAdapter adapter;
     private List<All_Question> questionList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState); // <-- phải gọi trước
+        super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_all_question); // <-- phải đặt trước mọi findViewById
+        setContentView(R.layout.activity_all_question);
 
         Log.d("DEBUG", "All_QuestionActivity được khởi chạy");
 
@@ -74,10 +71,6 @@ public class All_QuestionActivity extends AppCompatActivity {
                 String image = obj.getString("image");
                 questions.add(new All_Question(qText, options, answer, image));
             }
-
-
-
-
         } catch (Exception e) {
             e.printStackTrace();
         }

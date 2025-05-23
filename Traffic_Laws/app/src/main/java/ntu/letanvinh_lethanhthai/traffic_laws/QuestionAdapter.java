@@ -65,7 +65,7 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.Questi
         return questionList.size();  // Số lượng câu hỏi
     }
 
-    // ViewHolder để lưu trữ các view trong mỗi item
+    //lưu trữ các view trong mỗi item
     public static class QuestionViewHolder extends RecyclerView.ViewHolder {
         public TextView questionText;
         public TextView optionsText;
@@ -78,7 +78,6 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.Questi
             optionsText = itemView.findViewById(R.id.options_text);
             answerText = itemView.findViewById(R.id.answer_text);
             imageText = itemView.findViewById(R.id.image_text);
-
         }
     }
 }
