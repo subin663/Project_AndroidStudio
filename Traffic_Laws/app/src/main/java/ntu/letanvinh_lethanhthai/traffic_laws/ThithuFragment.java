@@ -1,5 +1,6 @@
 package ntu.letanvinh_lethanhthai.traffic_laws;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -51,16 +52,16 @@ public class ThithuFragment extends Fragment {
         lnThi2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Xử lý sự kiện click cho lnThi2 (nếu cần chuyển đến Fragment khác)
-
+                Intent intent = new Intent(getActivity(), QuizRandom_Activity.class);
+                startActivity(intent);
             }
         });
 
         lnThi3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Xử lý sự kiện click cho lnThi3 (nếu cần chuyển đến Fragment khác)
-
+                Intent intent = new Intent(getActivity(), DeLiet_Activity.class);
+                startActivity(intent);
             }
         });
     }

@@ -2,10 +2,10 @@ package ntu.letanvinh_lethanhthai.traffic_laws;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.CountDownTimer; // Thêm import này
+import android.os.CountDownTimer;
 import android.util.Log;
 import android.widget.Button;
-import android.widget.TextView; // Thêm import này
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,31 +17,35 @@ import org.json.JSONObject;
 
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
-import java.util.Locale; // Thêm import này
-import java.util.concurrent.TimeUnit; // Thêm import này
+import java.util.Locale;
+import java.util.concurrent.TimeUnit;
 
-public class Quiz4_Activity extends AppCompatActivity  {
+public class QuizRandom_Activity extends AppCompatActivity {
     RecyclerView recyclerView;
-    QuizAdapter adapter;
+    QuizAdapter adapter; // Đây chính là QuizAdapter chung mà bạn đang dùng
     List<All_Question> questionList;
     List<String> userAnswers;
     Button submitButton;
-    TextView timerTextView; // Khai báo TextView cho timer
-    CountDownTimer countDownTimer; // Khai báo CountDownTimer
-    private static final long QUIZ_DURATION_MILLIS = 1140000; // 5 phút (5 * 60 * 1000)
+    TextView timerTextView;
+    CountDownTimer countDownTimer;
+
+    private static final long QUIZ_DURATION_MILLIS = 300000;
+    private static final int NUMBER_OF_RANDOM_QUESTIONS = 20;
+    private static final String ALL_QUESTIONS_JSON_FILE = "all_questions.json";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz1); // Đảm bảo bạn đang sử dụng layout có timer_text
+        setContentView(R.layout.activity_quiz1); // Hoặc activity_quiz_random nếu bạn dùng layout riêng
 
         submitButton = findViewById(R.id.submitButton);
-        timerTextView = findViewById(R.id.timer_text); // Khởi tạo timer TextView
+        timerTextView = findViewById(R.id.timer_text);
 
-        questionList = loadQuestionsFromAssets();
+        questionList = loadRandomQuestionsFromAssets();
 
-        if (questionList != null) {
+        if (questionList != null && !questionList.isEmpty()) {
             userAnswers = new ArrayList<>(questionList.size());
             for (int i = 0; i < questionList.size(); i++) {
                 userAnswers.add(null);
@@ -50,21 +54,22 @@ public class Quiz4_Activity extends AppCompatActivity  {
             recyclerView = findViewById(R.id.recyclerView);
             recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
+            // KHỞI TẠO ADAPTER ĐÚNG CÁCH NHƯ HIỆN TẠI
             adapter = new QuizAdapter(questionList, userAnswers, (position, selectedAnswer) -> {
                 userAnswers.set(position, selectedAnswer);
-                Log.d("Quiz4_Activity", "Câu " + (position + 1) + " - Đã chọn: " + selectedAnswer); // Đổi tên Activity trong Log
+                Log.d("QuizRandom_Activity", "Câu " + (position + 1) + " - Đã chọn: " + selectedAnswer);
             });
             recyclerView.setAdapter(adapter);
 
-            startQuizTimer(); // Bắt đầu đếm giờ khi quiz được tải
+            startQuizTimer();
 
         } else {
-            Log.e("Quiz4_Activity", "Không thể load danh sách câu hỏi."); // Đổi tên Activity trong Log
-            Toast.makeText(this, "Không thể tải được câu hỏi. Vui lòng kiểm tra lại.", Toast.LENGTH_LONG).show();
+            Log.e("QuizRandom_Activity", "Không thể load danh sách câu hỏi ngẫu nhiên hoặc danh sách trống.");
+            Toast.makeText(this, "Không thể tải được câu hỏi. Vui lòng kiểm tra lại file JSON.", Toast.LENGTH_LONG).show();
             finish();
         }
 
-        submitButton.setOnClickListener(v -> submitQuiz()); // Gán Listener cho nút nộp bài
+        submitButton.setOnClickListener(v -> submitQuiz());
     }
 
     private void startQuizTimer() {
@@ -81,51 +86,52 @@ public class Quiz4_Activity extends AppCompatActivity  {
             @Override
             public void onFinish() {
                 timerTextView.setText("00:00");
-                Toast.makeText(Quiz4_Activity.this, "Hết giờ! Tự động nộp bài.", Toast.LENGTH_LONG).show();
-                submitQuiz(); // Tự động nộp bài khi hết giờ
+                Toast.makeText(QuizRandom_Activity.this, "Hết giờ! Tự động nộp bài.", Toast.LENGTH_LONG).show();
+                submitQuiz();
             }
         }.start();
     }
 
     private void submitQuiz() {
         if (countDownTimer != null) {
-            countDownTimer.cancel(); // Dừng timer khi quiz được nộp
+            countDownTimer.cancel();
         }
 
+        // --- PHẦN THAY ĐỔI ĐỂ LẤY SỐ CÂU ĐÚNG TỪ ADAPTER ---
+        // Lấy số câu đúng trực tiếp từ Adapter
         int correctAnswers = adapter.getCorrectAnswersCount();
+        // ----------------------------------------------------
+
         int totalQuestions = questionList.size();
 
+
         Intent intent = new Intent(this, Answer_Activity.class);
-        intent.putExtra("correctAnswers", correctAnswers); // Truyền số câu đúng
-        intent.putExtra("totalQuestions", totalQuestions); // Truyền tổng số câu
+        intent.putExtra("correctAnswers", correctAnswers);
+        intent.putExtra("totalQuestions", totalQuestions);
+        intent.putExtra("quizType", "randomQuiz");
         startActivity(intent);
-        finish(); // Kết thúc Activity sau khi nộp bài
+        finish();
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
         if (countDownTimer != null) {
-            countDownTimer.cancel(); // Đảm bảo timer bị hủy để tránh rò rỉ bộ nhớ
+            countDownTimer.cancel();
         }
     }
 
-    private List<All_Question> loadQuestionsFromAssets() {
-        List<All_Question> questions = new ArrayList<>();
+    private List<All_Question> loadRandomQuestionsFromAssets() {
+        List<All_Question> allQuestions = new ArrayList<>();
         try {
-            // Chú ý: Ở đây bạn đang tải quiz_4.json
-            InputStream is = getAssets().open("quiz_4.json");
+            InputStream is = getAssets().open(ALL_QUESTIONS_JSON_FILE);
             int size = is.available();
-            Log.d("DEBUG", "Size of quiz_4.json: " + size); // Đổi tên file trong log
             byte[] buffer = new byte[size];
-            int read = is.read(buffer);
-            Log.d("DEBUG", "Bytes read from quiz_4.json: " + read); // Đổi tên file trong log
+            is.read(buffer);
             is.close();
             String json = new String(buffer, "UTF-8");
-            Log.d("DEBUG", "JSON content: " + json);
-            JSONArray jsonArray = new JSONArray(json);
-            Log.d("DEBUG", "JSONArray length: " + jsonArray.length());
 
+            JSONArray jsonArray = new JSONArray(json);
 
             for (int i = 0; i < jsonArray.length(); i++) {
                 JSONObject obj = jsonArray.getJSONObject(i);
@@ -137,14 +143,22 @@ public class Quiz4_Activity extends AppCompatActivity  {
                 }
                 String image = obj.getString("image");
                 String answer = obj.getString("answer");
-                questions.add(new All_Question(qText, options, answer, image));
+                allQuestions.add(new All_Question(qText, options, answer, image));
             }
-            Log.d("DEBUG", "Number of questions loaded: " + questions.size());
+
+            Collections.shuffle(allQuestions);
+
+            if (allQuestions.size() >= NUMBER_OF_RANDOM_QUESTIONS) {
+                return allQuestions.subList(0, NUMBER_OF_RANDOM_QUESTIONS);
+            } else {
+                Log.w("QuizRandom_Activity", "Số câu hỏi trong " + ALL_QUESTIONS_JSON_FILE + " (" + allQuestions.size() + ") ít hơn số câu hỏi yêu cầu (" + NUMBER_OF_RANDOM_QUESTIONS + "). Trả về tất cả các câu hỏi hiện có.");
+                return allQuestions;
+            }
+
         } catch (Exception e) {
-            Log.e("Quiz4_Activity", "Error loading questions: ", e); // Đổi tên Activity trong Log
+            Log.e("QuizRandom_Activity", "Error loading or selecting random questions from " + ALL_QUESTIONS_JSON_FILE + ": ", e);
             e.printStackTrace();
             return null;
         }
-        return questions;
     }
 }

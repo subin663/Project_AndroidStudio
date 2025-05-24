@@ -2,11 +2,12 @@ package ntu.letanvinh_lethanhthai.traffic_laws;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.util.Log;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -17,6 +18,8 @@ import org.json.JSONObject;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
+import java.util.concurrent.TimeUnit;
 
 public class Quiz1_Activity extends AppCompatActivity  {
     RecyclerView recyclerView;
@@ -24,56 +27,79 @@ public class Quiz1_Activity extends AppCompatActivity  {
     List<All_Question> questionList;
     List<String> userAnswers;
     Button submitButton;
+    TextView timerTextView; // New TextView for timer
+    CountDownTimer countDownTimer; // New CountDownTimer object
+    private static final long QUIZ_DURATION_MILLIS = 1140000; // 5 minutes (5 * 60 * 1000)
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz1);
+
         submitButton = findViewById(R.id.submitButton);
+        timerTextView = findViewById(R.id.timer_text); // Initialize timer TextView
 
         questionList = loadQuestionsFromAssets();
 
-        // Khởi tạo userAnswers sau khi đã có questionList
         if (questionList != null) {
             userAnswers = new ArrayList<>(questionList.size());
             for (int i = 0; i < questionList.size(); i++) {
                 userAnswers.add(null);
             }
 
-            // Gắn RecyclerView
             recyclerView = findViewById(R.id.recyclerView);
             recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-            // Gắn adapter
-            adapter = new QuizAdapter(questionList, userAnswers, new QuizAdapter.OnAnswerSelectedListener() {
-                @Override
-                public void onAnswerSelected(int position, String selectedAnswer) {
-                    // Lưu trữ câu trả lời của người dùng
-                    userAnswers.set(position, selectedAnswer);
-                    Log.d("Quiz1_Activity", "Câu " + (position + 1) + " - Đã chọn: " + selectedAnswer);
-                }
+            adapter = new QuizAdapter(questionList, userAnswers, (position, selectedAnswer) -> {
+                userAnswers.set(position, selectedAnswer);
+                Log.d("Quiz1_Activity", "Câu " + (position + 1) + " - Đã chọn: " + selectedAnswer);
             });
             recyclerView.setAdapter(adapter);
+
+            startQuizTimer();
 
         } else {
             Log.e("Quiz1_Activity", "Không thể load danh sách câu hỏi.");
             Toast.makeText(this, "Không thể tải được câu hỏi. Vui lòng kiểm tra lại.", Toast.LENGTH_LONG).show();
             finish();
         }
-        //Ví dụ tính điểm khi người dùng hoàn thành xong
-        //Bạn có thể gọi cái này ở bất cứ đâu bạn muốn
-        //như là trong 1 button listener
-        int finalScore = adapter.getCorrectAnswersCount();
-        Log.d("Quiz1_Activity", "Final Score: " + finalScore + " out of " + questionList.size());
 
-        submitButton.setOnClickListener(v -> {
-            int correctAnswers = adapter.getCorrectAnswersCount();
-            int totalQuestions = questionList.size();
+        submitButton.setOnClickListener(v -> submitQuiz());
+    }
 
-            Intent intent = new Intent(this, Answer_Activity.class);
-            intent.putExtra("correctAnswers", correctAnswers); // Truyền số câu đúng
-            intent.putExtra("totalQuestions", totalQuestions); // Truyền tổng số câu
-            startActivity(intent);
-        });
+    private void startQuizTimer() {
+        countDownTimer = new CountDownTimer(QUIZ_DURATION_MILLIS, 1000) {
+            @Override
+            public void onTick(long millisUntilFinished) {
+                long minutes = TimeUnit.MILLISECONDS.toMinutes(millisUntilFinished);
+                long seconds = TimeUnit.MILLISECONDS.toSeconds(millisUntilFinished) -
+                        TimeUnit.MINUTES.toSeconds(minutes);
+                String timeLeftFormatted = String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds);
+                timerTextView.setText(timeLeftFormatted);
+            }
+
+            @Override
+            public void onFinish() {
+                timerTextView.setText("00:00");
+                Toast.makeText(Quiz1_Activity.this, "Hết giờ! Tự động nộp bài.", Toast.LENGTH_LONG).show();
+                submitQuiz();
+            }
+        }.start();
+    }
+
+    private void submitQuiz() {
+        if (countDownTimer != null) {
+            countDownTimer.cancel();
+        }
+
+        int correctAnswers = adapter.getCorrectAnswersCount();
+        int totalQuestions = questionList.size();
+
+        Intent intent = new Intent(this, Answer_Activity.class);
+        intent.putExtra("correctAnswers", correctAnswers);
+        intent.putExtra("totalQuestions", totalQuestions);
+        startActivity(intent);
+        finish();
     }
 
     private List<All_Question> loadQuestionsFromAssets() {
@@ -113,4 +139,11 @@ public class Quiz1_Activity extends AppCompatActivity  {
         return questions;
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (countDownTimer != null) {
+            countDownTimer.cancel(); // Ensure timer is cancelled to prevent memory leaks
+        }
+    }
 }
