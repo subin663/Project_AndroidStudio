@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Traffic_Laws"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
+            android:name=".OT_CauhoilietActivity"
+=======
             android:name=".QuizRandom_Activity"
             android:exported="false" />
         <activity
@@ -20,6 +23,7 @@
             android:exported="false" />
         <activity
             android:name=".DeLiet_Activity"
+>>>>>>> 4c1378791c36875c1bab8367f2c7b536af128f91
             android:exported="false" />
         <activity
             android:name=".Quiz4_Activity"

@@ -79,7 +79,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="94 câu hỏi bao gồm 18 câu điểm liệt"
+                    android:text="94 câu hỏi bao gồm 20 câu điểm liệt"
                     android:textSize="18dp"/>
             </LinearLayout>
 
@@ -129,6 +129,30 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="35 câu hỏi bao gồm 0 câu điểm liệt"
+                    android:textSize="18dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/Cauhoiliet"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp"
+                android:gravity="center_vertical"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_edittext">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Câu hỏi liệt"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20 câu hỏi điểm liệt"
                     android:textSize="18dp"/>
             </LinearLayout>
         </LinearLayout>
