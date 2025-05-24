@@ -13,7 +13,7 @@ import android.widget.LinearLayout;
 public class OntapFragment extends Fragment {
 
     LinearLayout Toanbocauhoi;
-    LinearLayout Khainiemquytacgiaothong, Bienbaoduongbo, Sahinh;
+    LinearLayout Khainiemquytacgiaothong, Bienbaoduongbo, Sahinh, Cauhoiliet;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -27,6 +27,7 @@ public class OntapFragment extends Fragment {
         Khainiemquytacgiaothong = view.findViewById(R.id.Khainiemquytacgiaothong);
         Bienbaoduongbo = view.findViewById(R.id.Bienbaoduongbo);
         Sahinh = view.findViewById(R.id.Sahinh);
+        Cauhoiliet = view.findViewById(R.id.Cauhoiliet);
 
         // Thực hiện chức năng chuyển trang qua câu hỏi
 
@@ -62,6 +63,15 @@ public class OntapFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), OT_SaHinhActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // Trang Ôn tập câu điểm liệt
+        Cauhoiliet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), OT_CauhoilietActivity.class);
                 startActivity(intent);
             }
         });

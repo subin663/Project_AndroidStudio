@@ -2,10 +2,12 @@ package ntu.letanvinh_lethanhthai.traffic_laws;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -16,11 +18,8 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-public class All_QuestionActivity extends AppCompatActivity {
+public class OT_CauhoilietActivity extends AppCompatActivity {
 
-//    QuestionAdapter questionAdapter;
-//    ArrayList<String> recyclerViewData;
-//    RecyclerView recyclerViewQuestion;
     private RecyclerView recyclerView;
     private QuestionAdapter adapter;
     private List<All_Question> questionList;
@@ -49,11 +48,11 @@ public class All_QuestionActivity extends AppCompatActivity {
     }
 
 
-    //------Đọc dữ liệu từ thư mục Assets chứa file questions.json
-    private List<All_Question> loadQuestionsFromAssets() {
+    //----------------
+    List<All_Question> loadQuestionsFromAssets() {
         List<All_Question> questions = new ArrayList<>();
         try {
-            InputStream is = getAssets().open("questions.json");
+            InputStream is = getAssets().open("ontap_cauhoiliet.json");
             int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);
@@ -74,6 +73,10 @@ public class All_QuestionActivity extends AppCompatActivity {
                 String image = obj.getString("image");
                 questions.add(new All_Question(qText, options, answer, image));
             }
+
+
+
+
         } catch (Exception e) {
             e.printStackTrace();
         }

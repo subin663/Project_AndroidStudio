@@ -17,12 +17,14 @@
             android:layout_height="80dp"
             android:gravity="center"
             android:background="#1BB4B3">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
+                android:layout_marginRight="25dp"
                 android:padding="15dp"
-                android:text="Trang hiển thị câu hỏi"
+                android:text="TỔNG HỢP CÂU HỎI"
                 android:textSize="25dp"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"/>
