@@ -29,7 +29,7 @@ public class Quiz4_Activity extends AppCompatActivity  {
     Button submitButton;
     TextView timerTextView; // Khai báo TextView cho timer
     CountDownTimer countDownTimer; // Khai báo CountDownTimer
-    private static final long QUIZ_DURATION_MILLIS = 1140000; // 5 phút (5 * 60 * 1000)
+    static final long QUIZ_DURATION_MILLIS = 1140000; // 5 phút (5 * 60 * 1000)
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

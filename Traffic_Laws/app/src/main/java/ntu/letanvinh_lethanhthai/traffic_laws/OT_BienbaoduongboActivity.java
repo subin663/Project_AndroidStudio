@@ -17,9 +17,9 @@ import java.util.List;
 
 public class OT_BienbaoduongboActivity extends AppCompatActivity {
 
-    private RecyclerView recyclerView;
-    private QuestionAdapter adapter;
-    private List<All_Question> questionList;
+    RecyclerView recyclerView;
+    QuestionAdapter adapter;
+    List<All_Question> questionList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,10 +70,6 @@ public class OT_BienbaoduongboActivity extends AppCompatActivity {
                 String image = obj.getString("image");
                 questions.add(new All_Question(qText, options, answer, image));
             }
-
-
-
-
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -26,7 +26,6 @@ public class Answer_Activity extends AppCompatActivity {
             return insets;
         });
 
-        // Ánh xạ các TextView
         tvAns = findViewById(R.id.tvAns);
         tvDanhgia = findViewById(R.id.tvEvaluate);
 
@@ -34,10 +33,10 @@ public class Answer_Activity extends AppCompatActivity {
         int correctAnswers = getIntent().getIntExtra("correctAnswers", 0);
         int totalQuestions = getIntent().getIntExtra("totalQuestions", 0);
 
-        // Tính toán số câu sai
+        // Số câu sai
         int incorrectAnswers = totalQuestions - correctAnswers;
 
-        // Tính toán đậu hay rớt (đúng 21/25 câu)
+        //Đậu hay rớt (đúng 21/25 câu)
         boolean isPassed = correctAnswers >= 21 && totalQuestions == 25;
 
         // Tạo thông báo đánh giá và hiển thị lên TextView

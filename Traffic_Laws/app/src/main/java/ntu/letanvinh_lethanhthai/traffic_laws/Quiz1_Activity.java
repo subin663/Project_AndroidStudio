@@ -29,7 +29,7 @@ public class Quiz1_Activity extends AppCompatActivity  {
     Button submitButton;
     TextView timerTextView; // New TextView for timer
     CountDownTimer countDownTimer; // New CountDownTimer object
-    private static final long QUIZ_DURATION_MILLIS = 1140000; // 5 minutes (5 * 60 * 1000)
+    static final long QUIZ_DURATION_MILLIS = 1140000; // 5 minutes (5 * 60 * 1000)
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

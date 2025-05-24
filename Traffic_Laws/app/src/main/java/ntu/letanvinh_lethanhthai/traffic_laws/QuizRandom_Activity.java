@@ -24,21 +24,19 @@ import java.util.concurrent.TimeUnit;
 
 public class QuizRandom_Activity extends AppCompatActivity {
     RecyclerView recyclerView;
-    QuizAdapter adapter; // Đây chính là QuizAdapter chung mà bạn đang dùng
+    QuizAdapter adapter;
     List<All_Question> questionList;
     List<String> userAnswers;
     Button submitButton;
     TextView timerTextView;
     CountDownTimer countDownTimer;
 
-    private static final long QUIZ_DURATION_MILLIS = 300000;
-    private static final int NUMBER_OF_RANDOM_QUESTIONS = 20;
-    private static final String ALL_QUESTIONS_JSON_FILE = "all_questions.json";
+    static final long QUIZ_DURATION_MILLIS = 1140000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz1); // Hoặc activity_quiz_random nếu bạn dùng layout riêng
+        setContentView(R.layout.activity_quiz1);
 
         submitButton = findViewById(R.id.submitButton);
         timerTextView = findViewById(R.id.timer_text);
@@ -54,7 +52,6 @@ public class QuizRandom_Activity extends AppCompatActivity {
             recyclerView = findViewById(R.id.recyclerView);
             recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-            // KHỞI TẠO ADAPTER ĐÚNG CÁCH NHƯ HIỆN TẠI
             adapter = new QuizAdapter(questionList, userAnswers, (position, selectedAnswer) -> {
                 userAnswers.set(position, selectedAnswer);
                 Log.d("QuizRandom_Activity", "Câu " + (position + 1) + " - Đã chọn: " + selectedAnswer);
@@ -64,7 +61,7 @@ public class QuizRandom_Activity extends AppCompatActivity {
             startQuizTimer();
 
         } else {
-            Log.e("QuizRandom_Activity", "Không thể load danh sách câu hỏi ngẫu nhiên hoặc danh sách trống.");
+
             Toast.makeText(this, "Không thể tải được câu hỏi. Vui lòng kiểm tra lại file JSON.", Toast.LENGTH_LONG).show();
             finish();
         }
@@ -97,13 +94,8 @@ public class QuizRandom_Activity extends AppCompatActivity {
             countDownTimer.cancel();
         }
 
-        // --- PHẦN THAY ĐỔI ĐỂ LẤY SỐ CÂU ĐÚNG TỪ ADAPTER ---
-        // Lấy số câu đúng trực tiếp từ Adapter
         int correctAnswers = adapter.getCorrectAnswersCount();
-        // ----------------------------------------------------
-
         int totalQuestions = questionList.size();
-
 
         Intent intent = new Intent(this, Answer_Activity.class);
         intent.putExtra("correctAnswers", correctAnswers);
@@ -124,7 +116,7 @@ public class QuizRandom_Activity extends AppCompatActivity {
     private List<All_Question> loadRandomQuestionsFromAssets() {
         List<All_Question> allQuestions = new ArrayList<>();
         try {
-            InputStream is = getAssets().open(ALL_QUESTIONS_JSON_FILE);
+            InputStream is = getAssets().open("questions.json");
             int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);
@@ -146,17 +138,19 @@ public class QuizRandom_Activity extends AppCompatActivity {
                 allQuestions.add(new All_Question(qText, options, answer, image));
             }
 
+            // Xáo trộn danh sách câu hỏi
             Collections.shuffle(allQuestions);
 
-            if (allQuestions.size() >= NUMBER_OF_RANDOM_QUESTIONS) {
-                return allQuestions.subList(0, NUMBER_OF_RANDOM_QUESTIONS);
+            // Chỉ lấy số lượng câu hỏi mong muốn
+            if (allQuestions.size() >= 25) {
+                return allQuestions.subList(0, 25);
             } else {
-                Log.w("QuizRandom_Activity", "Số câu hỏi trong " + ALL_QUESTIONS_JSON_FILE + " (" + allQuestions.size() + ") ít hơn số câu hỏi yêu cầu (" + NUMBER_OF_RANDOM_QUESTIONS + "). Trả về tất cả các câu hỏi hiện có.");
+                Log.w("QuizRandom_Activity", "Số câu hỏi trong " + "questions.json" + " (" + allQuestions.size() + ") ít hơn số câu hỏi yêu cầu (" + 25 + "). Trả về tất cả các câu hỏi hiện có.");
                 return allQuestions;
             }
 
         } catch (Exception e) {
-            Log.e("QuizRandom_Activity", "Error loading or selecting random questions from " + ALL_QUESTIONS_JSON_FILE + ": ", e);
+            Log.e("QuizRandom_Activity", "Error loading or selecting random questions from " + "questions.json" + ": ", e);
             e.printStackTrace();
             return null;
         }

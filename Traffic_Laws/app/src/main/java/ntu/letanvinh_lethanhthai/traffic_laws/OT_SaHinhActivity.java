@@ -17,9 +17,9 @@ import java.util.List;
 
 public class OT_SaHinhActivity extends AppCompatActivity {
 
-    private RecyclerView recyclerView;
-    private QuestionAdapter adapter;
-    private List<All_Question> questionList;
+    RecyclerView recyclerView;
+    QuestionAdapter adapter;
+    List<All_Question> questionList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -1,7 +1,7 @@
 package ntu.letanvinh_lethanhthai.traffic_laws;
 import java.io.Serializable;
 public class Bienbao implements Serializable {
-    private static final long serialVersionUID = 1L;
+    static final long serialVersionUID = 1L;
     int id_bienbao;
     String ten_bienbao;
     String mota_bienbao;
