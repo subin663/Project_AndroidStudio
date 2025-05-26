@@ -13,7 +13,7 @@ import java.util.List;
 
 public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.QuestionViewHolder> {
 
-    private List<All_Question> questionList;
+    List<All_Question> questionList;
 
     public QuestionAdapter(List<All_Question> questionList) {
         this.questionList = questionList;

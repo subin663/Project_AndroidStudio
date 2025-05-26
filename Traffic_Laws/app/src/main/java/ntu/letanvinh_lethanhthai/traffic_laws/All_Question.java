@@ -3,10 +3,10 @@ package ntu.letanvinh_lethanhthai.traffic_laws;
 import java.util.List;
 
 public class All_Question {
-    private String question;
-    private List<String> options;
-    private String answer;
-    private String image;
+    String question;
+    List<String> options;
+    String answer;
+    String image;
 
     public All_Question(String question, List<String> options, String answer, String image) {
         this.question = question;
