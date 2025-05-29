@@ -28,13 +28,8 @@ public class All_QuestionActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_all_question);
 
-        Log.d("DEBUG", "All_QuestionActivity được khởi chạy");
-
         // Đọc dữ liệu câu hỏi
         questionList = loadQuestionsFromAssets();
-
-        // In log số lượng câu hỏi
-        Log.d("DEBUG", "Số câu hỏi load: " + questionList.size());
 
         // Gắn RecyclerView
         recyclerView = findViewById(R.id.recyclerView);

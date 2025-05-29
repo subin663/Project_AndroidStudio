@@ -36,13 +36,13 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.Questi
         // Gán câu hỏi vào TextView
         holder.questionText.setText(question.getQuestion());
 
-        // Hiển thị các lựa chọn (dạng chuỗi, nối các lựa chọn lại)
+        // Hiển thị các lựa chọn câu trả lời (dạng chuỗi, nối các lựa chọn lại)
         holder.optionsText.setText(TextUtils.join("\n", question.getOptions()));
 
-        // Hiển thị câu trả lời (có thể là đáp án đúng)
+        // Hiển thị đáp án
         holder.answerText.setText("Đáp án: " + question.getAnswer());
 
-// Hiển thị hình ảnh
+        // Hiển thị hình ảnh
         String imageName = question.getImage();
         if (imageName != null && !imageName.trim().isEmpty()) {
             int imageResId = holder.itemView.getContext().getResources().getIdentifier(

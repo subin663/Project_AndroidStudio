@@ -27,13 +27,8 @@ public class OT_QuytacgiaothongActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_all_question); // <-- phải đặt trước mọi findViewById
 
-        Log.d("DEBUG", "All_QuestionActivity được khởi chạy");
-
         // Đọc dữ liệu câu hỏi
         questionList = loadQuestionsFromAssets();
-
-        // In log số lượng câu hỏi
-        Log.d("DEBUG", "Số câu hỏi load: " + questionList.size());
 
         // Gắn RecyclerView
         recyclerView = findViewById(R.id.recyclerView);
@@ -43,8 +38,6 @@ public class OT_QuytacgiaothongActivity extends AppCompatActivity {
         adapter = new QuestionAdapter(questionList);
         recyclerView.setAdapter(adapter);
     }
-
-
     //----------------
     List<All_Question> loadQuestionsFromAssets() {
         List<All_Question> questions = new ArrayList<>();
@@ -56,7 +49,6 @@ public class OT_QuytacgiaothongActivity extends AppCompatActivity {
             is.close();
             String json = new String(buffer, "UTF-8");
             JSONArray jsonArray = new JSONArray(json);
-
 
             for (int i = 0; i < jsonArray.length(); i++) {
                 JSONObject obj = jsonArray.getJSONObject(i);
@@ -70,10 +62,6 @@ public class OT_QuytacgiaothongActivity extends AppCompatActivity {
                 String image = obj.getString("image");
                 questions.add(new All_Question(qText, options, answer, image));
             }
-
-
-
-
         } catch (Exception e) {
             e.printStackTrace();
         }
