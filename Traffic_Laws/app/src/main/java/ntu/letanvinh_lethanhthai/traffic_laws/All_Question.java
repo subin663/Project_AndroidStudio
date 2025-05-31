@@ -3,11 +3,13 @@ package ntu.letanvinh_lethanhthai.traffic_laws;
 import java.util.List;
 
 public class All_Question {
+    // Các tham số cho câu hỏi
     String question;
     List<String> options;
     String answer;
     String image;
 
+    // Hàm khởi tạo có tham số
     public All_Question(String question, List<String> options, String answer, String image) {
         this.question = question;
         this.options = options;

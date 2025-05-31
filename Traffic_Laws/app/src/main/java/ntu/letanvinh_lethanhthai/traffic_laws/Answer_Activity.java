@@ -17,7 +17,6 @@ import androidx.core.view.WindowInsetsCompat;
 public class Answer_Activity extends AppCompatActivity {
 
     TextView tvAns, tvDanhgia;
-    Button btnBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

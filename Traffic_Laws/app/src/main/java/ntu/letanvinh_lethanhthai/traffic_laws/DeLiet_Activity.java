@@ -39,17 +39,17 @@ public class DeLiet_Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // Xóa EdgeToEdge hoặc giữ lại.
-        // EdgeToEdge.enable(this);
         setContentView(R.layout.activity_quiz1); // Đảm bảo bạn đang sử dụng layout activity_de_liet.xml
 
-
+            //Tìm điều khiển
            submitButton = findViewById(R.id.submitButton);
            timerTextView = findViewById(R.id.timer_text); // Khởi tạo timer TextView
 
         questionList = loadQuestionsFromAssets();
 
-        if (questionList != null) {
+        if (questionList != null)
+        {
+            // Mảng chứa các câu trả lời của người dùng
             userAnswers = new ArrayList<>(questionList.size());
             for (int i = 0; i < questionList.size(); i++) {
                 userAnswers.add(null);
@@ -59,14 +59,15 @@ public class DeLiet_Activity extends AppCompatActivity {
             recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
             adapter = new QuizAdapter(questionList, userAnswers, (position, selectedAnswer) -> {
-                userAnswers.set(position, selectedAnswer);
-                Log.d("DeLiet_Activity", "Câu " + (position + 1) + " - Đã chọn: " + selectedAnswer); // Đổi tên Activity trong Log
+                userAnswers.set(position, selectedAnswer); // thiết lập các vị trí tương ứng câu trả lời người dùng
+                Log.d("DeLiet_Activity", "Câu " + (position + 1) + " - Đã chọn: " + selectedAnswer);
             });
             recyclerView.setAdapter(adapter);
 
             startQuizTimer(); // Bắt đầu đếm giờ khi quiz được tải
 
-        } else {
+        } else
+        {
             Log.e("DeLiet_Activity", "Không thể load danh sách câu hỏi."); // Đổi tên Activity trong Log
             Toast.makeText(this, "Không thể tải được câu hỏi. Vui lòng kiểm tra lại.", Toast.LENGTH_LONG).show();
             finish();
@@ -75,15 +76,19 @@ public class DeLiet_Activity extends AppCompatActivity {
         submitButton.setOnClickListener(v -> submitQuiz()); // Gán Listener cho nút nộp bài
     }
 
+    // Bộ đếm thời gian làm bài
     private void startQuizTimer() {
-        countDownTimer = new CountDownTimer(QUIZ_DURATION_MILLIS, 1000) {
+        countDownTimer = new CountDownTimer(QUIZ_DURATION_MILLIS, 1000)  // tạo đồng hồ đếm ngược (millisecond)
+        {
             @Override
             public void onTick(long millisUntilFinished) {
+                // Chuyển millisecond sang phút và giây
                 long minutes = TimeUnit.MILLISECONDS.toMinutes(millisUntilFinished);
                 long seconds = TimeUnit.MILLISECONDS.toSeconds(millisUntilFinished) -
-                        TimeUnit.MINUTES.toSeconds(minutes);
+                        TimeUnit.MINUTES.toSeconds(minutes); // số giây còn lại bằng số giây - số phút trước đó
+                // Dạng hiển thị của đồng hồ MM:SS 09:30
                 String timeLeftFormatted = String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds);
-                timerTextView.setText(timeLeftFormatted);
+                timerTextView.setText(timeLeftFormatted); // Thiết lặp hiển thị
             }
 
             @Override
@@ -100,17 +105,19 @@ public class DeLiet_Activity extends AppCompatActivity {
             countDownTimer.cancel(); // Dừng timer khi quiz được nộp
         }
 
-        int correctAnswers = adapter.getCorrectAnswersCount();
-        int totalQuestions = questionList.size();
+        int correctAnswers = adapter.getCorrectAnswersCount(); // Lấy số câu đúng người dùng
+        int totalQuestions = questionList.size(); // Số lượng câu hỏi
 
         // Thay đổi Intent để chuyển đến Answer_Activity (hoặc một Activity kết quả phù hợp)
         Intent intent = new Intent(this, AnswerDeLiet_Acivity.class);
+        // Truyền theo data
         intent.putExtra("correctAnswers", correctAnswers); // Truyền số câu đúng
         intent.putExtra("totalQuestions", totalQuestions); // Truyền tổng số câu
         startActivity(intent);
         finish(); // Kết thúc Activity sau khi nộp bài
     }
 
+    // Xử lý xoá sạch khi rời khỏi Activity (chuyển trang, thoát app)
     @Override
     protected void onDestroy() {
         super.onDestroy();
@@ -122,35 +129,29 @@ public class DeLiet_Activity extends AppCompatActivity {
     private List<All_Question> loadQuestionsFromAssets() {
         List<All_Question> questions = new ArrayList<>();
         try {
-            // RẤT QUAN TRỌNG: Thay đổi tên file JSON phù hợp với đề liệt của bạn
-            InputStream is = getAssets().open("quiz_1.json"); // Ví dụ: "de_liet.json"
-            int size = is.available();
-            Log.d("DEBUG", "Size of de_liet.json: " + size); // Đổi tên file trong log
-            byte[] buffer = new byte[size];
-            int read = is.read(buffer);
-            Log.d("DEBUG", "Bytes read from de_liet.json: " + read); // Đổi tên file trong log
-            is.close();
-            String json = new String(buffer, "UTF-8");
-            Log.d("DEBUG", "JSON content: " + json);
-            JSONArray jsonArray = new JSONArray(json);
-            Log.d("DEBUG", "JSONArray length: " + jsonArray.length());
 
+            InputStream doc_file = getAssets().open("quiz_1.json"); // Ví dụ: "de_liet.json"
+            int size = doc_file.available(); // số lượng câu hỏi trong file
+            byte[] buffer = new byte[size]; // Tạo kho chứa lưu trữ câu hỏi
+            int read = doc_file.read(buffer);
+            doc_file.close();
+            String noi_dung_file_json = new String(buffer, "UTF-8"); // chứa nội dung file json theo kho buffer
+            JSONArray jsonArray = new JSONArray(noi_dung_file_json); // Chuyển json thành mảng, mỗi câu hỏi là 1 phần tử trong mảng
 
+            // // Duyệt qua từng câu hỏi trong jsonArray lấy dữ liệu
             for (int i = 0; i < jsonArray.length(); i++) {
-                JSONObject obj = jsonArray.getJSONObject(i);
-                String qText = obj.getString("question");
-                JSONArray opts = obj.getJSONArray("options");
+                JSONObject cau_hoi = jsonArray.getJSONObject(i);
+                String qText = cau_hoi.getString("question");
+                JSONArray opts = cau_hoi.getJSONArray("options");
                 List<String> options = new ArrayList<>();
                 for (int j = 0; j < opts.length(); j++) {
                     options.add(opts.getString(j));
                 }
-                String image = obj.getString("image");
-                String answer = obj.getString("answer");
-                questions.add(new All_Question(qText, options, answer, image));
+                String image = cau_hoi.getString("image");
+                String answer = cau_hoi.getString("answer");
+                questions.add(new All_Question(qText, options, answer, image)); // Thêm mới câu hỏi và thêm vào danh sách câu hỏi
             }
-            Log.d("DEBUG", "Number of questions loaded: " + questions.size());
         } catch (Exception e) {
-            Log.e("DeLiet_Activity", "Error loading questions: ", e); // Đổi tên Activity trong Log
             e.printStackTrace();
             return null;
         }
