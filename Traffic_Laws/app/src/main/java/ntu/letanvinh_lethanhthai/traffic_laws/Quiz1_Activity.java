@@ -29,7 +29,7 @@ public class Quiz1_Activity extends AppCompatActivity  {
     Button submitButton;
     TextView timerTextView; // New TextView for timer
     CountDownTimer countDownTimer; // New CountDownTimer object
-    static final long QUIZ_DURATION_MILLIS = 1140000; // 5 minutes (5 * 60 * 1000)
+    static final long QUIZ_DURATION_MILLIS = 1140000; // 19 minutes (19 * 60 * 1000)
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,12 +47,12 @@ public class Quiz1_Activity extends AppCompatActivity  {
         if (questionList != null) {
             userAnswers = new ArrayList<>(questionList.size()); // Tạo mảng chứa câu trả lời người dùng
             for (int i = 0; i < questionList.size(); i++) {
-                userAnswers.add(null);  // Tạo mới và thêm vào danh sách câu trả lời
+                userAnswers.add(null);  // Tạo mới và thêm câu trả lời trống vào danh sách câu trả lời
             }
 
             recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-            // Tạo mới Adapter
+            // Tạo mới Adapter, danh  sách chứa câu trả lời người dùng
             adapter = new QuizAdapter(questionList, userAnswers, (position, selectedAnswer) -> {
                 userAnswers.set(position, selectedAnswer);
                 Log.d("Quiz1_Activity", "Câu " + (position + 1) + " - Đã chọn: " + selectedAnswer);
@@ -63,7 +63,6 @@ public class Quiz1_Activity extends AppCompatActivity  {
             startQuizTimer();
 
         } else {
-            Log.e("Quiz1_Activity", "Không thể load danh sách câu hỏi.");
             Toast.makeText(this, "Không thể tải được câu hỏi. Vui lòng kiểm tra lại.", Toast.LENGTH_LONG).show();
             finish();
         }
@@ -118,15 +117,11 @@ public class Quiz1_Activity extends AppCompatActivity  {
         try {
             InputStream doc_file = getAssets().open("quiz_1.json"); // đọc file từ thu mục Assets
             int size = doc_file.available(); // lấy số lượng câu hỏi để tạo mảng
-            Log.d("DEBUG", "Size of quiz_1.json: " + size);
             byte[] buffer = new byte[size]; // Mãng chứa các câu hỏi
             int read = doc_file.read(buffer);
-            Log.d("DEBUG", "Bytes read from quiz_1.json: " + read);
             doc_file.close();
             String noi_dung_file_json = new String(buffer, "UTF-8");
-            Log.d("DEBUG", "JSON content: " + noi_dung_file_json);
             JSONArray jsonArray = new JSONArray(noi_dung_file_json); //Chuyển json thành mảng, mỗi câu hỏi là 1 phần tử
-            Log.d("DEBUG", "JSONArray length: " + jsonArray.length());
 
 
             // Duyệt qua các câu hỏi trong mãng json để lấy dữ lệu
@@ -142,9 +137,7 @@ public class Quiz1_Activity extends AppCompatActivity  {
                 String answer = obj.getString("answer");
                 questions.add(new All_Question(qText, options, answer, image)); // Thêm mới câu hỏi vào danh sách  câu hỏi
             }
-            Log.d("DEBUG", "Number of questions loaded: " + questions.size());
         } catch (Exception e) {
-            Log.e("Quiz1_Activity", "Error loading questions: ", e);
             e.printStackTrace();
             return null;
         }

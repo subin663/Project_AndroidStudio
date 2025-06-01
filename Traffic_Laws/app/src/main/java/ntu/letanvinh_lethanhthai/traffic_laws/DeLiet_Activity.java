@@ -39,7 +39,8 @@ public class DeLiet_Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz1); // Đảm bảo bạn đang sử dụng layout activity_de_liet.xml
+        // Giao diện layout sử dụng
+        setContentView(R.layout.activity_quiz1);
 
             //Tìm điều khiển
            submitButton = findViewById(R.id.submitButton);
