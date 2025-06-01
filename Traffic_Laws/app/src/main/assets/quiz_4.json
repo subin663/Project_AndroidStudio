@@ -7,7 +7,8 @@
       "C. Dải phân cách gồm giá long môn và biển báo hiệu đường bộ."
     ],
     "answer": "A",
-    "image": ""
+    "image": "",
+    "isCritical":false
   },
   {
     "question": "2. Khái niệm “người điều khiển giao thông” được hiểu như thế nào là đúng?",
@@ -17,7 +18,8 @@
       "C. Là người tham gia giao thông tại nơi thi công, nơi ùn tắc giao thông, ở bến phà, tại cầu đường bộ đi chung với đường sắt."
     ],
     "answer": "B",
-    "image": ""
+    "image": "",
+    "isCritical":false
   },
   {
     "question": "3. Khi lái xe trong khu đô thị và đông dân cư trừ các khu vực có biển cấm sử dụng còi, người lái xe được sử dụng còi như thế nào trong các trường hợp dưới đây?",
@@ -27,7 +29,8 @@
       "C. Từ 23 giờ đêm đến 5 giờ sáng hôm sau."
     ],
     "answer": "B",
-    "image": ""
+    "image": "",
+    "isCritical":false
   },
   {
     "question": "4. Khi điều khiển xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy, những hành vi nào không được phép?",
@@ -38,7 +41,8 @@
       "D. Chở người ngồi sau dưới 16 tuổi."
     ],
     "answer": "A",
-    "image": ""
+    "image": "",
+    "isCritical":true
   },
   {
     "question": "5. Hành vi vận chuyển đồ vật cồng kềnh bằng xe mô tô, xe gắn máy khi tham gia giao thông có được phép hay không?",
@@ -48,7 +52,8 @@
       "C. Chỉ được vận chuyển vật cồng kềnh trên xe máy nếu khoảng cách về nhà ngắn hơn 2 km."
     ],
     "answer": "A",
-    "image": ""
+    "image": "",
+    "isCritical":true
   },
   {
     "question": "6: Khi gặp hiệu lệnh như dưới đây của cảnh sát giao thông thì người tham gia giao thông phải đi như thế nào là đúng quy tắc giao thông?",
@@ -59,7 +64,8 @@
       "D. Người tham gia giao thông ở phía trước và phía sau người điều khiển phải dừng lại; người tham gia giao thông ở phía bên phải và phía bên trái người điều khiển được đi tất cả các hướng."
     ],
     "answer": "D",
-    "image": "ha44"
+    "image": "ha44",
+    "isCritical":false
   },
   {
     "question": "7. Khi tránh xe đi ngược chiều, các xe phải nhường đường như thế nào là đúng quy tắc giao thông?",
@@ -70,7 +76,8 @@
       "D. Cả ý 1 và ý 2."
     ],
     "answer": "D",
-    "image": ""
+    "image": "",
+    "isCritical":false
   },
   {
     "question": "8. Người điều khiển xe mô tô hai bánh, xe gắn máy không được thực hiện những hành vi nào dưới đây?",
@@ -80,7 +87,8 @@
       "C. Điều khiển phương tiện tham gia giao thông trên đường tỉnh lộ hoặc quốc lộ."
     ],
     "answer": "A",
-    "image": ""
+    "image": "",
+    "isCritical":false
   },
   {
     "question": "9. Đường bộ trong khu vực đông dân cư gồm những đoạn đường nào dưới đây?",
@@ -90,7 +98,8 @@
       "C. Là đoạn đường nằm ngoài khu vực nội thành phố, nội thị xã có đông người và phương tiện tham gia giao thông và được xác định cụ thể bằng biển chỉ dẫn địa giới."
     ],
     "answer": "B",
-    "image": ""
+    "image": "",
+    "isCritical":false
   },
   {
     "question": "10. *Khi điều khiển xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy, những hành vi nào không được phép?",
@@ -101,7 +110,8 @@
       "D. Chở người ngồi sau dưới 16 tuổi."
     ],
     "answer": "A",
-    "image": ""
+    "image": "",
+    "isCritical":false
   },
   {
     "question": "11. *Trong các khái niệm dưới đây, “dải phân cách” được hiểu như thế nào là đúng?",
@@ -111,7 +121,8 @@
       "C. Là bộ phận của đường để phân chia mặt đường thành hai chiều xe chạy riêng biệt hoặc để phân chia phần đường của xe cơ giới và xe thô sơ."
     ],
     "answer": "C",
-    "image": ""
+    "image": "",
+    "isCritical":false
   },
   {
     "question": "12. *Trên đường có nhiều làn đường cho xe đi cùng chiều được phân biệt bằng vạch kẻ phân làn đường, người điều khiển phương tiện phải cho xe đi như thế nào?",
@@ -121,7 +132,8 @@
       "C. Phải cho xe đi trong một làn đường, khi cần thiết phải chuyển làn đường, người lái xe phải quan sát xe phía trước để bảo đảm an toàn."
     ],
     "answer": "B",
-    "image": ""
+    "image": "",
+    "isCritical":false
   },
   {
     "question": "13. Kỹ thuật cơ bản để giữ thăng bằng khi điều khiển xe mô tô đi trên đường gồ ghề như thế nào trong các trường hợp dưới đây?",
@@ -131,7 +143,8 @@
       "C. Ngồi lệch sang bên trái hoặc bên phải để lấy thăng bằng qua đoạn đường gồ ghề."
     ],
     "answer": "A",
-    "image": ""
+    "image": "",
+    "isCritical":false
   },
   {
     "question": "14. Biển nào cấm các phương tiện giao thông đường bộ rẽ phải?",
@@ -142,7 +155,8 @@
       "D. Cả ba biển."
     ],
     "answer": "A",
-    "image": "ha107"
+    "image": "ha107",
+    "isCritical":false
   },
   {
     "question": "15. Gặp biển nào xe xích lô được phép đi vào?",
@@ -153,7 +167,8 @@
       "D. Biển 1 và biển 2."
     ],
     "answer": "D",
-    "image": "ha116"
+    "image": "ha116",
+    "isCritical":false
   },
   {
     "question": "16. Biển nào chỉ đường dành cho người đi bộ, các loại xe không được đi vào khi gặp biển này?",
@@ -164,7 +179,8 @@
       "D. Cả ba biển."
     ],
     "answer": "C",
-    "image": "ha124"
+    "image": "ha124",
+    "isCritical":false
   },
   {
     "question": "17. Biển nào báo hiệu, chỉ dẫn xe đi trên đường này được quyền ưu tiên qua nơi giao nhau?",
@@ -175,7 +191,8 @@
       "D. Cả ba biển."
     ],
     "answer": "B",
-    "image": "ha132"
+    "image": "ha132",
+    "isCritical":false
   },
   {
     "question": "18. Biển nào báo hiệu 'Giao nhau với đường hai chiều'?",
@@ -185,19 +202,22 @@
       "C. Biển 3."
     ],
     "answer": "A",
-    "image": "ha140"
+    "image": "ha140",
+    "isCritical":false
   },
   {
     "question": "19. Biển nào báo hiệu “Hướng đi thẳng phải theo”?",
     "options": ["A. Biển 1.", "B. Biển 2."],
     "answer": "A",
-    "image": "ha148"
+    "image": "ha148",
+    "isCritical":false
   },
   {
     "question": "20. Biển nào chỉ dẫn cho người đi bộ sử dụng cầu vượt qua đường?",
     "options": ["A. Biển 1.", "B. Biển 2.", "C. Cả hai biển.", "D. Không biển nào."],
     "answer": "A",
-    "image": "ha155"
+    "image": "ha155",
+    "isCritical":false
   },
   {
     "question": "21. Khi gặp vạch kẻ đường nào các xe được phép đè vạch?",
@@ -208,7 +228,8 @@
       "D. Vạch 1 và vạch 3."
     ],
     "answer": "D",
-    "image": "ha164"
+    "image": "ha164",
+    "isCritical":false
   },
   {
     "question": "22. Thứ tự các xe đi như thế nào là đúng quy tắc giao thông?",
@@ -219,7 +240,8 @@
       "D. Mô tô, xe tải, xe con, xe khách."
     ],
     "answer": "C",
-    "image": "ha172"
+    "image": "ha172",
+    "isCritical":false
   },
   {
     "question": "23. Xe nào được quyền đi trước trong trường hợp này?",
@@ -228,7 +250,8 @@
       "B. Xe con."
     ],
     "answer": "A",
-    "image": "ha180"
+    "image": "ha180",
+    "isCritical":false
   },
   {
     "question": "24. Trong hình dưới, những xe nào vi phạm quy tắc giao thông?",
@@ -239,7 +262,8 @@
       "D. Tất cả các loại xe trên."
     ],
     "answer": "C",
-    "image": "ha188"
+    "image": "ha188",
+    "isCritical":false
   },
   {
     "question": "25. Các xe đi theo thứ tự nào là đúng quy tắc giao thông đường bộ?",
@@ -249,6 +273,7 @@
       "C. Mô tô, xe con, xe của bạn."
     ],
     "answer": "B",
-    "image": "ha196"
+    "image": "ha196",
+    "isCritical":false
   }
 ]

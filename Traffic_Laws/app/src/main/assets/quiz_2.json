@@ -7,7 +7,8 @@
       "C. Là đường cho xe ô tô chạy, dừng, đỗ an toàn."
     ],
     "answer": "B",
-    "image": ""
+    "image": "",
+    "isCritical":false
   },
   {
     "question": "2. “Người tham gia giao thông đường bộ” gồm những đối tượng nào?",
@@ -17,7 +18,8 @@
       "C. Cả ý 1 và ý 2."
     ],
     "answer": "C",
-    "image": ""
+    "image": "",
+    "isCritical":false
   },
   {
     "question": "3. Theo luật phòng chống tác hại của rượu, bia, đối tượng nào dưới đây bị cấm sử dụng rượu, bia khi tham gia giao thông?",
@@ -28,7 +30,8 @@
       "D. Cả ý 1 và ý 2."
     ],
     "answer": "A",
-    "image": ""
+    "image": "",
+    "isCritical":true
   },
   {
     "question": "4. Người điều khiển xe mô tô hai bánh, ba bánh, xe gắn máy có được phép sử dụng xe để kéo hoặc đẩy các phương tiện khác khi tham gia giao thông không?",
@@ -39,7 +42,8 @@
       "D. Không được phép."
     ],
     "answer": "D",
-    "image": ""
+    "image": "",
+    "isCritical":true
   },
   {
     "question": "5. Người đủ 16 tuổi được điều khiển các loại xe nào dưới đây?",
@@ -50,7 +54,8 @@
       "D. Tất cả các ý nêu trên."
     ],
     "answer": "B",
-    "image": ""
+    "image": "",
+    "isCritical":false
   },
   {
     "question": "6. Biển báo hiệu hình chữ nhật hoặc hình vuông hoặc hình mũi tên nền xanh lam là loại biển gì dưới đây?",
@@ -61,7 +66,8 @@
       "D. Biển báo chỉ dẫn."
     ],
     "answer": "D",
-    "image": "ha42"
+    "image": "ha42",
+    "isCritical":false
   },
   {
     "question": "7. Khi điều khiển xe chạy trên đường biết có xe sau xin vượt nếu đủ điều kiện an toàn người lái xe phải làm gì?",
@@ -71,7 +77,8 @@
       "C. Cho xe tránh về bên trái mình và ra hiệu cho xe sau vượt; nếu có chướng ngại vật phía trước hoặc thiếu điều kiện an toàn chưa cho vượt được phải ra hiệu cho xe sau biết; cấm gây trở ngại cho xe xin vượt."
     ],
     "answer": "B",
-    "image": ""
+    "image": "",
+    "isCritical":false
   },
   {
     "question": "8. Người ngồi trên xe mô tô 2 bánh, xe gắn máy phải đội mũ bảo hiểm có cài quai đúng quy cách khi nào?",
@@ -81,7 +88,8 @@
       "C. Khi tham gia giao thông trên đường tỉnh lộ hoặc quốc lộ."
     ],
     "answer": "A",
-    "image": ""
+    "image": "",
+    "isCritical":true
   },
   {
     "question": "9. Người lái xe mô tô xử lý như thế nào khi cho xe mô tô phía sau vượt?",
@@ -91,7 +99,8 @@
       "C. Nếu đủ điều kiện an toàn, người lái xe phải tăng tốc độ, đi sát về bên phải của phần đường chạy cho đến khi xe sau vượt qua."
     ],
     "answer": "A",
-    "image": ""
+    "image": "",
+    "isCritical":false
   },
   {
     "question": "10. Người lái xe phải giảm tốc độ thấp hơn tốc độ tối đa cho phép đến mức cần thiết, chú ý quan sát và chuẩn bị sẵn sàng những tình huống có thể xảy ra để phòng ngừa tai nạn trong các trường hợp nào dưới đây?",
@@ -101,7 +110,8 @@
       "C. Gặp biển báo hết mọi lệnh cấm."
     ],
     "answer": "A",
-    "image": ""
+    "image": "",
+    "isCritical":false
   },
   {
     "question": "11. *Người điều khiển xe mô tô hai bánh không được phép vượt xe khác trong trường hợp nào dưới đây?",
@@ -111,7 +121,8 @@
       "C. Cả hai ý trên."
     ],
     "answer": "C",
-    "image": ""
+    "image": "",
+    "isCritical":false
   },
   {
     "question": "12. *Khi điều khiển xe mô tô quay đầu người lái xe cần thực hiện như thế nào để đảm bảo an toàn?",
@@ -121,7 +132,8 @@
       "C. Bóp còi liên tục khi quay đầu để cảnh báo các xe khác."
     ],
     "answer": "A",
-    "image": ""
+    "image": "",
+    "isCritical":false
   },
   {
     "question": "13. Gương chiếu hậu của xe mô tô hai bánh có tác dụng gì trong các trường hợp dưới đây?",
@@ -132,7 +144,8 @@
       "D. Để quan sát an toàn phía trước cả bên trái và bên phải trước khi chuyển hướng."
     ],
     "answer": "C",
-    "image": ""
+    "image": "",
+    "isCritical":false
   },
   {
     "question": "14. Khi gặp biển nào xe được rẽ trái?",
@@ -142,7 +155,8 @@
       "C. Không biển nào."
     ],
     "answer": "B",
-    "image": "ha106"
+    "image": "ha106",
+    "isCritical":false
   },
   {
     "question": "15. Khi gặp biển nào xe ưu tiên theo luật định vẫn phải dừng lại?",
@@ -152,7 +166,8 @@
       "C. Cả ba biển."
     ],
     "answer": "B",
-    "image": "ha114"
+    "image": "ha114",
+    "isCritical":false
   },
   {
     "question": "16. Biển báo nào báo hiệu bắt đầu đoạn đường vào phạm vi khu dân cư, các phương tiện tham gia giao thông phải tuân theo các quy định đi đường được áp dụng ở khu đông dân cư?",
@@ -161,7 +176,8 @@
       "B. Biển 2."
     ],
     "answer": "A",
-    "image": "ha122"
+    "image": "ha122",
+    "isCritical":false
   },
   {
     "question": "17. Biển nào báo hiệu đường sắt giao nhau với đường bộ không có rào chắn?",
@@ -172,7 +188,8 @@
       "D. Cả ba biển."
     ],
     "answer": "C",
-    "image": "ha130"
+    "image": "ha130",
+    "isCritical":false
   },
   {
     "question": "18. Biển nào báo hiệu 'Đường đôi'?",
@@ -182,19 +199,22 @@
       "C. Biển 3."
     ],
     "answer": "C",
-    "image": "ha138"
+    "image": "ha138",
+    "isCritical":false
   },
   {
     "question": "19. Biển báo này có ý nghĩa gì?",
     "options": ["A. Báo hiệu đường có ổ gà, lồi lõm.", "B. Báo hiệu đường có gồ giảm tốc phía trước."],
     "answer": "B",
-    "image": "ha146"
+    "image": "ha146",
+    "isCritical":false
   },
   {
     "question": "20. Trong các biển dưới đây biển nào là biển “Hết mọi lệnh cấm”?",
     "options": ["A. Biển 1.", "B. Biển 2.", "C. Biển 3.", "D. Cả ba biển."],
     "answer": "B",
-    "image": "ha154"
+    "image": "ha154",
+    "isCritical":false
   },
   {
     "question": "21. Vạch kẻ đường nào dưới đây là vạch phân chia hai chiều xe chạy (vạch tim đường)?",
@@ -205,7 +225,8 @@
       "D. Vạch 1 và 3."
     ],
     "answer": "D",
-    "image": "ha162"
+    "image": "ha162",
+    "isCritical":false
   },
   {
     "question": "22. Theo tín hiệu đèn, xe nào được phép đi?",
@@ -214,7 +235,8 @@
       "B. Mô tô."
     ],
     "answer": "A",
-    "image": "ha170"
+    "image": "ha170",
+    "isCritical":false
   },
   {
     "question": "23. Xe nào được quyền đi trước trong trường hợp này?",
@@ -223,7 +245,8 @@
       "B. Xe mô tô."
     ],
     "answer": "B",
-    "image": "ha178"
+    "image": "ha178",
+    "isCritical":false
   },
   {
     "question": "24. Trong trường hợp này, thứ tự xe đi như thế nào là đúng quy tắc giao thông?",
@@ -233,7 +256,8 @@
       "C. Xe mô tô + xe con, xe quân sự, xe công an."
     ],
     "answer": "B",
-    "image": "ha186"
+    "image": "ha186",
+    "isCritical":false
   },
   {
     "question": "25. Các xe đi theo hướng mũi tên, xe nào chấp hành đúng quy tắc giao thông?",
@@ -244,6 +268,7 @@
       "D. Mô tô, xe con."
     ],
     "answer": "B",
-    "image": "ha194"
+    "image": "ha194",
+    "isCritical":false
   }
 ]
