@@ -21,15 +21,15 @@ import java.util.List;
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
-public class Quiz1_Activity extends AppCompatActivity  {
+public class Quiz1_Activity extends AppCompatActivity {
     RecyclerView recyclerView;
     QuizAdapter adapter;
     List<All_Question> questionList;
     List<String> userAnswers;
     Button submitButton;
-    TextView timerTextView; // New TextView for timer
-    CountDownTimer countDownTimer; // New CountDownTimer object
-    static final long QUIZ_DURATION_MILLIS = 1140000; // 5 minutes (5 * 60 * 1000)
+    TextView timerTextView;
+    CountDownTimer countDownTimer;
+    static final long QUIZ_DURATION_MILLIS = 1140000; // 19 minutes (19 * 60 * 1000)
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,11 +37,11 @@ public class Quiz1_Activity extends AppCompatActivity  {
         setContentView(R.layout.activity_quiz1);
 
         submitButton = findViewById(R.id.submitButton);
-        timerTextView = findViewById(R.id.timer_text); // Initialize timer TextView
+        timerTextView = findViewById(R.id.timer_text);
 
         questionList = loadQuestionsFromAssets();
 
-        if (questionList != null) {
+        if (questionList != null && !questionList.isEmpty()) {
             userAnswers = new ArrayList<>(questionList.size());
             for (int i = 0; i < questionList.size(); i++) {
                 userAnswers.add(null);
@@ -51,8 +51,9 @@ public class Quiz1_Activity extends AppCompatActivity  {
             recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
             adapter = new QuizAdapter(questionList, userAnswers, (position, selectedAnswer) -> {
-                userAnswers.set(position, selectedAnswer);
-                Log.d("Quiz1_Activity", "Câu " + (position + 1) + " - Đã chọn: " + selectedAnswer);
+                // The recalculation logic is now primarily within the adapter's onCheckedChanged
+                // We don't need to do anything specific here for critical questions,
+                // as the adapter will handle tracking them internally.
             });
             recyclerView.setAdapter(adapter);
 
@@ -92,12 +93,19 @@ public class Quiz1_Activity extends AppCompatActivity  {
             countDownTimer.cancel();
         }
 
+        // Gọi recalculateResults() một lần cuối cùng để đảm bảo kết quả chính xác nhất
+        // trước khi gửi đi.
+        adapter.recalculateResults();
+
         int correctAnswers = adapter.getCorrectAnswersCount();
         int totalQuestions = questionList.size();
+        boolean hasCriticalError = adapter.hasCriticalError(); // Lấy trạng thái lỗi câu hỏi liệt
 
         Intent intent = new Intent(this, Answer_Activity.class);
         intent.putExtra("correctAnswers", correctAnswers);
         intent.putExtra("totalQuestions", totalQuestions);
+        // Thêm thông tin về lỗi câu hỏi liệt vào Intent
+        intent.putExtra("hasCriticalError", hasCriticalError);
         startActivity(intent);
         finish();
     }
@@ -128,7 +136,9 @@ public class Quiz1_Activity extends AppCompatActivity  {
                 }
                 String image = obj.getString("image");
                 String answer = obj.getString("answer");
-                questions.add(new All_Question(qText, options, answer, image));
+                // Đọc giá trị isCritical từ JSON, mặc định là false nếu không có
+                boolean isCritical = obj.optBoolean("isCritical", false);
+                questions.add(new All_Question(qText, options, answer, image, isCritical));
             }
             Log.d("DEBUG", "Number of questions loaded: " + questions.size());
         } catch (Exception e) {
@@ -143,7 +153,7 @@ public class Quiz1_Activity extends AppCompatActivity  {
     protected void onDestroy() {
         super.onDestroy();
         if (countDownTimer != null) {
-            countDownTimer.cancel(); // Ensure timer is cancelled to prevent memory leaks
+            countDownTimer.cancel();
         }
     }
 }

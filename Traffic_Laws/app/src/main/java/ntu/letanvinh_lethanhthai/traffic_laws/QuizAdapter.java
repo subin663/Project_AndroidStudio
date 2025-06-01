@@ -19,18 +19,18 @@ public class QuizAdapter extends RecyclerView.Adapter<QuizAdapter.QuestionViewHo
     List<String> userAnswers;
     OnAnswerSelectedListener listener;
     int correctAnswersCount = 0;
+    // Biến mới để theo dõi lỗi câu hỏi liệt
+    boolean hasCriticalError = false;
 
     public QuizAdapter(List<All_Question> questionList, List<String> userAnswers, OnAnswerSelectedListener listener) {
         this.questionList = questionList;
         this.userAnswers = userAnswers;
         this.listener = listener;
     }
-    //nterface này cho phép Activity hoặc Fragment lắng nghe sự kiện khi người dùng chọn một đáp án trong
-    //danh sách câu hỏi. Phương thức này nhận vào vị trí của câu hỏi và đáp án đã chọn.
+
     public interface OnAnswerSelectedListener {
         void onAnswerSelected(int position, String selectedAnswer);
     }
-
 
     @NonNull
     @Override
@@ -47,11 +47,9 @@ public class QuizAdapter extends RecyclerView.Adapter<QuizAdapter.QuestionViewHo
         All_Question question = questionList.get(position);
         holder.questionText.setText(question.getQuestion());
 
-        // Xóa tất cả các RadioButton cũ trước khi thêm mới
         holder.optionsGroup.removeAllViews();
         Log.d("DEBUG", "Cleared existing RadioButtons from optionsGroup");
 
-        // Thêm các RadioButton cho mỗi lựa chọn
         if (question.getOptions() != null) {
             for (int i = 0; i < question.getOptions().size(); i++) {
                 String option = question.getOptions().get(i);
@@ -59,7 +57,6 @@ public class QuizAdapter extends RecyclerView.Adapter<QuizAdapter.QuestionViewHo
                 radioButton.setText(option);
                 holder.optionsGroup.addView(radioButton);
 
-                // Kiểm tra nếu đây là câu trả lời đã được chọn trước đó
                 if (userAnswers.get(position) != null && userAnswers.get(position).equals(option)) {
                     radioButton.setChecked(true);
                     Log.d("DEBUG", "RadioButton checked for option: " + option + " at position: " + position);
@@ -72,24 +69,26 @@ public class QuizAdapter extends RecyclerView.Adapter<QuizAdapter.QuestionViewHo
                     RadioButton checkedRadioButton = group.findViewById(checkedId);
                     if (checkedRadioButton != null) {
                         String selectedAnswerFullText = checkedRadioButton.getText().toString();
-                        String selectedAnswerKey = ""; // Biến để lưu 'A', 'B', 'C', hoặc 'D'
-
-                        // Trích xuất ký tự đầu tiên nếu nó là một chữ cái viết hoa
-                        if (selectedAnswerFullText.length() > 0 && Character.isUpperCase(selectedAnswerFullText.charAt(0))) {
-                            selectedAnswerKey = String.valueOf(selectedAnswerFullText.charAt(0));
-                        }
-
+                        // Lấy vị trí hiện tại của ViewHolder
                         int currentPosition = holder.getAdapterPosition();
                         if (currentPosition != RecyclerView.NO_POSITION) {
-                            userAnswers.set(currentPosition, selectedAnswerFullText); // Lưu toàn bộ văn bản đã chọn
+                            All_Question currentQuestion = questionList.get(currentPosition);
+
+                            // Lưu toàn bộ văn bản đã chọn
+                            userAnswers.set(currentPosition, selectedAnswerFullText);
                             Log.d("DEBUG", "Câu " + (currentPosition + 1) + " - Đã chọn: " + selectedAnswerFullText + " stored at position: " + currentPosition);
                             listener.onAnswerSelected(currentPosition, selectedAnswerFullText); // Gọi listener
 
-                            // Kiểm tra và tăng biến đếm bằng cách so sánh ký tự đầu tiên
-                            if (selectedAnswerKey.equals(questionList.get(currentPosition).getAnswer())) {
-                                correctAnswersCount++;
-                                Log.d("DEBUG", "Correct answer at position " + currentPosition + ". Total correct answers: " + correctAnswersCount);
+                            // Lấy ký tự đáp án (A, B, C, D) từ văn bản đầy đủ của tùy chọn
+                            String selectedAnswerKey = "";
+                            if (selectedAnswerFullText.length() > 0 && Character.isUpperCase(selectedAnswerFullText.charAt(0))) {
+                                selectedAnswerKey = String.valueOf(selectedAnswerFullText.charAt(0));
                             }
+
+                            // Cập nhật số câu trả lời đúng
+                            // Cần reset correctAnswersCount và hasCriticalError mỗi khi user thay đổi đáp án
+                            // để tính toán lại chính xác
+                            recalculateResults();
                         }
                     }
                 }
@@ -98,7 +97,6 @@ public class QuizAdapter extends RecyclerView.Adapter<QuizAdapter.QuestionViewHo
 
         holder.answerText.setText("");
 
-        // Hiển thị hình ảnh (nếu có)
         String imageName = question.getImage();
         if (imageName != null && !imageName.trim().isEmpty()) {
             int imageResId = holder.itemView.getContext().getResources().getIdentifier(
@@ -120,14 +118,53 @@ public class QuizAdapter extends RecyclerView.Adapter<QuizAdapter.QuestionViewHo
         return questionList.size();
     }
 
+    // Phương thức mới để tính toán lại kết quả sau mỗi lần thay đổi đáp án
+    public void recalculateResults() {
+        correctAnswersCount = 0;
+        hasCriticalError = false;
+
+        for (int i = 0; i < questionList.size(); i++) {
+            All_Question question = questionList.get(i);
+            String userAnswer = userAnswers.get(i); // Lấy toàn bộ văn bản câu trả lời của người dùng
+
+            if (userAnswer != null) {
+                // Trích xuất ký tự đáp án (A, B, C, D) từ câu trả lời của người dùng
+                String userAnswerKey = "";
+                if (userAnswer.length() > 0 && Character.isUpperCase(userAnswer.charAt(0))) {
+                    userAnswerKey = String.valueOf(userAnswer.charAt(0));
+                }
+
+                // Kiểm tra xem câu trả lời có đúng không
+                if (userAnswerKey.equals(question.getAnswer())) {
+                    correctAnswersCount++;
+                } else {
+                    // Nếu là câu hỏi liệt và trả lời sai
+                    if (question.isCritical()) {
+                        hasCriticalError = true;
+                        Log.d("QuizAdapter", "Critical question answered incorrectly at position: " + i);
+                    }
+                }
+            }
+        }
+        Log.d("QuizAdapter", "Recalculated: Correct Answers = " + correctAnswersCount + ", Critical Error = " + hasCriticalError);
+    }
+
     public int getCorrectAnswersCount() {
+        // Đảm bảo rằng kết quả được tính toán lại trước khi trả về
+        recalculateResults();
         return correctAnswersCount;
+    }
+
+    public boolean hasCriticalError() {
+        // Đảm bảo rằng kết quả được tính toán lại trước khi trả về
+        recalculateResults();
+        return hasCriticalError;
     }
 
     class QuestionViewHolder extends RecyclerView.ViewHolder {
         public TextView questionText;
         public RadioGroup optionsGroup;
-        public TextView answerText;
+        public TextView answerText; // This might not be needed for quiz view, but keep if used elsewhere
         public ImageView imageText;
 
         public QuestionViewHolder(@NonNull View itemView) {

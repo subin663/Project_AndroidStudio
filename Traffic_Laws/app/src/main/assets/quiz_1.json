@@ -7,7 +7,8 @@
       "C. Phần đường xe cơ giới."
     ],
     "answer": "B",
-    "image": ""
+    "image": "",
+    "isCritical": false
   },
   {
     "question": "2. “Phương tiện tham gia giao thông đường bộ” gồm những loại nào?",
@@ -17,7 +18,8 @@
       "C. Cả ý 1 và ý 2."
     ],
     "answer": "C",
-    "image": ""
+    "image": "",
+    "isCritical": false
   },
   {
     "question": "3. Sử dụng rượu, bia khi lái xe, nếu bị phát hiện thì bị xử lý như thế nào?",
@@ -27,7 +29,8 @@
       "C. Không bị xử lý hình sự."
     ],
     "answer": "B",
-    "image": ""
+    "image": "",
+    "isCritical": true
   },
   {
     "question": "4. Bạn đang lái xe phía trước có một xe cứu thương đang phát tín hiệu ưu tiên bạn có được phép vượt hay không?",
@@ -38,7 +41,8 @@
       "D. Được vượt khi đảm bảo an toàn."
     ],
     "answer": "A",
-    "image": ""
+    "image": "",
+    "isCritical":false
   },
   {
     "question": "5. Hành vi sử dụng xe mô tô để kéo, đẩy xe mô tô khác bị hết xăng đến trạm mua xăng có được phép hay không?",
@@ -48,7 +52,8 @@
       "C. Không được phép."
     ],
     "answer": "C",
-    "image": ""
+    "image": "",
+    "isCritical":true
   },
   {
     "question": "6: Biển báo hiệu hình tròn có nền xanh lam có hình vẽ màu trắng là loại biển gì dưới đây?",
@@ -59,7 +64,8 @@
       "D. Biển báo chỉ dẫn."
     ],
     "answer": "C",
-    "image": "ha41"
+    "image": "ha41",
+    "isCritical":false
   },
   {
     "question": "7. Bạn đang lái xe trong khu vực đô thị từ 22 giờ đến 5 giờ sáng hôm sau và cần vượt một xe khác, bạn cần báo hiệu như thế nào để đảm bảo an toàn giao thông?",
@@ -70,7 +76,8 @@
       "D. Chỉ báo hiệu bằng đèn."
     ],
     "answer": "D",
-    "image": ""
+    "image": "",
+    "isCritical":false
   },
   {
     "question": "8. Người điều khiển phương tiện tham gia giao thông trong hầm đường bộ ngoài việc phải tuân thủ các quy tắc giao thông còn phải thực hiện những quy định nào dưới đây?",
@@ -80,7 +87,8 @@
       "C. Xe máy chuyên dùng phải bật đèn ngay cả khi đường hầm sáng; phải cho xe chạy trên một làn đường và chỉ chuyển làn ở nơi được phép; được quay đầu xe, lùi xe khi cần thiết."
     ],
     "answer": "A",
-    "image": ""
+    "image": "",
+    "isCritical":false
   },
   {
     "question": "9. Trên đoạn đường hai chiều không có giải phân cách giữa, người lái xe không được vượt xe khác trong các trường hợp nào dưới đây?",
@@ -91,7 +99,8 @@
       "D. Cả ý 1 và ý 3."
     ],
     "answer": "D",
-    "image": ""
+    "image": "",
+    "isCritical":false
   },
   {
     "question": "10. Khi điều khiển xe chạy với tốc độ dưới 60km/h để đảm bảo khoảng cách an toàn giữa hai xe, người lái xe phải điều khiển xe như thế nào?",
@@ -101,7 +110,8 @@
       "C. Cả ý 1 và ý 2."
     ],
     "answer": "C",
-    "image": ""
+    "image": "",
+    "isCritical":false
   },
   {
     "question": "11. *Trên đường một chiều có vạch kẻ phân làn đường, xe thô sơ và xe cơ giới phải đi như thế nào là đúng quy tắc giao thông?",
@@ -111,7 +121,8 @@
       "C. Xe thô sơ đi trên làn đường phù hợp không gây cản trở giao thông, xe cơ giới, xe máy chuyên dùng đi trên làn đường bên phải."
     ],
     "answer": "B",
-    "image": ""
+    "image": "",
+    "isCritical":false
   },
   {
     "question": "12. *Khi điều khiển xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy, những hành vi nào không được phép?",
@@ -122,7 +133,8 @@
       "D. Chở người ngồi sau dưới 16 tuổi."
     ],
     "answer": "A",
-    "image": ""
+    "image": "",
+    "isCritical":true
   },
   {
     "question": "13. Tay ga trên xe mô tô hai bánh có tác dụng gì trong các trường hợp dưới đây?",
@@ -133,7 +145,8 @@
       "D. Cả ý 1 và ý 2."
     ],
     "answer": "D",
-    "image": ""
+    "image": "",
+    "isCritical":false
   },
   {
     "question": "14. Biển nào cấm xe rẽ trái?",
@@ -143,7 +156,8 @@
       "C. Cả hai biển."
     ],
     "answer": "A",
-    "image": "ha105"
+    "image": "ha105",
+    "isCritical":false
   },
   {
     "question": "15. Biển nào dưới đây các phương tiện không được phép đi vào?",
@@ -153,7 +167,8 @@
       "C. Biển 1 và 2."
     ],
     "answer": "C",
-    "image": "ha113"
+    "image": "ha113",
+    "isCritical":false
   },
   {
     "question": "16. Biển nào xe mô tô hai bánh không được đi vào?",
@@ -163,7 +178,8 @@
       "C. Biển 3."
     ],
     "answer": "B",
-    "image": "ha121"
+    "image": "ha121",
+    "isCritical":false
   },
   {
     "question": "17. Biển nào báo hiệu nguy hiểm giao nhau với đường sắt?",
@@ -174,7 +190,8 @@
       "D. Cả ba biển."
     ],
     "answer": "B",
-    "image": "ha129"
+    "image": "ha129",
+    "isCritical":false
   },
   {
     "question": "18. Biển nào báo hiệu 'Đường giao nhau' của các tuyến đường cùng cấp?",
@@ -184,19 +201,22 @@
       "C. Biển 3."
     ],
     "answer": "A",
-    "image": "ha137"
+    "image": "ha137",
+    "isCritical":false
   },
   {
     "question": "19. Biển nào chỉ dẫn nơi bắt đầu đoạn đường dành cho người đi bộ?",
     "options": ["A. Biển 1.", "B. Biển 2.", "C. Biển 3."],
     "answer": "B",
-    "image": "ha145"
+    "image": "ha145",
+    "isCritical":false
   },
   {
     "question": "20. Biển nào dưới đây báo hiệu hết cấm vượt?",
     "options": ["A. Biển 1.", "B. Biển 2.", "C. Biển 3.", "D. Biển 2 và 3."],
     "answer": "D",
-    "image": "ha153"
+    "image": "ha153",
+    "isCritical":false
   },
   {
     "question": "21. Vạch kẻ đường nào dưới đây là vạch phân chia hai chiều xe chạy (vạch tim đường), xe không được lấn làn, không được đè lên vạch?",
@@ -207,7 +227,8 @@
       "D. Cả 3 vạch."
     ],
     "answer": "A",
-    "image": "ha161"
+    "image": "ha161",
+    "isCritical":false
   },
   {
     "question": "22. Xe nào được quyền đi trước trong trường hợp này?",
@@ -216,7 +237,8 @@
       "B. Xe cứu thương."
     ],
     "answer": "B",
-    "image": "ha169"
+    "image": "ha169",
+    "isCritical":false
   },
   {
     "question": "23. Xe tải kéo mô tô ba bánh như hình này có đúng quy tắc giao thông không?",
@@ -225,7 +247,8 @@
       "B. Không đúng."
     ],
     "answer": "B",
-    "image": "ha177"
+    "image": "ha177",
+    "isCritical":false
   },
   {
     "question": "24. Theo hướng mũi tên, những hướng nào xe mô tô được phép đi?",
@@ -236,7 +259,8 @@
       "D. Hướng 2 và 3."
     ],
     "answer": "C",
-    "image": "ha185"
+    "image": "ha185",
+    "isCritical":false
   },
   {
     "question": "25. Các xe đi theo hướng mũi tên, xe nào vi phạm quy tắc giao thông?",
@@ -247,6 +271,7 @@
       "D. Cả bốn xe."
     ],
     "answer": "B",
-    "image": "ha193"
+    "image": "ha193",
+    "isCritical":false
   }
 ]
