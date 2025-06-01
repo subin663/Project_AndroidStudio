@@ -13,9 +13,6 @@
         android:theme="@style/Theme.Traffic_Laws"
         tools:targetApi="31">
         <activity
-            android:name=".OT_CauhoilietActivity"
-            android:exported="false" />
-        <activity
             android:name=".QuizRandom_Activity"
             android:exported="false" />
         <activity
@@ -44,6 +41,9 @@
             android:exported="false" />
         <activity
             android:name=".OT_SaHinhActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OT_CauhoilietActivity"
             android:exported="false" />
         <activity
             android:name=".Quiz1_Activity"

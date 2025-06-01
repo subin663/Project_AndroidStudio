@@ -27,6 +27,8 @@ public class QuizAdapter extends RecyclerView.Adapter<QuizAdapter.QuestionViewHo
         this.userAnswers = userAnswers;
         this.listener = listener;
     }
+    //Interface này cho phép Activity hoặc Fragment lắng nghe sự kiện khi người dùng chọn một đáp án trong
+    //danh sách câu hỏi. Phương thức này nhận vào vị trí của câu hỏi và đáp án đã chọn.
 
     public interface OnAnswerSelectedListener {
         void onAnswerSelected(int position, String selectedAnswer);

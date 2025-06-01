@@ -11,14 +11,11 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
 public class OntapFragment extends Fragment {
-
     LinearLayout Toanbocauhoi;
     LinearLayout Khainiemquytacgiaothong, Bienbaoduongbo, Sahinh, Cauhoiliet;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_ontap, container, false);
 
@@ -49,7 +46,7 @@ public class OntapFragment extends Fragment {
             }
         });
 
-        // Trang Ôn tập bển báo đường bộ
+        // Trang Ôn tập biển báo đường bộ
         Bienbaoduongbo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -1,19 +1,21 @@
 package ntu.letanvinh_lethanhthai.traffic_laws;
 import java.io.Serializable;
-public class Bienbao implements Serializable {
+public class Bienbao implements Serializable  // Cho phép truyền qua các Activity bằng intent
+{
     static final long serialVersionUID = 1L;
     int id_bienbao;
     String ten_bienbao;
     String mota_bienbao;
-    String wbbFileName;
+    String wbbFileName; // Tên file ảnh
 
+    // Hàm khởi tạo
     public Bienbao(int id_bienbao, String ten_bienbao, String mota_bienbao, String wbbFileName) {
         this.id_bienbao = id_bienbao;
         this.ten_bienbao = ten_bienbao;
         this.mota_bienbao = mota_bienbao;
         this.wbbFileName = wbbFileName;
     }
-
+    // Phương thức getter và setter để lấy và gán giá trị
     public int getId_bienbao() {
         return id_bienbao;
     }

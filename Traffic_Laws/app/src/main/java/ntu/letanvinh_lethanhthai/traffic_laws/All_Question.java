@@ -20,6 +20,14 @@ public class All_Question {
 
     // Constructor cũ của bạn (nếu bạn muốn giữ lại cho trường hợp không có isCritical)
     // Hoặc bạn có thể chỉ dùng constructor ở trên và truyền false cho isCritical khi cần
+
+    // Các tham số cho câu hỏi
+    String question;
+    List<String> options;
+    String answer;
+    String image;
+
+    // Hàm khởi tạo có tham số
     public All_Question(String question, List<String> options, String answer, String image) {
         this.question = question;
         this.options = options;

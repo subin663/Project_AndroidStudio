@@ -14,7 +14,6 @@ import androidx.core.view.WindowInsetsCompat;
 public class AnswerDeLiet_Acivity extends AppCompatActivity {
 
     TextView tvAns, tvDanhgia;
-    Button btnBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +24,7 @@ public class AnswerDeLiet_Acivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
+        // Tìm điều khiển
         // Ánh xạ các TextView
         tvAns = findViewById(R.id.tvAns);
         tvDanhgia = findViewById(R.id.tvEvaluate);
@@ -49,7 +48,7 @@ public class AnswerDeLiet_Acivity extends AppCompatActivity {
             messageAns = "BETTER LUCK NEXT TIME!";
             messageDanhgia = "Bạn đã trả lời đúng " + correctAnswers + "/" + totalQuestions + " câu. Bạn cần 25/25 câu để đậu.";
         }
-
+        // Hiển thị nội dung cho textView
         tvAns.setText(messageAns);
         tvDanhgia.setText(messageDanhgia);
     }

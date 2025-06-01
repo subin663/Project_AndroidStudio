@@ -29,12 +29,12 @@ public class Quiz3_Activity extends AppCompatActivity  {
     Button submitButton;
     TextView timerTextView; // Khai báo TextView cho timer
     CountDownTimer countDownTimer; // Khai báo CountDownTimer
-    static final long QUIZ_DURATION_MILLIS = 1140000; // 5 phút (5 * 60 * 1000)
+    static final long QUIZ_DURATION_MILLIS = 1140000; // 19 phút (19 * 60 * 1000)
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz1); // Đảm bảo bạn đang sử dụng layout có timer_text
+        setContentView(R.layout.activity_quiz1);
 
         submitButton = findViewById(R.id.submitButton);
         timerTextView = findViewById(R.id.timer_text); // Khởi tạo timer TextView
