@@ -3,11 +3,12 @@ package ntu.letanvinh_lethanhthai.traffic_laws;
 import java.util.List;
 
 public class All_Question {
-    String question; // Giữ nguyên tên
-    List<String> options; // Giữ nguyên tên
-    String answer; // Giữ nguyên tên
-    String image; // Giữ nguyên tên
-    boolean isCritical; // Thêm trường mới
+    // Các tham số cho câu hỏi
+    String question;
+    List<String> options;
+    String answer;
+    String image;
+    boolean isCritical;
 
     // Constructor cũ của bạn, thêm isCritical
     public All_Question(String question, List<String> options, String answer, String image, boolean isCritical) {
@@ -18,14 +19,6 @@ public class All_Question {
         this.isCritical = isCritical;
     }
 
-    // Constructor cũ của bạn (nếu bạn muốn giữ lại cho trường hợp không có isCritical)
-    // Hoặc bạn có thể chỉ dùng constructor ở trên và truyền false cho isCritical khi cần
-
-    // Các tham số cho câu hỏi
-    String question;
-    List<String> options;
-    String answer;
-    String image;
 
     // Hàm khởi tạo có tham số
     public All_Question(String question, List<String> options, String answer, String image) {
@@ -58,8 +51,5 @@ public class All_Question {
         return isCritical;
     }
 
-    // Bạn có thể thêm setter nếu cần, ví dụ:
-    // public void setCritical(boolean critical) {
-    //     isCritical = critical;
-    // }
+
 }

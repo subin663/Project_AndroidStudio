@@ -3,7 +3,7 @@ package ntu.letanvinh_lethanhthai.traffic_laws;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.util.Log;
+import android.util.Log; // Giữ lại Log nếu bạn dùng để debug
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -30,9 +30,6 @@ public class Quiz1_Activity extends AppCompatActivity {
     TextView timerTextView;
     CountDownTimer countDownTimer;
 
-    TextView timerTextView; // New TextView for timer
-    CountDownTimer countDownTimer; // New CountDownTimer object
-
     static final long QUIZ_DURATION_MILLIS = 1140000; // 19 minutes (19 * 60 * 1000)
 
     @Override
@@ -42,29 +39,26 @@ public class Quiz1_Activity extends AppCompatActivity {
 
         // Tìm điều khiển
         submitButton = findViewById(R.id.submitButton);
-        timerTextView = findViewById(R.id.timer_text);
-
         timerTextView = findViewById(R.id.timer_text); // Nơi hiển thị thời gian
         recyclerView = findViewById(R.id.recyclerView);
 
         // Tải câu hỏi
         questionList = loadQuestionsFromAssets();
 
+        // Kiểm tra xem câu hỏi có được tải thành công và không rỗng không
         if (questionList != null && !questionList.isEmpty()) {
-            userAnswers = new ArrayList<>(questionList.size());
-        if (questionList != null) {
             userAnswers = new ArrayList<>(questionList.size()); // Tạo mảng chứa câu trả lời người dùng
             for (int i = 0; i < questionList.size(); i++) {
-                userAnswers.add(null);  // Tạo mới và thêm câu trả lời trống vào danh sách câu trả lời
+                userAnswers.add(null);  // Khởi tạo tất cả câu trả lời là null
             }
 
             recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-            // Tạo mới Adapter, danh  sách chứa câu trả lời người dùng
+            // Tạo mới Adapter, danh sách chứa câu trả lời người dùng
             adapter = new QuizAdapter(questionList, userAnswers, (position, selectedAnswer) -> {
-                // The recalculation logic is now primarily within the adapter's onCheckedChanged
-                // We don't need to do anything specific here for critical questions,
-                // as the adapter will handle tracking them internally.
+                // Logic tính toán lại kết quả đã được xử lý chính trong onCheckedChanged của adapter.
+                // Không cần làm gì cụ thể ở đây cho câu hỏi liệt,
+                // vì adapter sẽ tự xử lý việc theo dõi chúng.
             });
             recyclerView.setAdapter(adapter);
 
@@ -72,7 +66,7 @@ public class Quiz1_Activity extends AppCompatActivity {
             startQuizTimer();
 
         } else {
-            Toast.makeText(this, "Không thể tải được câu hỏi. Vui lòng kiểm tra lại.", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Không thể tải được câu hỏi hoặc danh sách rỗng. Vui lòng kiểm tra lại.", Toast.LENGTH_LONG).show();
             finish();
         }
 
@@ -80,7 +74,7 @@ public class Quiz1_Activity extends AppCompatActivity {
         submitButton.setOnClickListener(v -> submitQuiz());
     }
 
-    // Bộ đếm thời giam
+    // Bộ đếm thời gian
     private void startQuizTimer() {
         countDownTimer = new CountDownTimer(QUIZ_DURATION_MILLIS, 1000) {
             @Override
@@ -113,8 +107,6 @@ public class Quiz1_Activity extends AppCompatActivity {
         // trước khi gửi đi.
         adapter.recalculateResults();
 
-        int correctAnswers = adapter.getCorrectAnswersCount();
-        int totalQuestions = questionList.size();
         boolean hasCriticalError = adapter.hasCriticalError(); // Lấy trạng thái lỗi câu hỏi liệt
         int correctAnswers = adapter.getCorrectAnswersCount(); // Lấy các câu trả lời đúng
         int totalQuestions = questionList.size(); // số lượng câu hỏi
@@ -143,7 +135,7 @@ public class Quiz1_Activity extends AppCompatActivity {
             JSONArray jsonArray = new JSONArray(noi_dung_file_json); //Chuyển json thành mảng, mỗi câu hỏi là 1 phần tử
 
 
-            // Duyệt qua các câu hỏi trong mãng json để lấy dữ lệu
+            // Duyệt qua các câu hỏi trong mảng json để lấy dữ liệu
             for (int i = 0; i < jsonArray.length(); i++) {
                 JSONObject obj = jsonArray.getJSONObject(i);
                 String qText = obj.getString("question");
@@ -156,9 +148,7 @@ public class Quiz1_Activity extends AppCompatActivity {
                 String answer = obj.getString("answer");
                 // Đọc giá trị isCritical từ JSON, mặc định là false nếu không có
                 boolean isCritical = obj.optBoolean("isCritical", false);
-                questions.add(new All_Question(qText, options, answer, image, isCritical));
-                questions.add(new All_Question(qText, options, answer, image)); // Thêm mới câu hỏi vào danh sách  câu hỏi
-
+                questions.add(new All_Question(qText, options, answer, image, isCritical)); // Thêm mới câu hỏi vào danh sách câu hỏi
             }
         } catch (Exception e) {
             e.printStackTrace();
