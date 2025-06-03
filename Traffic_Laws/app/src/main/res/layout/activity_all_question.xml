@@ -22,7 +22,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:layout_marginRight="25dp"
                 android:padding="15dp"
                 android:text="TỔNG HỢP CÂU HỎI"
                 android:textSize="25dp"

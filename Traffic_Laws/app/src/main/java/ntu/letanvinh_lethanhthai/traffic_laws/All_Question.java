@@ -50,6 +50,4 @@ public class All_Question {
     public boolean isCritical() { // Getter cho isCritical
         return isCritical;
     }
-
-
 }

@@ -21,12 +21,11 @@ import java.util.ArrayList;
 
 public class BienbaoFragment extends Fragment {
     BienbaoAdapter bbAdapter;
-    ArrayList<Bienbao> recyclerViewDatas = new ArrayList<>(); // Khởi tạo ở đây
+    ArrayList<Bienbao> recyclerViewDatas = new ArrayList<>(); // Khởi tạo
     RecyclerView rycyclerViewBB;
 
 
     public BienbaoFragment() {
-        // Required empty public constructor
     }
 
     @Override
@@ -43,7 +42,7 @@ public class BienbaoFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        // **Logic loadDataFromSQLite được ghép vào đây**
+        //  loadDataFromSQLite được ghép vào
         //Mở csdl,
         SQLiteDatabase db = requireActivity().openOrCreateDatabase(
                 "QLBienbao.db", // Tên của cơ sở dữ liệu
@@ -66,7 +65,7 @@ public class BienbaoFragment extends Fragment {
         };
         cs.close();
         db.close();
-        // **Kết thúc logic loadDataFromSQLite**
+        // Kết thúc loadDataFromSQLite
 
         // Thiết lập LayoutManager
         RecyclerView.LayoutManager layoutLinear = new LinearLayoutManager(requireContext());

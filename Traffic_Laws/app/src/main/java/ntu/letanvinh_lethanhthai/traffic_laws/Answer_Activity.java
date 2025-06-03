@@ -17,11 +17,11 @@ import androidx.core.view.WindowInsetsCompat;
 import java.util.Locale; // Import Locale để sử dụng String.format
 
 public class Answer_Activity extends AppCompatActivity {
-
     TextView tvAns, tvDanhgia;
     Button btnBack; // Khai báo nhưng chưa sử dụng, bạn có thể thêm OnClickListener cho nó
 
-    @Override
+
+     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
@@ -32,11 +32,12 @@ public class Answer_Activity extends AppCompatActivity {
             return insets;
         });
 
+        // Tìm điều khiển
         tvAns = findViewById(R.id.tvAns);
         tvDanhgia = findViewById(R.id.tvEvaluate);
 //        btnBack = findViewById(R.id.btnBack); // Đảm bảo bạn có một Button với ID này trong layout
 
-        // Nhận dữ liệu từ Intent
+        // Nhận dữ liệu từ Intent Quiz_Activity
         int correctAnswers = getIntent().getIntExtra("correctAnswers", 0);
         int totalQuestions = getIntent().getIntExtra("totalQuestions", 0);
         // Nhận trạng thái lỗi câu hỏi liệt
@@ -61,11 +62,11 @@ public class Answer_Activity extends AppCompatActivity {
             messageAns = "CHƯA ĐẠT!";
             messageDanhgia = String.format(Locale.getDefault(), "Bạn đã trả lời đúng %d/%d câu. Bạn cần %d/%d câu đúng để ĐẠT.", correctAnswers, totalQuestions, passingThreshold, totalQuestions);
         }
-
+        // Hển thị ở TextView
         tvAns.setText(messageAns);
         tvDanhgia.setText(messageDanhgia);
 
-        // Xử lý sự kiện nút Back (nếu bạn muốn quay lại màn hình trước đó)
+        // Xử lý sự kiện nút Back
         if (btnBack != null) {
             btnBack.setOnClickListener(new View.OnClickListener() {
                 @Override

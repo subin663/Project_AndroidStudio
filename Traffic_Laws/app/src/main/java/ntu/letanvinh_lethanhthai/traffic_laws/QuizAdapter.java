@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
+// ViewHolder là lớp giúp giữ các tham chiếu đến View trong mỗi item của RecyclerView để tái sử dụng và tăng hiệu suất.
 public class QuizAdapter extends RecyclerView.Adapter<QuizAdapter.QuestionViewHolder> {
     List<All_Question> questionList;
     List<String> userAnswers;

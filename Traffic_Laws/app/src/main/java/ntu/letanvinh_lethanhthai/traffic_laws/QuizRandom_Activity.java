@@ -38,9 +38,11 @@ public class QuizRandom_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz1);
 
+        // Tìm điều khiển
         submitButton = findViewById(R.id.submitButton);
         timerTextView = findViewById(R.id.timer_text);
 
+        // Tải câu hỏi
         questionList = loadRandomQuestionsFromAssets();
 
         if (questionList != null && !questionList.isEmpty()) {
@@ -113,36 +115,39 @@ public class QuizRandom_Activity extends AppCompatActivity {
         }
     }
 
+    // Đọc dữ liệu từ thư mục Assets
     private List<All_Question> loadRandomQuestionsFromAssets() {
         List<All_Question> allQuestions = new ArrayList<>();
         try {
-            InputStream is = getAssets().open("questions.json");
-            int size = is.available();
-            byte[] buffer = new byte[size];
-            is.read(buffer);
-            is.close();
-            String json = new String(buffer, "UTF-8");
+            InputStream doc_file = getAssets().open("questions.json");
+            int size = doc_file.available(); // Lấy kích thước để tạo mảng buffer
+            byte[] buffer = new byte[size]; // Tạo mảng chứa câu hỏi
+            doc_file.read(buffer);
+            doc_file.close();
+            String noi_dung_file_json = new String(buffer, "UTF-8"); // CHứa câu hỏi theo mảng buffer, chuẩn hoá mã hoá kí tự Tiếng Việt
 
-            JSONArray jsonArray = new JSONArray(json);
+            JSONArray jsonArray = new JSONArray(noi_dung_file_json); // Mỗi câu hỏi là 1 phần tử trong mảng
 
+            // Duyệt qua các câu hỏi
             for (int i = 0; i < jsonArray.length(); i++) {
-                JSONObject obj = jsonArray.getJSONObject(i);
-                String qText = obj.getString("question");
-                JSONArray opts = obj.getJSONArray("options");
+                JSONObject cau_hoi = jsonArray.getJSONObject(i);
+                String qText = cau_hoi.getString("question"); // Lấy tiêu đề câu hỏi
+                JSONArray opts = cau_hoi.getJSONArray("options"); // Lấy các lựa chọn trả lời
                 List<String> options = new ArrayList<>();
                 for (int j = 0; j < opts.length(); j++) {
-                    options.add(opts.getString(j));
+                    options.add(opts.getString(j)); // Thêm mới lựa chọn vào danh sách lựa chọn
                 }
-                String image = obj.getString("image");
-                String answer = obj.getString("answer");
-                allQuestions.add(new All_Question(qText, options, answer, image));
+                String image = cau_hoi.getString("image"); // Lấy hình ảnh
+                String answer = cau_hoi.getString("answer"); // Lấy đáp án
+                allQuestions.add(new All_Question(qText, options, answer, image)); // Thêm mới câu hỏi vào danh sách câu hỏi
             }
 
             // Xáo trộn danh sách câu hỏi
             Collections.shuffle(allQuestions);
 
             // Chỉ lấy số lượng câu hỏi mong muốn
-            if (allQuestions.size() >= 25) {
+            if (allQuestions.size() >= 25)
+            {
                 return allQuestions.subList(0, 25);
             } else {
                 Log.w("QuizRandom_Activity", "Số câu hỏi trong " + "questions.json" + " (" + allQuestions.size() + ") ít hơn số câu hỏi yêu cầu (" + 25 + "). Trả về tất cả các câu hỏi hiện có.");
@@ -150,7 +155,6 @@ public class QuizRandom_Activity extends AppCompatActivity {
             }
 
         } catch (Exception e) {
-            Log.e("QuizRandom_Activity", "Error loading or selecting random questions from " + "questions.json" + ": ", e);
             e.printStackTrace();
             return null;
         }
