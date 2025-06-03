@@ -23,6 +23,7 @@ public class QuizAdapter extends RecyclerView.Adapter<QuizAdapter.QuestionViewHo
     // Biến mới để theo dõi lỗi câu hỏi liệt
     boolean hasCriticalError = false;
 
+    
     public QuizAdapter(List<All_Question> questionList, List<String> userAnswers, OnAnswerSelectedListener listener) {
         this.questionList = questionList;
         this.userAnswers = userAnswers;
